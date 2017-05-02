@@ -6,7 +6,7 @@ Founded in 2017, Hopper's Heapin' Jalapenos is composed of several [contributors
 
 //TODO finish README opener
 
-Please refer to (previous README)[https://github.com/tjlagrow/CIS-422-Group-Project-1/blob/master/README.md] as a guideline.
+Please refer to [previous README](https://github.com/tjlagrow/CIS-422-Group-Project-1/blob/master/README.md) as a guideline.
 
 Idea::
 
