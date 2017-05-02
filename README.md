@@ -8,9 +8,9 @@ Founded in 2017, Hopper's Heapin' Jalapenos is composed of several [contributors
 
 Please refer to [previous README](https://github.com/tjlagrow/CIS-422-Group-Project-1/blob/master/README.md) as a guideline.
 
-Idea::
+Idea::A light-weight mobile web-based platform that allows user to input images to generate recipes 
 
-Scope::
+Scope:: 
 
 MVP::
 
