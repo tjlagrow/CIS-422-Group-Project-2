@@ -21,6 +21,6 @@ Feel free to comment on any of the [issues on Github](https://github.com/tjlagro
 
 For more information about this project, contact the following people: 
 - [Theodore J. LaGrow](mailto:tlagrow@uoregon.edu)
-- [Randy Chen](mailto:) //Add Randy's Email
+- [Randy Chen](mailto:randy.chen96@gmail.com)
 - [Je Min Son](mailto:jemin@uoregon.edu)
 - [Daniel Su](mailto:dsu@uoregon.edu)
