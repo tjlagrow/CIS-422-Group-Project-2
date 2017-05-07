@@ -89,7 +89,7 @@ if requests < 46:
 
 	response = unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/extract?forceExtraction=false&url=http%3A%2F%2Fwww.melskitchencafe.com%2Fthe-best-fudgy-brownies%2F",
   headers={
-    "X-Mashape-Key": "5y6MLKT5F4mshrkAYpHvCWJKxfgzp13ssCPjsnBV0z6ePTldcI"
+    "X-Mashape-Key":
   }
 
 	"""
