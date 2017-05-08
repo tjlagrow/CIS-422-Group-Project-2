@@ -9,5 +9,6 @@ app.secret_key = "secret_key"
 def main():
     return render_template('main.html')
 
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port = 8080, debug = True)
