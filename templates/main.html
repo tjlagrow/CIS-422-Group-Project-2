@@ -1,24 +1,73 @@
-{% extends "menu_bar.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-{% block body %}
-
+  <title>Hopper's Heapin' Jalapeños</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <style type ="text/css">
 	body{
 		margin: 0 auto;
-		text-align:center;
-		background-color: #FFF5EE;
+		text-align: center;
+		background-color: #e8efff;
 	}
 	h1
 	{
 		color: green;
 	}
+	.navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        letter-spacing: 5px;
+        background-color: #ffffff
+    }
+    .navbar-nav  li a:hover {
+        color: #2b8c08 !important;
+    }
 </style>
+</head>
 
-<h1> Hello! </h1>
+<body>
 
-<form class="form-horizontal" method="POST">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="padding-right: 5px; color: #e60303; 	font-size: 20px">Hopper's Heapin'</a>
+      <img src="..\templates\logo_w-o_name.jpg" style="height: 50px; width: auto\9; float: left; padding-left: 10px; padding-right: 5px;" class="img-responsive img-circle logo-img">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#aboutSect" style="color: #e60303;">About</a></li>
+        <li><a href="#instructions" style="color: #e60303;">Instructions</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1> Welcome! </h1>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <div class="container text-center" id = upload style="width: 40%; height:auto; padding-left: 0px; padding-right: 0px; width: 100%;">
+    <form class="form-horizontal" method="POST">
 	<fieldset>
+		<input type="file" onchange="previewFile()"><br>
+		<input class="btn btn-primary" type="submit" value="Upload">
+		<input class="btn btn-primary" type="submit" value="Generate">
+		<img src="" height="200" alt="Image preview...">
 		<legend>What type of food</legend>
 		<p> Choose which type of food you want</p>
 		<div class = "form-group">
@@ -27,12 +76,13 @@
 				<select class="form-control" id="select">
 					<option>American</option>
 					<option>Mexican</option>
-					<option>Asain</option>
+					<option>Asian</option>
 				</select>
 			</div>
 		</div>
 		<input class="btn btn-primary" type="submit" value="ADD">
 	</fieldset>
 </form>
-
-{% endblock %}
+</div>
+</div>
+</body>
