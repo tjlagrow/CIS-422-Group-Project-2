@@ -24,7 +24,7 @@ def upload():
       f_name = str(uuid.uuid4()) + extension
       app.config['UPLOAD_FOLDER'] = 'static/Uploads'
       file.save(os.path.join(app.config['UPLOAD_FOLDER'], f_name))
-	  return json.dumps({'filename':f_name})
+      return json.dumps({'filename':f_name})
 
 
 if __name__ == '__main__':
