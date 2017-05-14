@@ -9,6 +9,11 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="../jQuery-File-Upload-master/js/vendor/jquery.ui.widget.js"></script>
+  <script src=""></script>
+  <script type="text/javascript" src="../jQuery-File-Upload-master/js/jquery.fileupload.js"></script>
+  <script type="text/javascript" src="../jQuery-File-Upload-master/js/jquery.fileupload-process.js"></script>
+  <script type="text/javascript" src="../jQuery-File-Upload-master/js/jquery.fileupload-ui.js"></script>
 
 <style type ="text/css">
 	body{
@@ -33,6 +38,21 @@
     .navbar-nav  li a:hover {
         color: #2b8c08 !important;
     }
+    .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+    }
 </style>
 </head>
 
@@ -51,7 +71,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutSect" style="color: #e60303;">About</a></li>
+        <li><a href="#aboutSect" data-toggle="popover" data-content="Some content inside the popover" data-placement="bottom" style="color: #e60303;">About</a></li>
         <li><a href="#instructions" style="color: #e60303;">Instructions</a></li>
       </ul>
     </div>
@@ -64,13 +84,31 @@
   <div class="container text-center" id = upload style="width: 40%; height:auto; padding-left: 0px; padding-right: 0px; width: 100%;">
     <form class="form-horizontal" method="POST">
 	<fieldset>
-		<input type="file" onchange="previewFile()"><br>
-		<input class="btn btn-primary" type="submit" value="Upload">
-		<input class="btn btn-primary" type="submit" value="Generate">
-		<img src="" height="200" alt="Image preview...">
+		<p> Choose which type of food you want</p>	
+		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-camera"> Camera</span> </button>
+		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-barcode"> Barcode</span> </button>
+		<button class="btn btn-primary" type="submit" value="Generate"><span class="glyphicon glyphicon-cloud-upload"> Upload</span> </button>
+
+		 <div class="input-group">
+                    <span class="input-group-btn">
+                    <span class="btn btn-primary btn-file">
+                        Browse&hellip; <input type="file" id="fileupload" name="file" multiple>
+                    </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+        </div>
+        <div class="pull-right">
+    		<img id="imgUpload" style="width: 140px; height: 140px;" class="img-thumbnail">
+		</div>
+        <div class="form-group">
+ 
+                <p class="text-center">
+                    <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Publish" />
+                </p>
+            </div>
 		<legend>What type of food</legend>
-		<p> Choose which type of food you want</p>
-		<div class = "form-group">
+		
+		<!--<div class = "form-group">
 			<label for="select" class="col-lg-2 control-label">Options</label>
 			<div class="col-lg-2">
 				<select class="form-control" id="select">
@@ -80,9 +118,72 @@
 				</select>
 			</div>
 		</div>
-		<input class="btn btn-primary" type="submit" value="ADD">
+		<input class="btn btn-primary" type="submit" value="ADD">-->
 	</fieldset>
-</form>
+	</form>
+  </div>
 </div>
+<div class="container-fluid bg-1 text-center">
+  <div class="container text-center" id = upload style="width: 40%; height:auto; padding-left: 0px; padding-right: 0px; width: 100%;">
+  	<div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Recipe 1</strong></p><br>
+	    <a href="#demo" data-toggle="collapse">
+	      <img src="" class="img-circle person" alt="Recipe Name">
+	    </a>
+	    <div id="demo" class="collapse">
+	      <p>Pre-Heat</p>
+	      <p>Cut carrotsh</p>
+	      <p>Boil</p>
+	    </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Recipe 2</strong></p><br>
+    	<a href="#demo2" data-toggle="collapse">
+	      <img src="" class="img-circle person" alt="Recipe Name">
+	    </a>
+	    <div id="demo2" class="collapse">
+	      <p>Boil Noddles</p>
+	      <p>lonfdsafasfdasdfasdf</p>
+	      <p>Let the Chicken rest</p>
+	    </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Recipe 3</strong></p><br>
+      	<a href="#demo3" data-toggle="collapse">
+	      <img src="" class="img-circle person" alt="Recipe Name">
+	    </a>
+	    <div id="demo3" class="collapse">
+	      <p>Loves lo45648864beach</p>
+	    </div>
+    </div>
+  </div>
+  </div>
 </div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+<script type="text/javascript">
+$(function() {
+    $('#fileupload').fileupload({
+        url: 'upload',
+        dataType: 'json',
+        add: function(e, data) {
+            data.submit();
+        },
+        success: function(response, status) {
+            console.log(response);
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    });
+})
+$('#imgUpload').attr('src','static/Uploads/'+response.filename);
+</script>
 </body>
+</html>
