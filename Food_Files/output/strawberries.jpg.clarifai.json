@@ -1,0 +1,169 @@
+{
+    "outputs": [
+        {
+            "created_at": "2017-05-14T05:52:12.513270161Z",
+            "data": {
+                "concepts": [
+                    {
+                        "app_id": "",
+                        "id": "ai_JQV7LmzG",
+                        "name": "berry",
+                        "value": 0.99759793
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_rpDBJsjW",
+                        "name": "pasture",
+                        "value": 0.9948587
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_JXCD9lx9",
+                        "name": "strawberry",
+                        "value": 0.9923837
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_0wh0dJkQ",
+                        "name": "sweet",
+                        "value": 0.9730176
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_r59dFMqd",
+                        "name": "juice",
+                        "value": 0.7720879
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_v65hxxVH",
+                        "name": "raspberry",
+                        "value": 0.44963393
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_C91DX0qm",
+                        "name": "goji berry",
+                        "value": 0.3299582
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_TtT3b8dX",
+                        "name": "cherry",
+                        "value": 0.30648118
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_MW9k9bfX",
+                        "name": "sweet cherry",
+                        "value": 0.23114283
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_wFb8BVzK",
+                        "name": "straw",
+                        "value": 0.2244424
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_KNh2Htg8",
+                        "name": "grass",
+                        "value": 0.20613104
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_C9pkw8w6",
+                        "name": "salmonberry",
+                        "value": 0.19001137
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_wXt5mZpW",
+                        "name": "redcurrant",
+                        "value": 0.18313435
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_dFFRXlSP",
+                        "name": "comestible",
+                        "value": 0.1220441
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_RZgNXv7K",
+                        "name": "aliment",
+                        "value": 0.10773586
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_dm5HQ1H0",
+                        "name": "miracle fruit",
+                        "value": 0.105975114
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_mRgZ9JTB",
+                        "name": "lychee",
+                        "value": 0.10427043
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_NDbbpCv1",
+                        "name": "vegetable",
+                        "value": 0.09830779
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_2TfRbKFW",
+                        "name": "apple",
+                        "value": 0.08864641
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_NTSJdt8h",
+                        "name": "currant",
+                        "value": 0.08804867
+                    }
+                ]
+            },
+            "id": "f723196f59ee4c2e885d603d8e404b24",
+            "input": {
+                "data": {
+                    "image": {
+                        "base64": "true",
+                        "url": "https://s3.amazonaws.com/clarifai-api/img/prod/d21df60ba41a4ad28b31558aaaddc199/a2a09dbf0a284128bd27b3303390dbd0.jpeg"
+                    }
+                },
+                "id": "af2361542c844f7b947299f6e860153f"
+            },
+            "model": {
+                "app_id": "",
+                "created_at": "2016-09-17T22:18:59.955626Z",
+                "id": "bd367be194cf45149e75f01d59f77ba7",
+                "model_version": {
+                    "created_at": "2016-09-17T22:18:59.955626Z",
+                    "id": "dfebc169854e429086aceb8368662641",
+                    "status": {
+                        "code": 21100,
+                        "description": "Model trained successfully"
+                    }
+                },
+                "name": "food-items-v1.0",
+                "output_info": {
+                    "message": "Show output_info with: GET /models/{model_id}/output_info",
+                    "type": "concept",
+                    "type_ext": "concept"
+                }
+            },
+            "status": {
+                "code": 10000,
+                "description": "Ok"
+            }
+        }
+    ],
+    "response_time": 3.2668027877807617,
+    "status": {
+        "code": 10000,
+        "description": "Ok"
+    }
+}
