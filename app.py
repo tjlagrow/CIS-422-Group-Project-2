@@ -9,7 +9,7 @@ app.secret_key = "secret_key"
 #main page 
 @app.route('/')
 def main():
-    return render_template('main.html')
+    return render_template('CIS-422-Group-Project-2/templates/main.html')
 
 @app.route('/dashboard',methods=('GET',))
 def dashboard():
