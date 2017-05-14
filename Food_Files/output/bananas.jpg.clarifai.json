@@ -1,0 +1,169 @@
+{
+    "outputs": [
+        {
+            "created_at": "2017-05-14T05:51:59.661764542Z",
+            "data": {
+                "concepts": [
+                    {
+                        "app_id": "",
+                        "id": "ai_GNdVB8DV",
+                        "name": "banana",
+                        "value": 0.99873585
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_rpDBJsjW",
+                        "name": "pasture",
+                        "value": 0.6957773
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_NDbbpCv1",
+                        "name": "vegetable",
+                        "value": 0.5662019
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_skxkRfDl",
+                        "name": "cake",
+                        "value": 0.51087594
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_0wh0dJkQ",
+                        "name": "sweet",
+                        "value": 0.49906784
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_DlGsqbPZ",
+                        "name": "chocolate",
+                        "value": 0.48242182
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_PbPLrZH1",
+                        "name": "milk",
+                        "value": 0.43590128
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_PWmbd19r",
+                        "name": "cream",
+                        "value": 0.3611769
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_f1zKlGnc",
+                        "name": "coffee",
+                        "value": 0.28448248
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_G58V132Z",
+                        "name": "water",
+                        "value": 0.22659555
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_19dZ4m9Q",
+                        "name": "durian",
+                        "value": 0.20908473
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_4Pj7JQVd",
+                        "name": "peanut butter",
+                        "value": 0.20085676
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_wXDqH0t0",
+                        "name": "chips",
+                        "value": 0.19883764
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_hh0lr5sh",
+                        "name": "peanut",
+                        "value": 0.19790412
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_MsJXFg9r",
+                        "name": "birthday cake",
+                        "value": 0.19543341
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_x80v7t3W",
+                        "name": "bamboo shoots",
+                        "value": 0.19343254
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_BR1Svb7D",
+                        "name": "coconut",
+                        "value": 0.19290146
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_Br1hm5jR",
+                        "name": "butter",
+                        "value": 0.17053339
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_53wgdjQM",
+                        "name": "candy",
+                        "value": 0.15421748
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_Hm82f4BW",
+                        "name": "hazelnut",
+                        "value": 0.13704854
+                    }
+                ]
+            },
+            "id": "faec275d96324b85aed2f05502c19c8c",
+            "input": {
+                "data": {
+                    "image": {
+                        "base64": "true",
+                        "url": "https://s3.amazonaws.com/clarifai-api/img/prod/d21df60ba41a4ad28b31558aaaddc199/ba7e1cc635d24c1dbe7ed755baf07a81.jpeg"
+                    }
+                },
+                "id": "d31901dee3aa4862bbcfa11b20d184ca"
+            },
+            "model": {
+                "app_id": "",
+                "created_at": "2016-09-17T22:18:59.955626Z",
+                "id": "bd367be194cf45149e75f01d59f77ba7",
+                "model_version": {
+                    "created_at": "2016-09-17T22:18:59.955626Z",
+                    "id": "dfebc169854e429086aceb8368662641",
+                    "status": {
+                        "code": 21100,
+                        "description": "Model trained successfully"
+                    }
+                },
+                "name": "food-items-v1.0",
+                "output_info": {
+                    "message": "Show output_info with: GET /models/{model_id}/output_info",
+                    "type": "concept",
+                    "type_ext": "concept"
+                }
+            },
+            "status": {
+                "code": 10000,
+                "description": "Ok"
+            }
+        }
+    ],
+    "response_time": 2.853440284729004,
+    "status": {
+        "code": 10000,
+        "description": "Ok"
+    }
+}

@@ -72,7 +72,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#aboutSect" data-toggle="popover" data-content="Some content inside the popover" data-placement="bottom" style="color: #e60303;">About</a></li>
-        <li><a href="#instructions" style="color: #e60303;">Instructions</a></li>
+        <li><a href="#instructions" data-toggle="popover" data-content="Instructions" data-placement="bottom" style="color: #e60303;">Instructions</a></li>
       </ul>
     </div>
   </div>
@@ -89,21 +89,21 @@
 		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-barcode"> Barcode</span> </button>
 		<button class="btn btn-primary" type="submit" value="Generate"><span class="glyphicon glyphicon-cloud-upload"> Upload</span> </button>
 
-		 <div class="input-group">
+		<div class="input-group">
                     <span class="input-group-btn">
                     <span class="btn btn-primary btn-file">
-                        Browse&hellip; <input type="file" id="fileupload" name="file" multiple>
+			    Browse&hellip;<input type="file" id="fileupload" name="file" multiple>
                     </span>
                     </span>
                     <input type="text" class="form-control" readonly>
-        </div>
+        	</div>
         <div class="pull-right">
     		<img id="imgUpload" style="width: 140px; height: 140px;" class="img-thumbnail">
 		</div>
         <div class="form-group">
  
                 <p class="text-center">
-                    <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Publish" />
+                    <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Submit" />
                 </p>
             </div>
 		<legend>What type of food</legend>
