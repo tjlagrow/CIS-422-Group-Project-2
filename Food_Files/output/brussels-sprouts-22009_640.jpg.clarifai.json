@@ -1,0 +1,169 @@
+{
+    "outputs": [
+        {
+            "created_at": "2017-05-14T05:44:10.612782889Z",
+            "data": {
+                "concepts": [
+                    {
+                        "app_id": "",
+                        "id": "ai_3PlgVmlN",
+                        "name": "food",
+                        "value": 0.99223506
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_LpcgM7r5",
+                        "name": "vegetable",
+                        "value": 0.99219
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_dlrW3K9W",
+                        "name": "market",
+                        "value": 0.9831866
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_0mCQLwrm",
+                        "name": "healthy",
+                        "value": 0.9787259
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_Lq00FggW",
+                        "name": "desktop",
+                        "value": 0.97664744
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_ZsprRgCn",
+                        "name": "farming",
+                        "value": 0.9736587
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_VRrpDkps",
+                        "name": "grow",
+                        "value": 0.9723079
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_nl2sV1Hm",
+                        "name": "nutrition",
+                        "value": 0.97158635
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_786Zr311",
+                        "name": "no person",
+                        "value": 0.96590006
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_mZ2tl6cW",
+                        "name": "health",
+                        "value": 0.9506731
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_mzK38Fr0",
+                        "name": "pasture",
+                        "value": 0.9492252
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_6jpGRJmm",
+                        "name": "flora",
+                        "value": 0.9479203
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_KXNqVd5F",
+                        "name": "cooking",
+                        "value": 0.93694055
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_xzqBDlmV",
+                        "name": "ingredients",
+                        "value": 0.9364753
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_4lvjn8qv",
+                        "name": "closeup",
+                        "value": 0.9272773
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_Cp0N9mF9",
+                        "name": "diet",
+                        "value": 0.9257211
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_FV7K7zJh",
+                        "name": "pile",
+                        "value": 0.92279387
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_tBcWlsCp",
+                        "name": "nature",
+                        "value": 0.920143
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_0JbWBDPd",
+                        "name": "color",
+                        "value": 0.91447693
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_J50Tm7NJ",
+                        "name": "texture",
+                        "value": 0.91164815
+                    }
+                ]
+            },
+            "id": "dcd1593c8cea43e684d9f7967fdb8d5e",
+            "input": {
+                "data": {
+                    "image": {
+                        "base64": "true",
+                        "url": "https://s3.amazonaws.com/clarifai-api/img/prod/d21df60ba41a4ad28b31558aaaddc199/e7ae9e178af840ecae10b914e2858c57.jpeg"
+                    }
+                },
+                "id": "a7444ec879da4d318d58d0f447564cd7"
+            },
+            "model": {
+                "app_id": "",
+                "created_at": "2016-03-09T17:11:39.608845Z",
+                "id": "aaa03c23b3724a16a56b629203edc62c",
+                "model_version": {
+                    "created_at": "2016-07-13T01:19:12.147644Z",
+                    "id": "aa9ca48295b37401f8af92ad1af0d91d",
+                    "status": {
+                        "code": 21100,
+                        "description": "Model trained successfully"
+                    }
+                },
+                "name": "general-v1.3",
+                "output_info": {
+                    "message": "Show output_info with: GET /models/{model_id}/output_info",
+                    "type": "concept",
+                    "type_ext": "concept"
+                }
+            },
+            "status": {
+                "code": 10000,
+                "description": "Ok"
+            }
+        }
+    ],
+    "response_time": 3.121509552001953,
+    "status": {
+        "code": 10000,
+        "description": "Ok"
+    }
+}

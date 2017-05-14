@@ -1,0 +1,169 @@
+{
+    "outputs": [
+        {
+            "created_at": "2017-05-14T05:52:16.403035655Z",
+            "data": {
+                "concepts": [
+                    {
+                        "app_id": "",
+                        "id": "ai_CB8hsS3T",
+                        "name": "tomato",
+                        "value": 0.99917006
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_NDbbpCv1",
+                        "name": "vegetable",
+                        "value": 0.9989083
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_R1JsfxCw",
+                        "name": "cherry tomato",
+                        "value": 0.9846964
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_rpDBJsjW",
+                        "name": "pasture",
+                        "value": 0.97592485
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_TtT3b8dX",
+                        "name": "cherry",
+                        "value": 0.92429566
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_Bh2xGwKk",
+                        "name": "tomato sauce",
+                        "value": 0.5429795
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_TBlNCk7F",
+                        "name": "tamarillo",
+                        "value": 0.4508427
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_4zZCzRj8",
+                        "name": "ketchup",
+                        "value": 0.3196019
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_H2d8CVB7",
+                        "name": "salad",
+                        "value": 0.312217
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_zvnnC5W6",
+                        "name": "habanero pepper",
+                        "value": 0.22195737
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_r59dFMqd",
+                        "name": "juice",
+                        "value": 0.21076457
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_6s1vcbq9",
+                        "name": "garlic",
+                        "value": 0.20682599
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_RZgNXv7K",
+                        "name": "aliment",
+                        "value": 0.15291396
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_2KV5G1Fg",
+                        "name": "basil",
+                        "value": 0.15250236
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_pfJcZR78",
+                        "name": "caprese salad",
+                        "value": 0.11966526
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_dng3Km10",
+                        "name": "persimmon",
+                        "value": 0.118157566
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_C91DX0qm",
+                        "name": "goji berry",
+                        "value": 0.1169965
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_pbLvhWD5",
+                        "name": "french dressing",
+                        "value": 0.10065639
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_QLn2rxmZ",
+                        "name": "lettuce",
+                        "value": 0.095690474
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_5bg5h7mn",
+                        "name": "hot sauce",
+                        "value": 0.09267728
+                    }
+                ]
+            },
+            "id": "c1fd96e775074350b80278992d7e84f6",
+            "input": {
+                "data": {
+                    "image": {
+                        "base64": "true",
+                        "url": "https://s3.amazonaws.com/clarifai-api/img/prod/d21df60ba41a4ad28b31558aaaddc199/c4318adeb0bd4532930b47b992ccbde9.jpeg"
+                    }
+                },
+                "id": "a4fa25c327c146df8cfc754c0940f887"
+            },
+            "model": {
+                "app_id": "",
+                "created_at": "2016-09-17T22:18:59.955626Z",
+                "id": "bd367be194cf45149e75f01d59f77ba7",
+                "model_version": {
+                    "created_at": "2016-09-17T22:18:59.955626Z",
+                    "id": "dfebc169854e429086aceb8368662641",
+                    "status": {
+                        "code": 21100,
+                        "description": "Model trained successfully"
+                    }
+                },
+                "name": "food-items-v1.0",
+                "output_info": {
+                    "message": "Show output_info with: GET /models/{model_id}/output_info",
+                    "type": "concept",
+                    "type_ext": "concept"
+                }
+            },
+            "status": {
+                "code": 10000,
+                "description": "Ok"
+            }
+        }
+    ],
+    "response_time": 2.951169490814209,
+    "status": {
+        "code": 10000,
+        "description": "Ok"
+    }
+}

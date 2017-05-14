@@ -1,0 +1,169 @@
+{
+    "outputs": [
+        {
+            "created_at": "2017-05-14T05:52:08.145110656Z",
+            "data": {
+                "concepts": [
+                    {
+                        "app_id": "",
+                        "id": "ai_mRgZ9JTB",
+                        "name": "lychee",
+                        "value": 0.99971074
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_0wh0dJkQ",
+                        "name": "sweet",
+                        "value": 0.99077463
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_rpDBJsjW",
+                        "name": "pasture",
+                        "value": 0.95304173
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_7Z7t26Kp",
+                        "name": "rambutan",
+                        "value": 0.86373323
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_JQV7LmzG",
+                        "name": "berry",
+                        "value": 0.84604704
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_r59dFMqd",
+                        "name": "juice",
+                        "value": 0.35971153
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_JXCD9lx9",
+                        "name": "strawberry",
+                        "value": 0.33284545
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_MHshlTZc",
+                        "name": "paracress",
+                        "value": 0.17501694
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_vp0MDvwk",
+                        "name": "purple mangosteen",
+                        "value": 0.13996236
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_NDbbpCv1",
+                        "name": "vegetable",
+                        "value": 0.09912889
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_qJv1rPLS",
+                        "name": "kiwi fruit",
+                        "value": 0.08045273
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_KkD1Lgv5",
+                        "name": "jackfruit",
+                        "value": 0.06690405
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_KWmFf1fn",
+                        "name": "meat",
+                        "value": 0.045207433
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_ssJRSZfg",
+                        "name": "cutlet",
+                        "value": 0.04175135
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_QJ8HWXfM",
+                        "name": "breadfruit",
+                        "value": 0.038534798
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_dm5HQ1H0",
+                        "name": "miracle fruit",
+                        "value": 0.031865448
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_17HrXjXq",
+                        "name": "relish",
+                        "value": 0.030676272
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_NWfLWKFT",
+                        "name": "passionfruit",
+                        "value": 0.02843256
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_TCKHtngf",
+                        "name": "ugli fruit",
+                        "value": 0.024061043
+                    },
+                    {
+                        "app_id": "",
+                        "id": "ai_F3XBpQpd",
+                        "name": "tree onion",
+                        "value": 0.017320212
+                    }
+                ]
+            },
+            "id": "dc833742ea4a4e98b80854e82c355ac3",
+            "input": {
+                "data": {
+                    "image": {
+                        "base64": "true",
+                        "url": "https://s3.amazonaws.com/clarifai-api/img/prod/d21df60ba41a4ad28b31558aaaddc199/fc375790b9b449e6b99d0d52d2fcb41f.jpeg"
+                    }
+                },
+                "id": "fac41083548c407884a76ab16cb24775"
+            },
+            "model": {
+                "app_id": "",
+                "created_at": "2016-09-17T22:18:59.955626Z",
+                "id": "bd367be194cf45149e75f01d59f77ba7",
+                "model_version": {
+                    "created_at": "2016-09-17T22:18:59.955626Z",
+                    "id": "dfebc169854e429086aceb8368662641",
+                    "status": {
+                        "code": 21100,
+                        "description": "Model trained successfully"
+                    }
+                },
+                "name": "food-items-v1.0",
+                "output_info": {
+                    "message": "Show output_info with: GET /models/{model_id}/output_info",
+                    "type": "concept",
+                    "type_ext": "concept"
+                }
+            },
+            "status": {
+                "code": 10000,
+                "description": "Ok"
+            }
+        }
+    ],
+    "response_time": 3.0760645866394043,
+    "status": {
+        "code": 10000,
+        "description": "Ok"
+    }
+}
