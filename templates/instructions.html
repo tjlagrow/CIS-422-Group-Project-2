@@ -49,39 +49,20 @@
       <a class="navbar-brand" href="#" style="padding-right: 5px; color: #e60303; 	font-size: 20px">Hopper's Heapin'</a>
       <img src="..\templates\logo_w-o_name.jpg" style="height: 50px; width: auto\9; float: left; padding-left: 10px; padding-right: 5px;" class="img-responsive img-circle logo-img">
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-	<li><a href="{{ url_for('about') }}" style="color: #e60303;">About</a></li>
-	<li><a href="{{ url_for('instructions') }}" style="color: #e60303;">Instructions</a></li>
-      </ul>
-    </div>
   </div>
 </nav>
-<h1> Welcome! </h1>
+<h1> ** Instrucion ** </h1>
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <div class="container text-center" id = upload style="width: 40%; height:auto; padding-left: 0px; padding-right: 0px; width: 100%;">
-    <form class="form-horizontal" method="POST">
-	<fieldset>
-		<input type="file" onchange="previewFile()"><br>
-		<img src="" height="200" alt="Image preview...">
-		<legend>What type of food</legend>
-		<p> Choose which type of food you want</p>
-		<div class = "form-group">
-			<label for="select" class="col-lg-2 control-label">Options</label>
-			<div class="col-lg-2">
-				<select class="form-control" id="select">
-					<option>American</option>
-					<option>Mexican</option>
-					<option>Asian</option>
-				</select>
-			</div>
-		</div>
-		<input class="btn btn-primary" type="submit" value="Upload">
-		<input class="btn btn-primary" type="submit" value="Generate">
-	</fieldset>
-</form>
+	<div class="container text-center" id = upload style="width: 40%; height:auto; padding-left: 0px; padding-right: 0px; width: 100%;">
+		<form class="form-horizontal" method="POST">
+			<fieldset>
+				<p> This page is 'instruction' </p>
+				<a href="{{ url_for('main') }}" class="btn btn-primary btn-lg">BACK</a>
+			</fieldset>
+		</form>
+	</div>
 </div>
-</div>
+
 </body>

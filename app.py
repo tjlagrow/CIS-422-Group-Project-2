@@ -9,11 +9,13 @@ app.secret_key = "secret_key"
 def main():
     return render_template('main.html')
 
-@app.route('/dashboard',methods=('GET',))
-def dashboard():
-    return render_template('dashboard.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
-
+@app.route('/instructions')
+def instructions():
+    return render_template('instructions.html')
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port = 8080, debug = True)
