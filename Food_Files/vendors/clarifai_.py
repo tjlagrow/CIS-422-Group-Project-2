@@ -29,6 +29,6 @@ def get_standardized_result(api_result):
     for (food, score) in list(output['tags']):
         if food not in not_specific_ingredients:
             confirm_foods.append(food)
-    print(confirm_foods)
-
-    return output
+    #print(confirm_foods)
+    return confirm_foods
+    #return output

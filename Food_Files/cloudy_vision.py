@@ -142,6 +142,7 @@ def process_all_images():
         with(open(settings('tags_filepath'), 'r')) as tags_file:
             tags = json.loads(tags_file.read())
 
+    recommendations = {}
     # Loop through all input images.
     for filename in os.listdir(settings('input_images_dir')):
 
@@ -209,11 +210,12 @@ def process_all_images():
 
             # Parse the JSON result we fetched (via API call or from cache)
             standardized_result = vendor_module.get_standardized_result(api_result)
-
+            #print(standardized_result)
+            recommendations[filename] = standardized_result
             # Sort tags if found
             if 'tags' in standardized_result:
                 sorted(standardized_result['tags'], key=lambda tup: tup[1], reverse=True)
-
+            """
             # If expected tags are provided, calculate accuracy
             tags_count = 0
             matching_tags = []
@@ -226,7 +228,7 @@ def process_all_images():
 
                     if len(matching_tags) > 0:
                         matching_confidence = sum([t[1] for t in matching_tags]) / len(matching_tags)
-
+            
             image_result['vendors'].append({
                 'api_result' : api_result,
                 'vendor_name' : vendor_name,
@@ -237,14 +239,14 @@ def process_all_images():
                 'matching_tags' : matching_tags,
                 'matching_tags_count' : len(matching_tags),
                 'matching_confidence' : matching_confidence,
-            })
+            })"""
 
     # Compute global statistics for each vendor
     #vendor_stats = vendor_statistics(image_results)
-
+    #print(recommendations)
     # Sort image_results output by filename (so that future runs produce comparable output)
     image_results.sort(key=lambda image_result: image_result['output_image_filepath'])
-
+    #print(image_results)
     # Render HTML file with all results.
     """output_html = render_from_template(
         '.',
@@ -258,7 +260,11 @@ def process_all_images():
     """output_html_filepath = os.path.join(settings('output_dir'), 'output.html')
     with open(output_html_filepath, 'wb') as output_html_file:
         output_html_file.write(output_html.encode('utf-8'))"""
-
+    # Write JSON output.
+    output_json_path = os.path.join(settings('output_dir'), 'foods.json')
+    with open(output_json_path, 'w') as outfile:
+        api_result_str = json.dumps(recommendations, sort_keys=True, indent=4, separators=(',', ': '))
+        outfile.write(api_result_str)
 
 if __name__ == "__main__":
     process_all_images()
