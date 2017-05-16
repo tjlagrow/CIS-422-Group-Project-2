@@ -16,48 +16,49 @@
   <script type="text/javascript" src="../jQuery-File-Upload-master/js/jquery.fileupload-ui.js"></script>
 
 <style type ="text/css">
-    body{
-        margin: 0 auto;
-        text-align: center;
-        background-color: #e8efff;
-    }
-    h1
-    {
-        color: green;
-    }
-    .navbar {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border: 0;
-        border-radius: 0;
-        margin-bottom: 0;
-        font-size: 16px;
-        letter-spacing: 5px;
-        background-color: #ffffff
-    }
-    .navbar-nav  li a:hover {
-        color: #2b8c08 !important;
-    }
-    .btn-file input[type=file] {
-            position: absolute;
-            top: 0;
-            right: 0;
-            min-width: 100%;
-            min-height: 100%;
-            font-size: 100px;
-            text-align: right;
-            filter: alpha(opacity=0);
-            opacity: 0;
-            outline: none;
-            background: white;
-            cursor: inherit;
-            display: block;
-    }
-    table, th, td{
-	    border: 2px solid #e8efff;
-	    border-collapse: collapse;
-	    text-align: center;
-    }
+	body{
+		margin: 0 auto;
+		text-align: center;
+		background-color: #e8efff;
+	}
+	h1
+	{
+		color: green;
+	}
+	.navbar {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border: 0;
+		border-radius: 0;
+		margin-bottom: 0;
+		font-size: 16px;
+		letter-spacing: 5px;
+		background-color: #ffffff
+		opacity: 0.9;
+	}
+	.navbar-nav  li a:hover {
+		color: #2b8c08 !important;
+	}
+	.btn-file input[type=file] {
+			position: absolute;
+			top: 0;
+			right: 0;
+			min-width: 100%;
+			min-height: 100%;
+			font-size: 100px;
+			text-align: right;
+			filter: alpha(opacity=0);
+			opacity: 0;
+			outline: none;
+			background: white;
+			cursor: inherit;
+			display: block;
+	}
+	table, th, td{
+		border: 2px solid #e8efff;
+		border-collapse: collapse;
+		text-align: center;
+	}
 
 </style>
 </head>
@@ -65,198 +66,210 @@
 <body>
 
 <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#" style="padding-right: 5px; color: #e60303;   font-size: 20px">Hopper's Heapin'</a>
-      <img src="..\static\logo_w-o_name.jpg" style="height: 50px; width: auto\9; float: left; padding-left: 10px; padding-right: 5px;" class="img-responsive img-circle logo-img">
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutSect" data-toggle="popover" data-content="Some content inside the popover" data-placement="bottom" style="color: #e60303;">About</a></li>
-        <li><a href="#instructions" data-toggle="popover" data-content="Instruction: How to use this app" data-placement="bottom" style="color: #e60303;">Instructions</a></li>
-      </ul>
-    </div>
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#" style="padding-right: 5px; color: #e60303;   font-size: 18px">Hopper's Heapin'</a>
+	  <img src="..\static\logo_w-o_name.jpg" style="height: 50px; width: auto; float: left; padding-left: 10px; padding-right: 5px;" class="img-responsive img-circle logo-img">
+	</div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="#aboutSect" data-toggle="popover" data-content="Some content inside the popover" data-placement="bottom" style="color: #e60303;">About</a></li>
+		<li><a href="#instructions" data-toggle="popover" data-content="Instruction: How to use this app" data-placement="bottom" style="color: #e60303;">Instructions</a></li>
+	  </ul>
+	</div>
   </div>
 </nav>
 <h1> Welcome! </h1>
 
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
-  <div class="container text-center" id = upload style="width: 40%; height:auto; padding-left: 0px; padding-right: 0px; width: 100%;">
-    <form class="form-horizontal" method="POST">
-    <fieldset>
-        <p> Choose which type of food you want</p>  
-        <button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-camera"> Camera</span> </button>
-        <button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-barcode"> Barcode</span> </button>
-        <button class="btn btn-primary" type="submit" value="Generate"><span class="glyphicon glyphicon-cloud-upload"> Upload</span> </button>
+  <div class="container text-center" id = upload style="height:auto\9; padding-left: 0px; padding-right: 0px; width:auto\9;">
+	<form class="form-horizontal" method="POST">
+	<fieldset>
+		<p> Choose which type of food you want</p>  
+		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-camera"> Camera</span> </button>
+		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-barcode"> Barcode</span> </button>
+		<button class="btn btn-primary" type="submit" value="Generate"><span class="glyphicon glyphicon-cloud-upload"> Upload</span> </button>
 
-<<<<<<< HEAD
-         <div class="input-group">
-=======
 		<div class="input-group">
->>>>>>> 9f542d35eb1f748fe00661d4260bd3df460e93c9
-                    <span class="input-group-btn">
-                    <span class="btn btn-primary btn-file">
-			    Browse&hellip;<input type="file" id="fileupload" name="file" multiple>
-                    </span>
-                    </span>
-                    <input type="text" class="form-control" readonly>
-        	</div>
-        <div class="pull-right">
-            <img id="imgUpload" style="width: 140px; height: 140px;" class="img-thumbnail">
-        </div>
-        <div class="form-group">
+				<span class="input-group-btn">
+					<span class="btn btn-primary btn-file">
+				Browse&hellip;<input type="file" id="fileupload" name="file" multiple>
+					</span>
+					</span>
+					<input type="text" class="form-control" readonly>
+			</div>
+		<div class="pull-right">
+			<img id="imgUpload" style="width: 140px; height: 140px;" class="img-thumbnail">
+		</div>
+		<div class="form-group">
  
-                <p class="text-center">
-                    <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Submit" />
-                </p>
-            </div>
-        <legend>What type of food</legend>
-        
-        <!--<div class = "form-group">
-            <label for="select" class="col-lg-2 control-label">Options</label>
-            <div class="col-lg-2">
-                <select class="form-control" id="select">
-                    <option>American</option>
-                    <option>Mexican</option>
-                    <option>Asian</option>
-                </select>
-            </div>
-        </div>
-        <input class="btn btn-primary" type="submit" value="ADD">-->
-    </fieldset>
-    </form>
+				<p class="text-center">
+					<input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Submit" />
+				</p>
+			</div>
+		<legend>What type of food</legend>
+
+	</fieldset>
+	</form>
   </div>
 </div>
 
-<table class="table table-striped table-hover ">
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>Column heading</th>
-			<th>Column heading</th>
-			<th>Column heading</th>
-			<th>Column heading</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1</td>
-			<td>Column content</td>
-			<td>Column content</td>
-			<td>Column content</td>
-			<td>Column content</td>
-		</tr>
-		<tr>
-			<td>2<td>
-			<td>Column content</td>
-			<td>Column content</td>
-			<td>Column content</td>
-		</tr>
-		<tr>
-			<td>3<td>
-			<td>Column content</td>
-			<td>Column content</td>
-			<td>Column content</td>
-		</tr>
-	</tbody>
-</table>
-
+<a href="#output" data-toggle="collapse">
+	<img src="" class="img-circle person" alt="table">
+</a>
+<div id ="output" data-toggle="collapse">
+<div class="container-fluid bg-1 text-center">
+  <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto;">
+	<table class="table table-striped table-hover ">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Column heading</th>
+				<th>Column heading</th>
+				<th>Column heading</th>
+				<th>Column heading</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Column content</td>
+				<td>Column content</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+			<tr>
+				<td>2<td>
+				<td>Column content</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+			<tr>
+				<td>3<td>
+				<td>Column content</td>
+				<td>Column content</td>
+				<td>Column content</td>
+			</tr>
+		</tbody>
+	</table>
+  </div>
+</div>
+</div>
 
 
 
 <div class="container-fluid bg-1 text-center">
-  <div class="container text-center" id = upload style="width: 40%; height:auto; padding-left: 0px; padding-right: 0px; width: 100%;">
+  <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto;">
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+	  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	  <li data-target="#myCarousel" data-slide-to="1"></li>
+	  <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+	</ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-      <p class="text-center"><strong>Recipe 1</strong></p><br>
-        <a href="#demo" data-toggle="collapse">
-          <img src="" class="img-circle person" alt="Recipe Name">
-        </a>
-        <div id="demo" class="collapse">
-          <p>Pre-Heat</p>
-          <p>Cut carrotsh</p>
-          <p>Boil</p>
-        </div>
-      </div>
+	<!-- Wrapper for slides -->
+	<div class="carousel-inner">
+	  <div class="item active">
+	  <p class="text-center"><strong>Recipe 1</strong></p><br>
+		<a href="#demo" data-toggle="collapse">
+		  <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+		</a>
+		<div id="demo" class="collapse">
+		  <p>Pre-Heat</p>
+		  <p>Cut carrotsh</p>
+		  <p>Boil</p>
+		</div>
+	  </div>
 
-      <div class="item">
-        <p class="text-center"><strong>Recipe 2</strong></p><br>
-        <a href="#demo2" data-toggle="collapse">
-          <img src="" class="img-circle person" alt="Recipe Name">
-        </a>
-        <div id="demo2" class="collapse">
-          <p>Boil Noddles</p>
-          <p>lonfdsafasfdasdfasdf</p>
-          <p>Let the Chicken rest</p>
-        </div>
-        </div>
-      </div>
-    
-      <div class="item">
-      <p class="text-center"><strong>Recipe 3</strong></p><br>
-        <a href="#demo3" data-toggle="collapse">
-          <img src="" class="img-circle person" alt="Recipe Name">
-        </a>
-        <div id="demo3" class="collapse">
-          <p>Loves lo45648864beach</p>
-        </div>
+	  <div class="item">
+		<p class="text-center"><strong>Recipe 2</strong></p><br>
+		<a href="#demo2" data-toggle="collapse">
+		  <img src="https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg" class="img-responsive img-thumbnail" alt="Recipe Name" style = "display: block; max-width: 80%;max-height: 30%;">
+		</a>
+		<div id="demo2" class="collapse">
+		  <p>Boil Noddles</p>
+		  <p>lonfdsafasfdasdfasdf</p>
+		  <p>Let the Chicken rest</p>
+		</div>
+	  </div>
+	
+	  <div class="item">
+		<p class="text-center"><strong>Recipe 3</strong></p><br>
+		<a href="#demo3" data-toggle="collapse">
+		  <img src="https://spoonacular.com/recipeImages/Ranch-Burgers-572049.jpg" class="img-responsive img-thumbnail" alt="Recipe Name" style = "display: block; max-width: 80%; max-height: 50%;">
+		</a>
+		<div id="demo3" class="collapse">
+		  <p>Loves lo45648864beach</p>
+		</div>
+	  </div>
 
-      </div>
-    </div>
-</div>
-</div>
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+	  <div class="item">
+		<p class="text-center"><strong>Recipe 4</strong></p><br>
+		<a href="#demo4" data-toggle="collapse">
+		  <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+		</a>
+		<div id="demo4" class="collapse">
+		  <p>Loves lo45648864beach</p>
+		</div>
+	  </div>
+
+	  <div class="item">
+		<p class="text-center"><strong>Recipe 5</strong></p><br>
+		<a href="#demo5" data-toggle="collapse">
+		  <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+		</a>
+		<div id="demo3" class="collapse">
+		  <p>Loves lo45648864beach</p>
+		</div>
+	  </div>
+<!-- Left and right controls -->
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+	  <span class="glyphicon glyphicon-chevron-left"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+	  <span class="glyphicon glyphicon-chevron-right"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+	</div>
   </div>
 </div>
-</div>
+	
  
 
 <script>
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
+	$('[data-toggle="popover"]').popover();   
 });
 </script>
 
 <script type="text/javascript">
 $(function() {
-    $('#fileupload').fileupload({
-        url: 'upload',
-        dataType: 'json',
-        add: function(e, data) {
-            data.submit();
-        },
-        success: function(response, status) {
-            console.log(response);
-        },
-        error: function(error) {
-            console.log(error);
-        }
-    });
+	$('#fileupload').fileupload({
+		url: 'upload',
+		dataType: 'json',
+		add: function(e, data) {
+			data.submit();
+		},
+		success: function(response, status) {
+			console.log(response);
+		},
+		error: function(error) {
+			console.log(error);
+		}
+	});
 })
 $('#imgUpload').attr('src','static/Uploads/'+response.filename);
 </script>
+
 </body>
 </html>
