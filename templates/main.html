@@ -91,14 +91,19 @@
   <div class="container text-center" id = upload style="height:auto\9; padding-left: 0px; padding-right: 0px; width:auto\9;">
 	<form class="form-horizontal" method="POST">
 	<fieldset>
-		<p> Choose which type of food you want</p>  
+		<p> Choose the methods you want to use! </p>  
 		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-camera"> Camera</span> </button>
 		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-barcode"> Barcode</span> </button>
 		<button class="btn btn-primary" type="submit" value="Generate"><span class="glyphicon glyphicon-cloud-upload"> Upload</span> </button>
 
 		<form action="upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file"><br /><br />
-        <input type="submit" value="Upload">
+        
+		
+		<input type="file" id="take-picture" accept="image/*"><br /><br />
+		<h2> Preview: </h2>
+		<img src="about:blank" alt="" id="show-picture">
+
+<!--	<input type="submit" value="Upload">
 
 
 		<div class="input-group">
@@ -119,7 +124,7 @@
 				</p>
 			</div>
 		<legend>What type of food</legend>
-
+-->
 	</fieldset>
 	</form>
   </div>
@@ -251,7 +256,11 @@
 	
  
 
+<script src="js/upload.js"></script>
+
+
 <script>
+
 $(document).ready(function(){
 	$('[data-toggle="popover"]').popover();   
 });
@@ -274,6 +283,7 @@ $(function() {
 	});
 })
 $('#imgUpload').attr('src','static/Uploads/'+response.filename);
+
 </script>
 
 </body>
