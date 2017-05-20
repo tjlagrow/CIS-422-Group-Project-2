@@ -26,6 +26,9 @@
       $info.listview("refresh");
     });
     });
+
+
+
 /*
 function displayAsImage3(file, containerid) {
     if (typeof FileReader !== "undefined") {

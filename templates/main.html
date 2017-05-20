@@ -95,6 +95,7 @@
 <!-- First Container -->
 <div class="container-fluid bg-1 text-center">
   <div class="container text-center" id = upload style="height:auto\9; padding-left: 0px; padding-right: 0px; width:auto\9;">
+<<<<<<< HEAD
   	<img src="..\static\header_process.jpg" style="height:auto; width: auto; float: left; padding-left: 10px; padding-right: 5px;" class="img-responsive">
 	<!-- The file upload form used as target for the file upload widget -->
     <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
@@ -138,6 +139,46 @@
         <!-- The table listing the files available for upload/download -->
         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
     </form>
+=======
+	<form class="form-horizontal" method="POST">
+	<fieldset>
+		<p> Choose the methods you want to use! </p>  
+		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-camera"> Camera</span> </button>
+		<button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-barcode"> Barcode</span> </button>
+		<button class="btn btn-primary" type="submit" value="Generate"><span class="glyphicon glyphicon-cloud-upload"> Upload</span> </button>
+
+		<form action="upload" method="post" enctype="multipart/form-data">
+        
+		
+		<input type="file" id="take-picture" accept="image/*"><br /><br />
+		<h2> Preview: </h2>
+		<img src="about:blank" alt="" id="show-picture">
+
+<!--	<input type="submit" value="Upload">
+
+
+		<div class="input-group">
+				<span class="input-group-btn">
+					<span class="btn btn-primary btn-file">
+				Browse&hellip;<input type="file" id="fileupload" name="file" multiple>
+					</span>
+					</span>
+					<input type="text" class="form-control" readonly>
+			</div>
+		<div class="pull-right">
+			<img id="imgUpload" style="width: 140px; height: 140px;" class="img-thumbnail">
+		</div>
+		<div class="form-group">
+ 
+				<p class="text-center">
+					<input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Submit" />
+				</p>
+			</div>
+		<legend>What type of food</legend>
+-->
+	</fieldset>
+	</form>
+>>>>>>> 3c40654452296595a28fc7738424495a21aaa0e2
   </div>
 </div>
 
@@ -267,12 +308,17 @@
 	
  
 
+<script src="js/upload.js"></script>
+
+
 <script>
+
 $(document).ready(function(){
 	$('[data-toggle="popover"]').popover();   
 });
 </script>
 
+<<<<<<< HEAD
 <script>
 $(function () {
     $('#fileupload').fileupload({
@@ -284,6 +330,26 @@ $(function () {
         }
     });
 });
+=======
+<script type="text/javascript">
+$(function() {
+	$('#fileupload').fileupload({
+		url: 'upload',
+		dataType: 'json',
+		add: function(e, data) {
+			data.submit();
+		},
+		success: function(response, status) {
+			console.log(response);
+		},
+		error: function(error) {
+			console.log(error);
+		}
+	});
+})
+$('#imgUpload').attr('src','static/Uploads/'+response.filename);
+
+>>>>>>> 3c40654452296595a28fc7738424495a21aaa0e2
 </script>
 </body>
 </html>
