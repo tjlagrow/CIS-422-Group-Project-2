@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Hopper's Heapin' Jalapeños</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Generic page styles -->
+<link rel="stylesheet" href="../jQuery-File-Upload-9.18.0/css/style.css">
+<!-- blueimp Gallery styles -->
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+<link rel="stylesheet" href="../jQuery-File-Upload-9.18.0/css/jquery.fileupload.css">
+<link rel="stylesheet" href="../jQuery-File-Upload-9.18.0/css/jquery.fileupload-ui.css">
+<!-- CSS adjustments for browsers with JavaScript disabled -->
+<noscript><link rel="stylesheet" href="../css/jquery.fileupload-noscript.css"></noscript>
+<noscript><link rel="stylesheet" href="../css/jquery.fileupload-ui-noscript.css"></noscript>
+
+<style type ="text/css">
+    body{
+        margin: 0 auto;
+        text-align: center;
+        background-color: #feefff;
+    }
+    h1
+    {
+        color: green;
+    }
+    .navbar {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 16px;
+        letter-spacing: 5px;
+        background-color: #ffffff
+        opacity: 0.9;
+    }
+    .navbar-nav  li a:hover {
+        color: #2b8c08 !important;
+    }
+    .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+    }
+    table, th, td{
+        border: 2px solid #e8efff;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#" style="padding-right: 5px; color: #e60303;   font-size: 18px">Hopper's Heapin'</a>
+      <img src="..\static\logo_w-o_name.jpg" style="height: 50px; width: auto; float: left; padding-left: 10px; padding-right: 5px;" class="img-responsive img-circle logo-img">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#aboutSect" data-toggle="popover" data-content="Some content inside the popover" data-placement="bottom" style="color: #e60303;">About</a></li>
+        <li><a href="#instructions" data-toggle="popover" data-content="Instruction: How to use this app" data-placement="bottom" style="color: #e60303;">Instructions</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1> Welcome! </h1>
+{% extends "base.html" %}
+{% block page_content %}
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <div class="container text-center" id = upload style="height:auto\9; padding-left: 0px; padding-right: 0px; width:auto\9;">
+    <img src="..\static\header_process.jpg" style="height:auto; width: auto; float: left; padding-left: 10px; padding-right: 5px;" class="img-responsive">
+    <!-- The file upload form used as target for the file upload widget -->
+    <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+        <!-- Redirect browsers with JavaScript disabled to the origin page -->
+        <noscript><input type="hidden" name="redirect" value="http://blueimp.github.io/jQuery-File-Upload/"></noscript>
+        <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
+        <div class="row fileupload-buttonbar">
+            <div class="col-lg-7">
+                <!-- The fileinput-button span is used to style the file input field as button -->
+                <span class="btn btn-success fileinput-button">
+                    <i class="glyphicon glyphicon-plus"></i>
+                    <span>Add files...</span>
+                    <input type="file" name="file" multiple>
+                </span>
+                <button type="submit" class="btn btn-primary start">
+                    <i class="glyphicon glyphicon-upload"></i>
+                    <span>Start upload</span>
+                </button>
+                <button type="reset" class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel upload</span>
+                </button>
+                <button type="button" class="btn btn-danger delete">
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <span>Delete</span>
+                </button>
+                <input type="checkbox" class="toggle">
+                <!-- The global file processing state -->
+                <span class="fileupload-process"></span>
+            </div>
+            <!-- The global progress state -->
+            <div class="col-lg-5 fileupload-progress fade">
+                <!-- The global progress bar -->
+                <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                </div>
+                <!-- The extended global progress state -->
+                <div class="progress-extended">&nbsp;</div>
+            </div>
+        </div>
+        <!-- The table listing the files available for upload/download -->
+        <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+    </form>
+    <br>
+</div>
+<!-- The blueimp Gallery widget -->
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+{% raw %}
+<!-- The template to display files available for upload -->
+<script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload fade">
+        <td>
+            <span class="preview"></span>
+        </td>
+        <td>
+            <p class="name">{%=file.name%}</p>
+            <strong class="error text-danger"></strong>
+        </td>
+        <td>
+            <p class="size">Processing...</p>
+            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+        </td>
+        <td>
+            {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn btn-primary start" disabled>
+                    <i class="glyphicon glyphicon-upload"></i>
+                    <span>Start</span>
+                </button>
+            {% } %}
+            {% if (!i) { %}
+                <button class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
+<!-- The template to display files available for download -->
+<script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download fade">
+        <td>
+            <span class="preview">
+                {% if (file.thumbnailUrl) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                {% } %}
+            </span>
+        </td>
+        <td>
+            <p class="name">
+                {% if (file.url) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+                {% } else { %}
+                    <span>{%=file.name%}</span>
+                {% } %}
+            </p>
+            {% if (file.error) { %}
+                <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+            {% } %}
+        </td>
+        <td>
+            <span class="size">{%=o.formatFileSize(file.size)%}</span>
+        </td>
+        <td>
+            {% if (file.deleteUrl) { %}
+                <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <span>Delete</span>
+                </button>
+                <input type="checkbox" name="delete" value="1" class="toggle">
+            {% } else { %}
+                <button class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script>
+{% endraw %}
+{% endblock %}
+
+{% block scripts %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="static/js/vendor/jquery.ui.widget.js"></script>
+<!-- The Templates plugin is included to render the upload/download listings -->
+<script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
+<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+<script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+<script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+<!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+<!-- blueimp Gallery script -->
+<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="static/js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="static/js/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="static/js/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="static/js/jquery.fileupload-image.js"></script>
+<!-- The File Upload audio preview plugin -->
+<script src="static/js/jquery.fileupload-audio.js"></script>
+<!-- The File Upload video preview plugin -->
+<script src="static/js/jquery.fileupload-video.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="static/js/jquery.fileupload-validate.js"></script>
+<!-- The File Upload user interface plugin -->
+<script src="static/js/jquery.fileupload-ui.js"></script>
+<!-- The main application script -->
+<script src="static/js/main.js"></script>
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
+<!--[if (gte IE 8)&(lt IE 10)]>
+<script src="js/cors/jquery.xdr-transport.js"></script>
+<![endif]-->
+{% endblock %}
+<!--s   <form class="form-horizontal" method="POST">
+    <fieldset>
+        <p> Choose the methods you want to use! </p>  
+        <button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-camera"> Camera</span> </button>
+        <button type="submit" class="btn btn-primary" ><span class="glyphicon glyphicon-barcode"> Barcode</span> </button>
+        <button class="btn btn-primary" type="submit" value="Generate"><span class="glyphicon glyphicon-cloud-upload"> Upload</span> </button>
+
+        <form action="upload" method="post" enctype="multipart/form-data">
+        
+        
+        <input type="file" id="take-picture" accept="image/*"><br /><br />
+        <h2> Preview: </h2>
+        <img src="about:blank" alt="" id="show-picture">
+
+    <input type="submit" value="Upload">
+
+
+        <div class="input-group">
+                <span class="input-group-btn">
+                    <span class="btn btn-primary btn-file">
+                Browse&hellip;<input type="file" id="fileupload" name="file" multiple>
+                    </span>
+                    </span>
+                    <input type="text" class="form-control" readonly>
+            </div>
+        <div class="pull-right">
+            <img id="imgUpload" style="width: 140px; height: 140px;" class="img-thumbnail">
+        </div>
+        <div class="form-group">
+ 
+                <p class="text-center">
+                    <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="Submit" />
+                </p>
+            </div>
+        <legend>What type of food</legend>
+-->
+    </fieldset>
+    </form>
+
+  </div>
+</div>
+
+<a href="#output" data-toggle="collapse">
+    <img src="" class="img-circle person" alt="table">
+</a>
+<div id ="output" data-toggle="collapse">
+<div class="container-fluid bg-1 text-center">
+  <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto;">
+    <table class="table table-striped table-hover ">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Column heading</th>
+                <th>Column heading</th>
+                <th>Column heading</th>
+                <th>Column heading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+            <tr>
+                <td>2<td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+            <tr>
+                <td>3<td>
+                <td>Column content</td>
+                <td>Column content</td>
+                <td>Column content</td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+here
+<p id="demo"></p>
+
+<script>
+ function loadXMLDoc()
+    {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myObj = JSON.parse(this.responseText);
+                document.getElementById("demo").innerHTML = myObj.text;
+            }
+        };
+        xmlhttp.open('POST', '/ajax')
+        xmlhttp.open("GET", "response2.txt", true);
+        xmlhttp.send();
+
+</script>
+
+
+<div class="container-fluid bg-1 text-center">
+  <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto;">
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+      <p class="text-center"><strong>Recipe 1</strong></p><br>
+        <a href="#demo" data-toggle="collapse">
+          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+        </a>
+        <div id="demo" class="collapse">
+          <p>Pre-Heat</p>
+          <p>Cut carrotsh</p>
+          <p>Boil</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="text-center"><strong>Recipe 2</strong></p><br>
+        <a href="#demo2" data-toggle="collapse">
+          <img src="https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg" class="img-responsive img-thumbnail" alt="Recipe Name" style = "display: block; max-width: 80%;max-height: 30%;">
+        </a>
+        <div id="demo2" class="collapse">
+          <p>Boil Noddles</p>
+          <p>lonfdsafasfdasdfasdf</p>
+          <p>Let the Chicken rest</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <p class="text-center"><strong>Recipe 3</strong></p><br>
+        <a href="#demo3" data-toggle="collapse">
+          <img src="https://spoonacular.com/recipeImages/Ranch-Burgers-572049.jpg" class="img-responsive img-thumbnail" alt="Recipe Name" style = "display: block; max-width: 80%; max-height: 50%;">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Loves lo45648864beach</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="text-center"><strong>Recipe 4</strong></p><br>
+        <a href="#demo4" data-toggle="collapse">
+          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+        </a>
+        <div id="demo4" class="collapse">
+          <p>Loves lo45648864beach</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <p class="text-center"><strong>Recipe 5</strong></p><br>
+        <a href="#demo5" data-toggle="collapse">
+          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+        </a>
+        <div id="demo3" class="collapse">
+          <p>Loves lo45648864beach</p>
+        </div>
+      </div>
+<!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </div>
+</div>
+    
+ 
+
+<script src="js/upload.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+<script>
+$(function () {
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+                $('<p/>').text(file.name).appendTo(document.body);
+            });
+        }
+    });
+});
+
+
+$(function() {
+    $('#fileupload').fileupload({
+        url: 'upload',
+        dataType: 'json',
+        add: function(e, data) {
+            data.submit();
+        },
+        success: function(response, status) {
+            console.log(response);
+        },
+        error: function(error) {
+            console.log(error);
+        }
+    });
+})
+$('#imgUpload').attr('src','static/Uploads/'+response.filename);
+
+$(function () {
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        add: function (e, data) {
+            data.context = $('<button/>').text('Upload')
+                .appendTo(document.body)
+                .click(function () {
+                    data.context = $('<p/>').text('Uploading...').replaceAll($(this));
+                    data.submit();
+                });
+        },
+        done: function (e, data) {
+            data.context.text('Upload finished.');
+        }
+    });
+});
+
+</script>
+</body>
+</html>
