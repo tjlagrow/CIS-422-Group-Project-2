@@ -6,17 +6,7 @@
         "milk",
         "cream",
         "coffee",
-        "water",
-        "durian",
-        "peanut butter",
-        "chips",
-        "peanut",
-        "birthday cake",
-        "bamboo shoots",
-        "coconut",
-        "butter",
-        "candy",
-        "hazelnut"
+        "water"
     ],
     "brussels.jpg": [
         "pea",
@@ -25,17 +15,7 @@
         "gooseberry",
         "brussels sprout",
         "indian pea",
-        "split peas",
-        "mung bean",
-        "cabbage",
-        "fava beans",
-        "cereal",
-        "tomatillo",
-        "lima bean",
-        "chickpeas",
-        "grape",
-        "pigeon pea",
-        "sprouts"
+        "split peas"
     ],
     "lychee.jpg": [
         "lychee",
@@ -44,14 +24,7 @@
         "paracress",
         "purple mangosteen",
         "kiwi fruit",
-        "jackfruit",
-        "cutlet",
-        "breadfruit",
-        "miracle fruit",
-        "relish",
-        "passionfruit",
-        "ugli fruit",
-        "tree onion"
+        "jackfruit"
     ],
     "strawberries.jpg": [
         "strawberry",
@@ -60,12 +33,7 @@
         "cherry",
         "sweet cherry",
         "straw",
-        "salmonberry",
-        "redcurrant",
-        "miracle fruit",
-        "lychee",
-        "apple",
-        "currant"
+        "salmonberry"
     ],
     "tomato.jpg": [
         "tomato",
@@ -74,14 +42,6 @@
         "tomato sauce",
         "tamarillo",
         "ketchup",
-        "habanero pepper",
-        "garlic",
-        "basil",
-        "caprese salad",
-        "persimmon",
-        "goji berry",
-        "french dressing",
-        "lettuce",
-        "hot sauce"
+        "habanero pepper"
     ]
 }

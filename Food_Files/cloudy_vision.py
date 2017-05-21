@@ -2,7 +2,6 @@ from jinja2 import FileSystemLoader, Environment
 from shutil import copyfile
 import datetime
 import json
-#import numpy as np
 import os
 import pprint
 import shutil
@@ -59,17 +58,17 @@ def settings(name):
         SETTINGS['api_keys'] = {}
 
     return SETTINGS[name]
-
+"""
 # not used
 if settings('resize'):
     from PIL import Image
-
+"""
 
 def log_status(filepath, vendor_name, msg):
     filename = os.path.basename(filepath)
     print("%s -> %s" % ((filename + ", " + vendor_name).ljust(40), msg))
-
-
+"""
+# not used
 def resize_and_save(input_image_filepath, output_image_filepath):
     image = Image.open(input_image_filepath)
     height = image.size[0]
@@ -81,7 +80,8 @@ def resize_and_save(input_image_filepath, output_image_filepath):
 
     image.thumbnail((new_width, new_height))
     image.save(output_image_filepath)
-
+"""
+"""
 # not used
 def render_from_template(directory, template_name, **kwargs):
     loader = FileSystemLoader(directory)
@@ -90,6 +90,8 @@ def render_from_template(directory, template_name, **kwargs):
     return template.render(**kwargs)
 
 # not used
+"""
+"""
 def vendor_statistics(image_results):
     vendor_stats = {}
 
@@ -116,8 +118,9 @@ def vendor_statistics(image_results):
             })
 
     return vendor_stats
-
-
+"""
+"""
+# not used.
 def find_matching_tags(tags, standardized_result):
     matching_tags = set()
     for tag in tags:
@@ -127,9 +130,18 @@ def find_matching_tags(tags, standardized_result):
                 matching_tags.add(res_tag)
 
     return list(matching_tags)
-
-
+"""
 def process_all_images():
+    """
+    This is the main function. It looks through the images in the input directory and loops through 
+    various API (default 1 API is used) and calls the API on the images, eventually getting back 
+    JSON which is written to a .json file to be used by the front end of the application.
+    Input:
+        Looks in the images located in the directory called 'input_images/' and looks for the API to call 
+        in the 'vendors/' directory
+    Output:
+        Writes a .json file into the 'output/' directory, which will be accessed by the application.
+    """
 
     image_results = []
 
@@ -142,6 +154,7 @@ def process_all_images():
         with(open(settings('tags_filepath'), 'r')) as tags_file:
             tags = json.loads(tags_file.read())
 
+    # Create a dictionary to be converted into a .json file after images have been processed.
     recommendations = {}
     # Loop through all input images.
     for filename in os.listdir(settings('input_images_dir')):
@@ -167,6 +180,7 @@ def process_all_images():
         }
         image_results.append(image_result)
 
+        # not used.
         # If there's no output file, then resize or copy the input file over
         output_image_filepath = os.path.join(settings('output_dir'), filename)
         if not(os.path.isfile(output_image_filepath)):
@@ -215,31 +229,8 @@ def process_all_images():
             # Sort tags if found
             if 'tags' in standardized_result:
                 sorted(standardized_result['tags'], key=lambda tup: tup[1], reverse=True)
-            """
-            # If expected tags are provided, calculate accuracy
-            tags_count = 0
-            matching_tags = []
-            matching_confidence = 0
-            if 'tags' in standardized_result:
-                tags_count = len(list(standardized_result['tags']))
+            #print(standardized_result)
 
-                if settings('tagged_images'):
-                    matching_tags = find_matching_tags(image_tags, standardized_result)
-
-                    if len(matching_tags) > 0:
-                        matching_confidence = sum([t[1] for t in matching_tags]) / len(matching_tags)
-            
-            image_result['vendors'].append({
-                'api_result' : api_result,
-                'vendor_name' : vendor_name,
-                'standardized_result' : standardized_result,
-                'output_json_filename' : output_json_filename,
-                'response_time' : api_result['response_time'],
-                'tags_count' : tags_count,
-                'matching_tags' : matching_tags,
-                'matching_tags_count' : len(matching_tags),
-                'matching_confidence' : matching_confidence,
-            })"""
 
     # Compute global statistics for each vendor
     #vendor_stats = vendor_statistics(image_results)
@@ -248,18 +239,12 @@ def process_all_images():
     image_results.sort(key=lambda image_result: image_result['output_image_filepath'])
     #print(image_results)
     # Render HTML file with all results.
-    """output_html = render_from_template(
-        '.',
-        os.path.join(settings('static_dir'), 'template.html'),
-        image_results=image_results,
-        #vendor_stats=vendor_stats,
-        process_date=datetime.datetime.today()
-    )"""
 
     # Write HTML output.
     """output_html_filepath = os.path.join(settings('output_dir'), 'output.html')
     with open(output_html_filepath, 'wb') as output_html_file:
         output_html_file.write(output_html.encode('utf-8'))"""
+
     # Write JSON output.
     output_json_path = os.path.join(settings('output_dir'), 'foods.json')
     with open(output_json_path, 'w') as outfile:
