@@ -14,6 +14,9 @@ import traceback
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory
 from flask_bootstrap import Bootstrap
 from werkzeug import secure_filename
+sys.path.append(os.path.abspath("home/422Hopper/CIS-422-Group-Project-2/Food_Files"))
+#import cloudy_vision
+
 
 from lib.upload_file import uploadfile
 
