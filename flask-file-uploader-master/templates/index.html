@@ -55,6 +55,57 @@
         border-collapse: collapse;
         text-align: center;
     }
+    .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    /* The actual popup */
+    .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+    }
+    /* Popup arrow */
+    .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+    }
 
 </style>
 </head>
@@ -74,8 +125,12 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutSect" data-toggle="popover" data-content="Some content inside the popover" data-placement="bottom" style="color: #e60303;">About</a></li>
-        <li><a href="#instructions" data-toggle="popover" data-content="Instruction: How to use this app" data-placement="bottom" style="color: #e60303;">Instructions</a></li>
+        <li><a class="popup" onclick="myPopupFunction()" style="color: #e60303;">About
+            <span class="popuptext" id="myPopup">This is popup function for About</span>
+        </a></li>
+        <li><a class="popup" onclick="myPopupFunction()" style="color: #e60303;">Instructions
+            <span class="popuptext" id="myPopup">This is popup function for Instructions</span>
+        </a></li>
       </ul>
     </div>
   </div>
@@ -317,7 +372,7 @@ function myFunction() {
           <p>Let the Chicken rest</p>
         </div>
       </div>
-    
+
       <div class="item">
         <p class="text-center"><strong>Recipe 3</strong></p><br>
         <a href="#demo3" data-toggle="collapse">
@@ -363,10 +418,10 @@ function myFunction() {
 <script>
 
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
+    $('[data-toggle="popover"]').popover();
 });
 </script>
- 
+
 
 <script src="js/upload.js"></script>
 
@@ -407,6 +462,21 @@ $(document).ready(function(){
 <!--[if (gte IE 8)&(lt IE 10)]>
 <script src="js/cors/jquery.xdr-transport.js"></script>
 <![endif]-->
+
+
+<script>
+function myPopupFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+
+
+
+
+
+
+
 
 {% endblock %}
 </body>
