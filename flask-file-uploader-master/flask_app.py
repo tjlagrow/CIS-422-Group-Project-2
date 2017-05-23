@@ -5,6 +5,7 @@
 # Git repository: https://github.com/ngoduykhanh/flask-file-uploader
 # This work based on jQuery-File-Upload which can be found at https://github.com/blueimp/jQuery-File-Upload/
 
+import sys
 import os
 import PIL
 from PIL import Image
@@ -89,13 +90,13 @@ def upload():
                 # create thumbnail after saving
                 if mime_type.startswith('image'):
                     create_thumbnail(filename)
-                
+
                 # get file size after saving
                 size = os.path.getsize(uploaded_file_path)
 
                 # return json for js call back
                 result = uploadfile(name=filename, type=mime_type, size=size)
-            
+
             return simplejson.dumps({"files": [result.get_file()]})
 
     if request.method == 'GET':
@@ -103,7 +104,7 @@ def upload():
 
 
         files = [f for f in os.listdir(app.config['UPLOAD_FOLDER']) if os.path.isfile(os.path.join(app.config['UPLOAD_FOLDER'],f)) and f not in IGNORED_FILES ]
-        
+
         for f in os.listdir(app.config['UPLOAD_FOLDER']):
           f = os.path.join(app.config['UPLOAD_FOLDER'], f)
           if os.path.isfile(f) and f not in IGNORED_FILES:
@@ -132,7 +133,7 @@ def delete(filename):
 
             if os.path.exists(file_thumb_path):
                 os.remove(file_thumb_path)
-            
+
             return simplejson.dumps({filename: 'True'})
         except:
             return simplejson.dumps({filename: 'False'})
