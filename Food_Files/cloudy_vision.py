@@ -1,12 +1,8 @@
 from jinja2 import FileSystemLoader, Environment
 from shutil import copyfile
-import datetime
 import json
 import os
-import pprint
-import shutil
 import time
-import re
 #import vendors.google
 #import vendors.microsoft
 import vendors.clarifai_
@@ -26,7 +22,7 @@ def settings(name):
         # Change this dict to suit your taste.
         SETTINGS = {
             'api_keys_filepath' : './api_keys.json',
-            'input_images_dir' : 'input_images',
+            'input_images_dir' : '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/',
             'output_dir' : 'output',
             'static_dir' : 'static',
             'output_image_height' : 200,
@@ -133,11 +129,11 @@ def find_matching_tags(tags, standardized_result):
 """
 def process_all_images():
     """
-    This is the main function. It looks through the images in the input directory and loops through 
-    various API (default 1 API is used) and calls the API on the images, eventually getting back 
+    This is the main function. It looks through the images in the input directory and loops through
+    various API (default 1 API is used) and calls the API on the images, eventually getting back
     JSON which is written to a .json file to be used by the front end of the application.
     Input:
-        Looks in the images located in the directory called 'input_images/' and looks for the API to call 
+        Looks in the images located in the directory called 'input_images/' and looks for the API to call
         in the 'vendors/' directory
     Output:
         Writes a .json file into the 'output/' directory, which will be accessed by the application.

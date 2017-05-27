@@ -1,0 +1,169 @@
+{
+    "outputs": [
+        {
+            "created_at": "2017-05-25T21:32:21.214067291Z",
+            "data": {
+                "concepts": [
+                    {
+                        "app_id": "main",
+                        "id": "ai_NDbbpCv1",
+                        "name": "vegetable",
+                        "value": 0.9989133
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_CB8hsS3T",
+                        "name": "tomato",
+                        "value": 0.9644978
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_6s1vcbq9",
+                        "name": "garlic",
+                        "value": 0.95594406
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_RZgNXv7K",
+                        "name": "aliment",
+                        "value": 0.85992324
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_2TfRbKFW",
+                        "name": "apple",
+                        "value": 0.8597071
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_jBk5LfnF",
+                        "name": "broccoli",
+                        "value": 0.85502195
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_r59dFMqd",
+                        "name": "juice",
+                        "value": 0.84634304
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_P2qDCXHV",
+                        "name": "lemon",
+                        "value": 0.8436974
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_KsKqBTpb",
+                        "name": "cucumber",
+                        "value": 0.82068896
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_mPjqBnPk",
+                        "name": "carrot",
+                        "value": 0.6786836
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_Z8w3kVJM",
+                        "name": "pepper",
+                        "value": 0.6689522
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_42RH6vqD",
+                        "name": "pineapple",
+                        "value": 0.6628091
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_GNdVB8DV",
+                        "name": "banana",
+                        "value": 0.65365034
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_0zSBLCB6",
+                        "name": "parsley",
+                        "value": 0.6326678
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_rpDBJsjW",
+                        "name": "pasture",
+                        "value": 0.531953
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_zVjFT7TW",
+                        "name": "cabbage",
+                        "value": 0.47554135
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_4pzSWRHh",
+                        "name": "peach",
+                        "value": 0.45412987
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_VW8sCJ6J",
+                        "name": "micronutrient",
+                        "value": 0.4440928
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_FX1826Ng",
+                        "name": "legume",
+                        "value": 0.38384348
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_hKSGjvND",
+                        "name": "salad dressing",
+                        "value": 0.34237465
+                    }
+                ]
+            },
+            "id": "fe51808cc8e546169bd23e75255362a8",
+            "input": {
+                "data": {
+                    "image": {
+                        "base64": "true",
+                        "url": "https://s3.amazonaws.com/clarifai-api/img/prod/d21df60ba41a4ad28b31558aaaddc199/daecab0617ad467fa7415ca2a4ba753d.jpeg"
+                    }
+                },
+                "id": "ba7b823b0d5a49a598f2c74d5e9f937d"
+            },
+            "model": {
+                "app_id": "main",
+                "created_at": "2016-09-17T22:18:59.955626Z",
+                "id": "bd367be194cf45149e75f01d59f77ba7",
+                "model_version": {
+                    "created_at": "2016-09-17T22:18:59.955626Z",
+                    "id": "dfebc169854e429086aceb8368662641",
+                    "status": {
+                        "code": 21100,
+                        "description": "Model trained successfully"
+                    }
+                },
+                "name": "food-items-v1.0",
+                "output_info": {
+                    "message": "Show output_info with: GET /models/{model_id}/output_info",
+                    "type": "concept",
+                    "type_ext": "concept"
+                }
+            },
+            "status": {
+                "code": 10000,
+                "description": "Ok"
+            }
+        }
+    ],
+    "response_time": 0.610008955001831,
+    "status": {
+        "code": 10000,
+        "description": "Ok"
+    }
+}
