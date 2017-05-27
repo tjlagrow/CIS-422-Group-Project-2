@@ -7,13 +7,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<<<<<<< HEAD
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!----
+=======
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!---
+>>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 --->
+
 
 <!-- blueimp Gallery styles -->
 <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
@@ -55,6 +62,7 @@
         border-collapse: collapse;
         text-align: center;
     }
+<<<<<<< HEAD
     .hidden {
         display: none !important;
         visibility: hidden !important;
@@ -67,11 +75,235 @@
     height: auto;
     width: auto\9; /* ie8 */
 }
+=======
+    .popup-trigger {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 260px;
+        color: #2b8c08 !important;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 20px;
+        cursor: pointer;
+    }
+    .popup-trigger1 {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 260px;
+        color: #2b8c08 !important;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 20px;
+        cursor: pointer;
+    }
+    .popup {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        width: 700px;
+        margin-left: -350px;
+        padding: 50px 30px;
+        background: #fff;
+        color: #333;
+        font-size: 19px;
+        line-height: 30px;
+        border: 10px solid #150E2D;
+        z-index: 9999;
+    }
+    .popup1 {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        width: 700px;
+        margin-left: -350px;
+        padding: 50px 30px;
+        background: #fff;
+        color: #333;
+        font-size: 19px;
+        line-height: 30px;
+        border: 10px solid #150E2D;
+        z-index: 9999;
+    }
+    .popup-mobile {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 30px 0 0;
+        width: 100%;
+    }
+    .popup-mobile1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 30px 0 0;
+        width: 100%;
+    }
+    .popup-btn-close {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+        color: #4EBD79;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .popup-btn-close1 {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+        color: #4EBD79;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+
+.container{
+    text-align: center;
+    background-color: #feefff;
+    overflow: hidden;
+}
+/*
+.box:nth-child(2n-1){
+    background-color: rgba(0,0,0,0.05);
+}
+*/
+.box{
+    display: inline-block;
+    height: 200px;
+    width: 33.3%;
+    float:left;
+    position: relative;
+    margin:0 -4px -5px -2px;
+    transition: all .2s ease;
+}
+
+.box p{
+    color: #777;
+    font-family:  Lato,"Helvetica Neue" ;
+    font-weight: 300;
+    position: absolute;
+    font-size: 30px;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    bottom: 0px;
+    margin: 0;
+    top:160px;
+    background-color: #fff;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.box:hover p{
+    bottom:0px;
+    top:175px;
+    opacity: 1;
+    transition: all .2s ease;
+    z-index: 2;
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 700px){
+.box{
+    width: 50%;
+}
+
+.box:nth-child(2n-1){
+    background-color: inherit;
+}
+
+.box:nth-child(4n),.box:nth-child(4n-3) {
+    background-color: rgba(0,0,0,0.05);
+}
+
+}
+
+.loader4{
+    position: relative;
+    width: 180px;
+    height: 30px;
+
+    top: 45%;
+    top: -webkit-calc(50% - 10px);
+    top: calc(50% - 10px);
+    left: 25%;
+    left: -webkit-calc(50% - 75px);
+    left: calc(50% - 75px);
+
+    background-color: rgba(255,255,255,0.2);
+}
+
+.loader4:before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 0px;
+    z-index: 0;
+    opacity: 1;
+    -webkit-transform-origin:  100% 0%;
+    transform-origin:  100% 0% ;
+    -webkit-animation: loader4 10s ease-in-out infinite;
+    animation: loader4 10s ease-in-out infinite;
+}
+
+.loader4:after{
+    content: "LOADING ...";
+    color: #fff;
+    font-family:  Lato,"Helvetica Neue" ;
+    font-weight: 200;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    left: 0;
+    top: 0;
+}
+
+@-webkit-keyframes loader4{
+    0%{width: 0px;}
+    70%{width: 100%; opacity: 1;}
+    90%{opacity: 0; width: 100%;}
+    100%{opacity: 0;width: 0px;}
+}
+
+@keyframes loader4{
+    0%{width: 0px;}
+    70%{width: 100%; opacity: 1;}
+    90%{opacity: 0; width: 100%;}
+    100%{opacity: 0;width: 0px;}
+}
+
+>>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 
 </style>
 </head>
 
 <body>
+
+
+
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -86,8 +318,16 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutSect" data-toggle="popover" data-content="Some content inside the popover" data-placement="bottom" style="color: #e60303;">About</a></li>
-        <li><a href="#instructions" data-toggle="popover" data-content="Instruction: How to use this app" data-placement="bottom" style="color: #e60303;">Instructions</a></li>
+        <a class="popup-trigger">about</a>
+        <div class="popup">
+            This is the popup function for the "ABOUT"
+            <span class="popup-btn-close">close</span>
+        </div>
+        <a class="popup-trigger1">Instructions</a>
+        <div class="popup1">
+            This is the popup function for the "Instruction"
+            <span class="popup-btn-close1">close</span>
+        </div>
       </ul>
     </div>
   </div>
@@ -161,12 +401,21 @@
             <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
         </td>
         <td>
+<<<<<<< HEAD
            {% if (!i && !o.options.autoUpload) { %}
                 <button class="btn-primary hidden">
                     <span></span>
                 </button>
             {% } %}
 
+=======
+            {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn btn-primary start" disabled>
+                    <i class="glyphicon glyphicon-upload"></i>
+                    <span>Start</span>
+                </button>
+            {% } %}
+>>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
             {% if (!i) { %}
                 <button class="btn btn-warning cancel">
                     <i class="glyphicon glyphicon-ban-circl0e"></i>
@@ -200,7 +449,10 @@
                 <div><span class="label label-danger">Error</span> {%=file.error%}</div>
             {% } %}
         </td>
+<<<<<<< HEAD
         
+=======
+>>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
         <td>
             <span class="size">{%=o.formatFileSize(file.size)%}</span>
         </td>
@@ -227,6 +479,7 @@
             <i class="glyphicon glyphicon-share-alt"></i>
         </button>
 
+<<<<<<< HEAD
     <div id="demo">
         <h2>Let AJAX change this text</h2>
     <button type="button" onclick="loadDoc()">Change Content</button>
@@ -235,6 +488,17 @@
 </div>
 
 
+=======
+<div class="container">
+    <div class="box">   
+        <div class = "loader4"></div>
+        <p>Loader</p>
+    </div>
+</div>
+
+
+
+>>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 <a href="#output" data-toggle="collapse">
     <img src="" class="img-circle person" alt="table">
 </a>
@@ -245,8 +509,8 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Column heading</th>
-                <th>Column heading</th>
+                <th>Image file</th>
+                <th>Ingredients</th>
                 <th>Column heading</th>
                 <th>Column heading</th>
             </tr>
@@ -277,6 +541,28 @@
 </div>
 </div>
 
+<<<<<<< HEAD
+=======
+<p id="demo"></p>
+
+<script>
+ function loadXMLDoc()
+    {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myObj = JSON.parse(this.responseText);
+                document.getElementById("demo").innerHTML = myObj.text;
+            }
+        };
+        xmlhttp.open("GET", "response2.txt", true);
+        xmlhttp.send();
+    }
+
+</script>
+
+
+>>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 <div class="container-fluid bg-1 text-center">
   <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto; padding-bottom: 30px">
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -314,7 +600,7 @@
           <p>Let the Chicken rest</p>
         </div>
       </div>
-    
+
       <div class="item">
         <p class="img-center"><strong>Recipe 3</strong></p><br>
         <a href="#demo3" data-toggle="collapse">
@@ -357,6 +643,18 @@
   </div>
 </div>
 
+<<<<<<< HEAD
+=======
+<script>
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+
+<script src="js/upload.js"></script>
+>>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 
 
 {% block scripts %}
@@ -393,6 +691,87 @@
 <!--[if (gte IE 8)&(lt IE 10)]>
 <script src="js/cors/jquery.xdr-transport.js"></script>
 <![endif]-->
+
+<script>
+// Popup Window
+var scrollTop = '';
+var newHeight = '100';
+
+$(window).bind('scroll', function() {
+  scrollTop = $( window ).scrollTop();
+  newHeight = scrollTop + 100;
+});
+
+$('.popup-trigger').click(function(e) {
+  e.stopPropagation();
+  if(jQuery(window).width() < 767) {
+    $(this).after( $( ".popup" ) );
+    $('.popup').show().addClass('popup-mobile').css('top', 0);
+    $('html, body').animate({
+      scrollTop: $('.popup').offset().top
+    }, 500);
+  } else {
+    $('.popup').removeClass('popup-mobile').css('top', newHeight).toggle();
+  };
+});
+
+$('html').click(function() {
+  $('.popup').hide();
+});
+
+$('.popup-btn-close').click(function(e){
+  $('.popup').hide();
+});
+
+$('.popup').click(function(e){
+  e.stopPropagation();
+});
+</script>
+
+
+<script>
+// Popup1 Window
+var scrollTop = '';
+var newHeight = '100';
+
+$(window).bind('scroll', function() {
+  scrollTop = $( window ).scrollTop();
+  newHeight = scrollTop + 100;
+});
+
+$('.popup-trigger1').click(function(e) {
+  e.stopPropagation();
+  if(jQuery(window).width() < 767) {
+    $(this).after( $( ".popup1" ) );
+    $('.popup1').show().addClass('popup-mobile1').css('top', 0);
+    $('html, body').animate({
+      scrollTop: $('.popup1').offset().top
+    }, 500);
+  } else {
+    $('.popup1').removeClass('popup-mobile1').css('top', newHeight).toggle();
+  };
+});
+
+$('html').click(function() {
+  $('.popup1').hide();
+});
+
+$('.popup-btn-close1').click(function(e){
+  $('.popup1').hide();
+});
+
+$('.popup1').click(function(e){
+  e.stopPropagation();
+});
+</script>
+
+
+
+
+
+
+
+
 
 {% endblock %}
 </body>
