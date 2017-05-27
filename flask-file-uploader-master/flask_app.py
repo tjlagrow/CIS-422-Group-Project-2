@@ -1,6 +1,7 @@
 #!flask/bin/python
 
-# Author: Ngo Duy Khanh
+# Author: Daniel Su
+# Ngo Duy Khanh
 # Email: ngokhanhit@gmail.com
 # Git repository: https://github.com/ngoduykhanh/flask-file-uploader
 # This work based on jQuery-File-Upload which can be found at https://github.com/blueimp/jQuery-File-Upload/
@@ -11,8 +12,9 @@ import PIL
 from PIL import Image
 import simplejson
 import traceback
+import json
 
-from flask import Flask, request, render_template, redirect, url_for, send_from_directory
+from flask import Flask, request, render_template, redirect, url_for, send_from_directory, jsonify
 from flask_bootstrap import Bootstrap
 from werkzeug import secure_filename
 sys.path.append(os.path.abspath("home/422Hopper/CIS-422-Group-Project-2/Food_Files"))
@@ -24,8 +26,11 @@ from lib.upload_file import uploadfile
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
-app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/'
-app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
+app.config['OUTPUT_PATH'] = '/mnt/c/Users/maddy/Dan/CIS-422-Group-Project-2/Recipe_Files/response.txt'
+#app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/'
+app.config['UPLOAD_FOLDER'] = 'data/'
+app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail'
+#app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
 ALLOWED_EXTENSIONS = set(['gif', 'png', 'jpg', 'jpeg', 'bmp'])
@@ -113,7 +118,8 @@ def upload():
         file_display = []
 
         for f in files:
-            size = os.path.getsize(os.path.join(app.config['UPLOAD_FOLDER'], f))
+            #size = os.path.getsize(os.path.join(app.config['UPLOAD_FOLDER'], f))
+            size = os.path.getsize(f)
             file_saved = uploadfile(name=f, size=size)
             file_display.append(file_saved.get_file())
 
@@ -149,10 +155,22 @@ def get_thumbnail(filename):
 def get_file(filename):
     return send_from_directory(os.path.join(app.config['UPLOAD_FOLDER']), filename=filename)
 
-@app.route('/ajax', methods = ['POST'])
+@app.route('/ajax')
 def ajax_request():
-    text = request.form['text']
-    return jsonify(text=text)
+    #json_data = json.load(open(app.config['OUTPUT_PATH']))
+    #text = request.form['text']
+    #return jsonify(title= recipe.title, text= recipe.steps, image = image)
+    a = request.args.get('a', 4, type=int)
+    b = request.args.get('b', 5, type=int)
+    return jsonify(result=a + b)
+
+@app.route('/articles')
+def api_articles():
+    return 'List of ' + url_for('api_articles')
+
+@app.route('/articles/<articleid>')
+def api_article(articleid):
+    return 'You are reading ' + articleid
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
