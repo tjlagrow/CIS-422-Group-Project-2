@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<!----
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!----
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 --->
@@ -55,6 +55,18 @@
         border-collapse: collapse;
         text-align: center;
     }
+    .hidden {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .img-center {
+    display: block;
+    margin: auto;
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
 
 </style>
 </head>
@@ -93,7 +105,7 @@
         <noscript><input type="hidden" name="redirect" value="http://blueimp.github.io/jQuery-File-Upload/"></noscript>
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
         <div class="row fileupload-buttonbar" style="text-align:center;">
-            <div class="col-lg-7" >
+            <div class="col-lg-7" style="text-align:center;">
                 <!-- The fileinput-button span is used to style the file input field as button -->
                 <span class="btn btn-success fileinput-button">
                     <i class="glyphicon glyphicon-plus"></i>
@@ -131,12 +143,6 @@
     <br>
 </div>
 
-<script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-</script>
-
 {% raw %}
 <!-- The template to display files available for upload -->
 
@@ -155,9 +161,15 @@ function myFunction() {
             <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
         </td>
         <td>
+           {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn-primary hidden">
+                    <span></span>
+                </button>
+            {% } %}
+
             {% if (!i) { %}
                 <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <i class="glyphicon glyphicon-ban-circl0e"></i>
                     <span>Cancel</span>
                 </button>
             {% } %}
@@ -167,7 +179,7 @@ function myFunction() {
 </script>
 <!-- The template to display files available for download -->
 <script id="template-download" type="text/x-tmpl">
-{% for (var i=0, file; file=o.files[i]; i++) { %}
+{% for (var i=1, file; file=o.files[i]; i++) { %}
     <tr class="template-download fade">
         <td>
             <span class="preview">
@@ -176,7 +188,6 @@ function myFunction() {
                 {% } %}
             </span>
         </td>
-        <!----
         <td>
             <p class="name">
                 {% if (file.url) { %}
@@ -189,7 +200,7 @@ function myFunction() {
                 <div><span class="label label-danger">Error</span> {%=file.error%}</div>
             {% } %}
         </td>
-        ---->
+        
         <td>
             <span class="size">{%=o.formatFileSize(file.size)%}</span>
         </td>
@@ -211,9 +222,18 @@ function myFunction() {
 {% } %}
 </script>
 {% endraw %}
+        <button class="btn" onClick="loadDoc()">
+            <span>Skip</span>
+            <i class="glyphicon glyphicon-share-alt"></i>
+        </button>
 
+    <div id="demo">
+        <h2>Let AJAX change this text</h2>
+    <button type="button" onclick="loadDoc()">Change Content</button>
+    </div>
   </div>
 </div>
+
 
 <a href="#output" data-toggle="collapse">
     <img src="" class="img-circle person" alt="table">
@@ -257,25 +277,8 @@ function myFunction() {
 </div>
 </div>
 
-<p id="demo"></p>
-
-<input type="button" onclick="CreateTableFromJSON()" value="Create Table From JSON" />
-    <div id="showData"></div>
-
-<script>
-$(function CreateTableFromJSON() {
-    var people = [];
-    $.getJSON('../CIS-422-Group-Project-2/Recipe_Files/output.txt', function(json) {
-        $.each(json.properties, function(i, f) {
-            var tblRow = "<tr>" + "<td>" + f.title + "</td>" + "<td>" + f.Name + "</td>" + "<td>" + f.Species_Id + "</td>" + "<td>" + f.timestamp + "</td>" + "</tr>";
-            $(tblRow).appendTo("#userdata tbody");
-        });
-    });
-});
-</script>
-
 <div class="container-fluid bg-1 text-center">
-  <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto;">
+  <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto; padding-bottom: 30px">
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -289,9 +292,9 @@ $(function CreateTableFromJSON() {
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-      <p class="text-center"><strong>Recipe 1</strong></p><br>
+      <p class="img-center"><strong>Recipe 1</strong></p><br>
         <a href="#demo" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-reponsive img-thumbnail img-center" alt="Recipe Name">
         </a>
         <div id="demo" class="collapse">
           <p>Pre-Heat</p>
@@ -301,9 +304,9 @@ $(function CreateTableFromJSON() {
       </div>
 
       <div class="item">
-        <p class="text-center"><strong>Recipe 2</strong></p><br>
+        <p class="img-center"><strong>Recipe 2</strong></p><br>
         <a href="#demo2" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg" class="img-responsive img-thumbnail" alt="Recipe Name" style = "display: block; max-width: 80%;max-height: 30%;">
+          <img src="https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg" class="img-responsive img-thumbnail img-center" alt="Recipe Name" style = "display: block; height: 536px;">
         </a>
         <div id="demo2" class="collapse">
           <p>Boil Noddles</p>
@@ -313,9 +316,9 @@ $(function CreateTableFromJSON() {
       </div>
     
       <div class="item">
-        <p class="text-center"><strong>Recipe 3</strong></p><br>
+        <p class="img-center"><strong>Recipe 3</strong></p><br>
         <a href="#demo3" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/Ranch-Burgers-572049.jpg" class="img-responsive img-thumbnail" alt="Recipe Name" style = "display: block; max-width: 80%; max-height: 50%;">
+          <img src="https://spoonacular.com/recipeImages/Ranch-Burgers-572049.jpg" class="img-responsive img-thumbnail img-center" alt="Recipe Name" style = "display: block; max-width: 80%; max-height: 536px;">
         </a>
         <div id="demo3" class="collapse">
           <p>Loves lo45648864beach</p>
@@ -323,9 +326,9 @@ $(function CreateTableFromJSON() {
       </div>
 
       <div class="item">
-        <p class="text-center"><strong>Recipe 4</strong></p><br>
+        <p class="img-center"><strong>Recipe 4</strong></p><br>
         <a href="#demo4" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-center img-thumbnail " alt="Recipe Name">
         </a>
         <div id="demo4" class="collapse">
           <p>Loves lo45648864beach</p>
@@ -333,9 +336,9 @@ $(function CreateTableFromJSON() {
       </div>
 
       <div class="item">
-        <p class="text-center"><strong>Recipe 5</strong></p><br>
+        <p class="img-center"><strong>Recipe 5</strong></p><br>
         <a href="#demo5" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-circle person" alt="Recipe Name">
+          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-thumbnail img-center " alt="Recipe Name">
         </a>
         <div id="demo3" class="collapse">
           <p>Loves lo45648864beach</p>
@@ -354,21 +357,12 @@ $(function CreateTableFromJSON() {
   </div>
 </div>
 
-<script>
-
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
-});
-</script>
- 
-
-<script src="js/upload.js"></script>
 
 
 {% block scripts %}
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!---<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>--->
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-<script src="static/js/vendor/jquery.ui.widget.js"></script>
+<script src="../static/js/vendor/jquery.ui.widget.js"></script>
 <!-- The Templates plugin is included to render the upload/download listings -->
 <script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
 <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
@@ -380,23 +374,21 @@ $(document).ready(function(){
 <!-- blueimp Gallery script -->
 <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-<script src="static/js/jquery.iframe-transport.js"></script>
+<script src="../static/js/jquery.iframe-transport.js"></script>
 <!-- The basic File Upload plugin -->
-<script src="static/js/jquery.fileupload.js"></script>
+<script src="../static/js/jquery.fileupload.js"></script>
 <!-- The File Upload processing plugin -->
-<script src="static/js/jquery.fileupload-process.js"></script>
+<script src="../static/js/jquery.fileupload-process.js"></script>
 <!-- The File Upload image preview & resize plugin -->
-<script src="static/js/jquery.fileupload-image.js"></script>
+<script src="../static/js/jquery.fileupload-image.js"></script>
 <!-- The File Upload audio preview plugin -->
-<script src="static/js/jquery.fileupload-audio.js"></script>
-<!-- The File Upload video preview plugin -->
-<script src="static/js/jquery.fileupload-video.js"></script>
+<script src="../static/js/jquery.fileupload-audio.js"></script>
 <!-- The File Upload validation plugin -->
-<script src="static/js/jquery.fileupload-validate.js"></script>
+<script src="../static/js/jquery.fileupload-validate.js"></script>
 <!-- The File Upload user interface plugin -->
-<script src="static/js/jquery.fileupload-ui.js"></script>
+<script src="../static/js/jquery.fileupload-ui.js"></script>
 <!-- The main application script -->
-<script src="static/js/main.js"></script>
+<script src="../static/js/jquery.test.js"></script>
 <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
 <!--[if (gte IE 8)&(lt IE 10)]>
 <script src="js/cors/jquery.xdr-transport.js"></script>
