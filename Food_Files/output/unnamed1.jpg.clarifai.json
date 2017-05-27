@@ -1,0 +1,169 @@
+{
+    "outputs": [
+        {
+            "created_at": "2017-05-25T21:32:17.863746569Z",
+            "data": {
+                "concepts": [
+                    {
+                        "app_id": "main",
+                        "id": "ai_CFS37srh",
+                        "name": "tea",
+                        "value": 0.9111458
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_NhSzzDVx",
+                        "name": "sandwich",
+                        "value": 0.8686205
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_f1zKlGnc",
+                        "name": "coffee",
+                        "value": 0.83175915
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_FnZCSVMH",
+                        "name": "cheese",
+                        "value": 0.82812965
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_dMJS6xjW",
+                        "name": "ice cream",
+                        "value": 0.82349735
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_skxkRfDl",
+                        "name": "cake",
+                        "value": 0.775302
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_PWmbd19r",
+                        "name": "cream",
+                        "value": 0.7201199
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_RzcvCV23",
+                        "name": "ice",
+                        "value": 0.6984713
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_2TfRbKFW",
+                        "name": "apple",
+                        "value": 0.6808974
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_DlGsqbPZ",
+                        "name": "chocolate",
+                        "value": 0.6800188
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_Hj7chVRp",
+                        "name": "waffle",
+                        "value": 0.63665843
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_w68d36Ks",
+                        "name": "bread",
+                        "value": 0.6296631
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_n4ZFFZ2x",
+                        "name": "cookie",
+                        "value": 0.6172637
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_PbPLrZH1",
+                        "name": "milk",
+                        "value": 0.61399245
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_fZsLlGwm",
+                        "name": "pizza",
+                        "value": 0.5776089
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_GNdVB8DV",
+                        "name": "banana",
+                        "value": 0.568187
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_bM3smwdS",
+                        "name": "dessert",
+                        "value": 0.5150558
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_r2Fbdv8L",
+                        "name": "beer",
+                        "value": 0.5013608
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_0wh0dJkQ",
+                        "name": "sweet",
+                        "value": 0.4889863
+                    },
+                    {
+                        "app_id": "main",
+                        "id": "ai_jvVxlhLh",
+                        "name": "chicken",
+                        "value": 0.476654
+                    }
+                ]
+            },
+            "id": "f4a90f0a8be24eda9281fcf3075452fe",
+            "input": {
+                "data": {
+                    "image": {
+                        "base64": "true",
+                        "url": "https://s3.amazonaws.com/clarifai-api/img/prod/d21df60ba41a4ad28b31558aaaddc199/edc181cfc80245c58a0cdd435b5042ef.jpeg"
+                    }
+                },
+                "id": "b40ef01a063245769a526dd288ef6296"
+            },
+            "model": {
+                "app_id": "main",
+                "created_at": "2016-09-17T22:18:59.955626Z",
+                "id": "bd367be194cf45149e75f01d59f77ba7",
+                "model_version": {
+                    "created_at": "2016-09-17T22:18:59.955626Z",
+                    "id": "dfebc169854e429086aceb8368662641",
+                    "status": {
+                        "code": 21100,
+                        "description": "Model trained successfully"
+                    }
+                },
+                "name": "food-items-v1.0",
+                "output_info": {
+                    "message": "Show output_info with: GET /models/{model_id}/output_info",
+                    "type": "concept",
+                    "type_ext": "concept"
+                }
+            },
+            "status": {
+                "code": 10000,
+                "description": "Ok"
+            }
+        }
+    ],
+    "response_time": 0.6399340629577637,
+    "status": {
+        "code": 10000,
+        "description": "Ok"
+    }
+}
