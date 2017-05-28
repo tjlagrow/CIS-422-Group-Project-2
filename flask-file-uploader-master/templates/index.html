@@ -7,7 +7,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<<<<<<< HEAD
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -62,7 +61,7 @@
         border-collapse: collapse;
         text-align: center;
     }
-<<<<<<< HEAD
+
     .hidden {
         display: none !important;
         visibility: hidden !important;
@@ -74,8 +73,8 @@
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
-}
-=======
+    }
+
     .popup-trigger {
         display: block;
         margin: 0 auto;
@@ -236,68 +235,6 @@
 
 }
 
-.loader{
-    position: relative;
-    width: 180px;
-    height: 30px;
-
-    top: 45%;
-    top: -webkit-calc(50% - 10px);
-    top: calc(50% - 10px);
-    left: 25%;
-    left: -webkit-calc(50% - 75px);
-    left: calc(50% - 75px);
-
-    background-color: #E9967A;
-}
-
-.loader:before{
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    top: 0px;
-    left: 0px;
-    height: 30px;
-    width: 0px;
-    z-index: 0;
-    opacity: 1;
-    -webkit-transform-origin:  100% 0%;
-    transform-origin:  100% 0% ;
-    -webkit-animation: loader4 10s ease-in-out infinite;
-    animation: loader 10s ease-in-out infinite;
-}
-
-.loader:after{
-    content: "LOADING ...";
-    color: #fff;
-    font-family:  Lato,"Helvetica Neue" ;
-    font-weight: 200;
-    font-size: 30px;
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    line-height: 30px;
-    left: 0;
-    top: 0;
-}
-
-@-webkit-keyframes loader{
-    0%{width: 0px;}
-    70%{width: 100%; opacity: 1;}
-    90%{opacity: 0; width: 100%;}
-    100%{opacity: 0;width: 0px;}
-}
-
-@keyframes loader{
-    0%{width: 0px;}
-    70%{width: 100%; opacity: 1;}
-    90%{opacity: 0; width: 100%;}
-    100%{opacity: 0;width: 0px;}
-}
-
-
-
-
 
 #mloader{
     position: fixed;
@@ -311,39 +248,30 @@
     display:none;
 }
 
+
 #mloader .masterkey_blink {
-    font-size:20px;
+    font-size:70px;
     font-weight:bold;
-    margin: 10% 45%;
+    position: relative;
+    top: 45%;
     -webkit-animation: masterkey_blink 3s linear infinite;
 } 
 @-webkit-keyframes masterkey_blink {
-    15% { color: white; }
+    15% { color: #E9967A; }
     40% { color: black; }
     75% { color: white; }
 }
 
-
-
-
-
-
-
-
-
-
-
+<<<<<<< HEAD
 
 >>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 
+=======
+>>>>>>> 1109568a760bd0ce8caa05f59bae6b0d019f5c42
 </style>
 </head>
 
 <body>
-
-
-
-
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -440,21 +368,17 @@
             <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
         </td>
         <td>
-<<<<<<< HEAD
            {% if (!i && !o.options.autoUpload) { %}
                 <button class="btn-primary hidden">
                     <span></span>
                 </button>
             {% } %}
-
-=======
             {% if (!i && !o.options.autoUpload) { %}
                 <button class="btn btn-primary start" disabled>
                     <i class="glyphicon glyphicon-upload"></i>
                     <span>Start</span>
                 </button>
             {% } %}
->>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
             {% if (!i) { %}
                 <button class="btn btn-warning cancel">
                     <i class="glyphicon glyphicon-ban-circl0e"></i>
@@ -488,10 +412,6 @@
                 <div><span class="label label-danger">Error</span> {%=file.error%}</div>
             {% } %}
         </td>
-<<<<<<< HEAD
-        
-=======
->>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
         <td>
             <span class="size">{%=o.formatFileSize(file.size)%}</span>
         </td>
@@ -513,12 +433,12 @@
 {% } %}
 </script>
 {% endraw %}
+
         <button class="btn" onClick="loadDoc()">
-            <span>Skip</span>
+            <span onclick="loading()">Skip</span>
             <i class="glyphicon glyphicon-share-alt"></i>
         </button>
 
-<<<<<<< HEAD
     <div id="demo">
         <h2>Let AJAX change this text</h2>
     <button type="button" onclick="loadDoc()">Change Content</button>
@@ -527,24 +447,23 @@
 </div>
 
 
+<<<<<<< HEAD
 =======
+
+
+
 <div id="mloader"><div class="masterkey_blink">LOADING...</div></div>
 
-<div class="col-lg-4">
-    <input type="button" class="form-control" value="loading test" onclick="test_loading()">
+<div class="col-lg-2">
+    <input type="button" value="loading test" onclick="loading()">
 </div>
 
 
 
-<div class="container">
-    <div class="box">   
-        <div class = "loader"></div>
-    </div>
-</div>
+=======
+>>>>>>> 1109568a760bd0ce8caa05f59bae6b0d019f5c42
 
 
-
->>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 <a href="#output" data-toggle="collapse">
     <img src="" class="img-circle person" alt="table">
 </a>
@@ -587,8 +506,6 @@
 </div>
 </div>
 
-<<<<<<< HEAD
-=======
 <p id="demo"></p>
 
 <script>
@@ -607,8 +524,6 @@
 
 </script>
 
-
->>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 <div class="container-fluid bg-1 text-center">
   <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto; padding-bottom: 30px">
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -812,12 +727,11 @@ $('.popup1').click(function(e){
 </script>
 
 
-
 <script>
-function test_loading(){
+function loading(){
     $.ajax({
         type: "POST",
-        url: "/post_inc/ajax_sleep/ajax_sleep.php",
+        url: "http://422hopper.pythonanywhere.com/",
         data: "n=1",
         beforeSend: function() { 
             $('#mloader').show();
@@ -834,7 +748,6 @@ function test_loading(){
         }
     });
 }
-
 </script>
 
 
