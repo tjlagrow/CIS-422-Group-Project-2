@@ -236,7 +236,7 @@
 
 }
 
-.loader4{
+.loader{
     position: relative;
     width: 180px;
     height: 30px;
@@ -248,10 +248,10 @@
     left: -webkit-calc(50% - 75px);
     left: calc(50% - 75px);
 
-    background-color: rgba(255,255,255,0.2);
+    background-color: #E9967A;
 }
 
-.loader4:before{
+.loader:before{
     content: "";
     position: absolute;
     background-color: #fff;
@@ -264,10 +264,10 @@
     -webkit-transform-origin:  100% 0%;
     transform-origin:  100% 0% ;
     -webkit-animation: loader4 10s ease-in-out infinite;
-    animation: loader4 10s ease-in-out infinite;
+    animation: loader 10s ease-in-out infinite;
 }
 
-.loader4:after{
+.loader:after{
     content: "LOADING ...";
     color: #fff;
     font-family:  Lato,"Helvetica Neue" ;
@@ -281,19 +281,58 @@
     top: 0;
 }
 
-@-webkit-keyframes loader4{
+@-webkit-keyframes loader{
     0%{width: 0px;}
     70%{width: 100%; opacity: 1;}
     90%{opacity: 0; width: 100%;}
     100%{opacity: 0;width: 0px;}
 }
 
-@keyframes loader4{
+@keyframes loader{
     0%{width: 0px;}
     70%{width: 100%; opacity: 1;}
     90%{opacity: 0; width: 100%;}
     100%{opacity: 0;width: 0px;}
 }
+
+
+
+
+
+#mloader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #000;
+    opacity: 0.7;
+    display:none;
+}
+
+#mloader .masterkey_blink {
+    font-size:20px;
+    font-weight:bold;
+    margin: 10% 45%;
+    -webkit-animation: masterkey_blink 3s linear infinite;
+} 
+@-webkit-keyframes masterkey_blink {
+    15% { color: white; }
+    40% { color: black; }
+    75% { color: white; }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 >>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
 
@@ -489,10 +528,17 @@
 
 
 =======
+<div id="mloader"><div class="masterkey_blink">LOADING...</div></div>
+
+<div class="col-lg-4">
+    <input type="button" class="form-control" value="loading test" onclick="test_loading()">
+</div>
+
+
+
 <div class="container">
     <div class="box">   
-        <div class = "loader4"></div>
-        <p>Loader</p>
+        <div class = "loader"></div>
     </div>
 </div>
 
@@ -767,9 +813,29 @@ $('.popup1').click(function(e){
 
 
 
+<script>
+function test_loading(){
+    $.ajax({
+        type: "POST",
+        url: "/post_inc/ajax_sleep/ajax_sleep.php",
+        data: "n=1",
+        beforeSend: function() { 
+            $('#mloader').show();
+        },
+        success: function(msg){
+            //alert( msg );
+        }, 
+        error: function(xhr, option, error){
+            alert(xhr.status); 
+            alert(error);
+        },
+        complete: function(){
+            $('#mloader').hide();       
+        }
+    });
+}
 
-
-
+</script>
 
 
 
