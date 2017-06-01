@@ -34,7 +34,7 @@ app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail'
 #app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
-ALLOWED_EXTENSIONS = set(['gif', 'png', 'jpg', 'jpeg', 'bmp'])
+ALLOWED_EXTENSIONS = set(['gif', 'png', 'jpg', 'jpeg', 'bmp', 'JPG'])
 IGNORED_FILES = set(['.gitignore'])
 
 bootstrap = Bootstrap(app)
@@ -107,8 +107,6 @@ def upload():
 
     if request.method == 'GET':
         # get all file in ./data directory
-
-
         files = [f for f in os.listdir(app.config['UPLOAD_FOLDER']) if os.path.isfile(os.path.join(app.config['UPLOAD_FOLDER'],f)) and f not in IGNORED_FILES ]
 
         for f in os.listdir(app.config['UPLOAD_FOLDER']):
@@ -156,28 +154,21 @@ def get_thumbnail(filename):
 def get_file(filename):
     return send_from_directory(os.path.join(app.config['UPLOAD_FOLDER']), filename=filename)
 
+'''
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
     # Activate Clarifai here.
-    subprocess.call(['python','../Food_Files/cloudy_vision.py'])
+    subprocess.call(['python','../Food_Files/tag_images.py'])
     return redirect(url_for('index'))
-
-@app.route('/ajax')
-def ajax_request():
+'''
+@app.route('/table', methods=['GET', 'POST'])
+def read_file():
     #json_data = json.load(open(app.config['OUTPUT_PATH']))
     #text = request.form['text']
     #return jsonify(title= recipe.title, text= recipe.steps, image = image)
     a = request.args.get('a', 4, type=int)
     b = request.args.get('b', 5, type=int)
     return jsonify(result=a + b)
-
-@app.route('/articles')
-def api_articles():
-    return 'List of ' + url_for('api_articles')
-
-@app.route('/articles/<articleid>')
-def api_article(articleid):
-    return 'You are reading ' + articleid
 
 @app.route('/', methods=['GET', 'POST'])
 def index():

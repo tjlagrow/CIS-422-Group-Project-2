@@ -10,16 +10,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!----
-=======
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!---
->>>>>>> 134c505435f118f12e362fef7fcfd33fc88e8b79
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
---->
-
 
 <!-- blueimp Gallery styles -->
 <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
@@ -350,11 +340,12 @@
         <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
     </form>
     <br>
+  </div>
 </div>
+
 
 {% raw %}
 <!-- The template to display files available for upload -->
-
 <script id="template-upload" type="text/x-tmpl">
 {% for (var i=0, file; file=o.files[i]; i++) { %}
     <tr class="template-upload fade">
@@ -370,20 +361,15 @@
             <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
         </td>
         <td>
-           {% if (!i && !o.options.autoUpload) { %}
-                <button class="btn-primary hidden">
-                    <span></span>
-                </button>
-            {% } %}
             {% if (!i && !o.options.autoUpload) { %}
-                <button class="btn btn-primary start" disabled>
+                <button class="btn btn-primary start" disabled style="display: none;>
                     <i class="glyphicon glyphicon-upload"></i>
                     <span>Start</span>
                 </button>
             {% } %}
             {% if (!i) { %}
                 <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circl0e"></i>
+                    <i class="glyphicon glyphicon-ban-circle"></i>
                     <span>Cancel</span>
                 </button>
             {% } %}
@@ -393,7 +379,7 @@
 </script>
 <!-- The template to display files available for download -->
 <script id="template-download" type="text/x-tmpl">
-{% for (var i=1, file; file=o.files[i]; i++) { %}
+{% for (var i=0, file; file=o.files[i]; i++) { %}
     <tr class="template-download fade">
         <td>
             <span class="preview">
@@ -435,32 +421,30 @@
 {% } %}
 </script>
 {% endraw %}
+
+ 
         <form action="/tag_images" method="post">
-             <i class="glyphicon glyphicon-share-alt"></i>
-            <button type="submit" value="Find Foods" />
+            <button class="btn" type="submit" value="Find Foods">Skip
+            <i class="glyphicon glyphicon-share-alt"></i>
+            </button>
         </form>
         <button class="btn" onClick="loadDoc()">
-            <span onclick="loading()">Skip</span>
+            <span onclick="loading()">Generate</span>
             <i class="glyphicon glyphicon-share-alt"></i>
         </button>
-
-    <div id="demo">
-        <h2>Let AJAX change this text</h2>
-    <button type="button" onclick="loadDoc()">Change Content</button>
-    </div>
-  </div>
+}
 </div>
 
-<div id="mloader"><div class="masterkey_blink">LOADING...</div></div>
-
 <div class="col-lg-2">
-    <input type="button" value="loading test" onclick="loading()">
+    <input type="button" value=" Pleassseeee wait..." onclick="loading()">
 </div>
 
 
 <a href="#output" data-toggle="collapse">
     <img src="" class="img-circle person" alt="table">
 </a>
+
+
 <div id ="output" data-toggle="collapse">
 <div class="container-fluid bg-1 text-center">
   <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto;">
@@ -501,24 +485,6 @@
   </div>
 </div>
 </div>
-
-<p id="demo"></p>
-
-<script>
- function loadXMLDoc()
-    {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                myObj = JSON.parse(this.responseText);
-                document.getElementById("demo").innerHTML = myObj.text;
-            }
-        };
-        xmlhttp.open("GET", "response2.txt", true);
-        xmlhttp.send();
-    }
-
-</script>
 
 <div class="container-fluid bg-1 text-center">
   <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto; padding-bottom: 30px">
@@ -600,17 +566,8 @@
   </div>
 </div>
 
-
-<script>
-
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();
-});
-</script>
-
-
 {% block scripts %}
-<!---<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>--->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
 <script src="../static/js/vendor/jquery.ui.widget.js"></script>
 <!-- The Templates plugin is included to render the upload/download listings -->
@@ -638,11 +595,13 @@ $(document).ready(function(){
 <!-- The File Upload user interface plugin -->
 <script src="../static/js/jquery.fileupload-ui.js"></script>
 <!-- The main application script -->
-<script src="../static/js/jquery.test.js"></script>
+<script src="../static/js/main.js"></script>
 <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
 <!--[if (gte IE 8)&(lt IE 10)]>
 <script src="js/cors/jquery.xdr-transport.js"></script>
 <![endif]-->
+{% endblock %}
+
 
 <script>
 // Popup Window
@@ -741,8 +700,5 @@ function loading(){
 }
 </script>
 
-
-
-{% endblock %}
 </body>
 </html>

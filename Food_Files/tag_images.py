@@ -22,6 +22,7 @@ def settings(name):
         # Change this dict to suit your taste.
         SETTINGS = {
             'api_keys_filepath' : './api_keys.json',
+            # Uncomment for pythonanywhere 
             #'input_images_dir' : '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/',
             'input_images_dir' : 'input_images',
             'output_dir' : 'output',
