@@ -13,6 +13,7 @@ from PIL import Image
 import simplejson
 import traceback
 import json
+import subprocess
 
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory, jsonify
 from flask_bootstrap import Bootstrap
@@ -154,6 +155,12 @@ def get_thumbnail(filename):
 @app.route("/data/<string:filename>", methods=['GET'])
 def get_file(filename):
     return send_from_directory(os.path.join(app.config['UPLOAD_FOLDER']), filename=filename)
+
+@app.route('/tag_images', methods=['GET', 'POST'])
+def tag_images():
+    # Activate Clarifai here.
+    subprocess.call(['python','../Food_Files/cloudy_vision.py'])
+    return redirect(url_for('index'))
 
 @app.route('/ajax')
 def ajax_request():

@@ -255,7 +255,7 @@
     position: relative;
     top: 45%;
     -webkit-animation: masterkey_blink 3s linear infinite;
-} 
+}
 @-webkit-keyframes masterkey_blink {
     15% { color: #E9967A; }
     40% { color: black; }
@@ -441,7 +441,10 @@
 {% } %}
 </script>
 {% endraw %}
-
+        <form action="/tag_images" method="post">
+             <i class="glyphicon glyphicon-share-alt"></i>
+            <button type="submit" value="Find Foods" />
+        </form>
         <button class="btn" onClick="loadDoc()">
             <span onclick="loading()">Skip</span>
             <i class="glyphicon glyphicon-share-alt"></i>
@@ -743,18 +746,18 @@ function loading(){
         type: "POST",
         url: "http://422hopper.pythonanywhere.com/",
         data: "n=1",
-        beforeSend: function() { 
+        beforeSend: function() {
             $('#mloader').show();
         },
         success: function(msg){
             //alert( msg );
-        }, 
+        },
         error: function(xhr, option, error){
-            alert(xhr.status); 
+            alert(xhr.status);
             alert(error);
         },
         complete: function(){
-            $('#mloader').hide();       
+            $('#mloader').hide();
         }
     });
 }
