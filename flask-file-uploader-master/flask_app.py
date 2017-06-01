@@ -27,7 +27,7 @@ from lib.upload_file import uploadfile
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
-app.config['INPUT'] = '/../foods.json'
+app.config['INPUT'] = '/templates/foods.json'
 #app.config['UPLOAD_FOLDER'] = '/../Food_Files/input_images/'
 #app.config['UPLOAD_FOLDER'] = 'data/'
 app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail'
@@ -156,24 +156,31 @@ def get_file(filename):
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
     # Activate Clarifai here.
-    read_file()
+    read_file(app.config['INPUT'])
     subprocess.call(['python3','../Food_Files/tag_images.py'])
     return redirect(url_for('index'))
 
 #@app.route('/table', methods=['GET', 'POST'])
-def read_file():
+def read_file(filename):
     #json_data = json.load(open(app.config['OUTPUT_PATH']))
     #text = request.form['text']
     #return jsonify(title= recipe.title, text= recipe.steps, image = image)
     try:
-        with open(app.config['INPUT']) as json_data:
+        with open(os.getcwd() + filename) as json_data:
             d = json.load(json_data)
             print(d)
+            print d[0]
     except:
         print 'false!!'
     a = request.args.get('a', 4, type=int)
     b = request.args.get('b', 5, type=int)
     return jsonify(result=a + b)
+
+
+@app.route('/recipes', methods=['GET', 'POST'])
+def show_recipe_full():
+    read_file
+    return 0
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
