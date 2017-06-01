@@ -2,6 +2,8 @@
 
 This is the GitHub repository for the second group project for CIS 422 Software Methodology taught by Dr. Michael Young.
 
+![alt text](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/Other_Files/Picture1.png)
+
 Founded in 2017, Hopper's Heapin' Jalapenos is composed of several [contributors](https://github.com/tjlagrow/CIS-422-Group-Project-2/wiki/Contributors). 
 
 //TODO finish README opener
