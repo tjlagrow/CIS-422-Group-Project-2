@@ -350,7 +350,11 @@
 {% for (var i=0, file; file=o.files[i]; i++) { %}
     <tr class="template-upload fade">
         <td>
-            <span class="preview"></span>
+            <span class="preview">
+                 {% if (file.thumbnailUrl) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                {% } %}
+            </span>
         </td>
         <td>
             <p class="name">{%=file.name%}</p>
@@ -365,7 +369,7 @@
                 <button class="btn btn-primary start" disabled style="display: none;>
                     <i class="glyphicon glyphicon-upload"></i>
                     <span>Start</span>
-                </button>
+                </button>       
             {% } %}
             {% if (!i) { %}
                 <button class="btn btn-warning cancel">
@@ -429,7 +433,7 @@
             </button>
         </form>
         <button class="btn" onClick="loadDoc()">
-            <span onclick="loading()">Generate</span>
+            <span onclick="">Generate</span>
             <i class="glyphicon glyphicon-share-alt"></i>
         </button>
 }

@@ -27,10 +27,11 @@ from lib.upload_file import uploadfile
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
-app.config['UPLOAD_FOLDER'] = '/../Food_Files/input_images/'
+app.config['INPUT'] = '/../foods.json'
+#app.config['UPLOAD_FOLDER'] = '/../Food_Files/input_images/'
 #app.config['UPLOAD_FOLDER'] = 'data/'
-#app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail'
-app.config['THUMBNAIL_FOLDER'] = '/../data/thumbnail/'
+app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail'
+app.config['UPLOAD_FOLDER'] = '../Food_Files/input_images/'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
 ALLOWED_EXTENSIONS = set(['gif', 'png', 'jpg', 'jpeg', 'bmp', 'JPG'])
@@ -72,7 +73,6 @@ def create_thumbnail(image):
     except:
         print traceback.format_exc()
         return False
-
 
 @app.route("/upload", methods=['GET', 'POST'])
 def upload():
@@ -156,14 +156,21 @@ def get_file(filename):
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
     # Activate Clarifai here.
-    subprocess.call(['python','../Food_Files/tag_images.py'])
+    read_file()
+    subprocess.call(['python3','../Food_Files/tag_images.py'])
     return redirect(url_for('index'))
 
-@app.route('/table', methods=['GET', 'POST'])
+#@app.route('/table', methods=['GET', 'POST'])
 def read_file():
     #json_data = json.load(open(app.config['OUTPUT_PATH']))
     #text = request.form['text']
     #return jsonify(title= recipe.title, text= recipe.steps, image = image)
+    try:
+        with open(app.config['INPUT']) as json_data:
+            d = json.load(json_data)
+            print(d)
+    except:
+        print 'false!!'
     a = request.args.get('a', 4, type=int)
     b = request.args.get('b', 5, type=int)
     return jsonify(result=a + b)
