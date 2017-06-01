@@ -20,6 +20,12 @@
 <noscript><link rel="stylesheet" href="../static/css/jquery.fileupload-noscript.css"></noscript>
 <noscript><link rel="stylesheet" href="../static/css/jquery.fileupload-ui-noscript.css"></noscript>
 
+<!-- CSS to style the popup box-->
+<link rel="stylesheet" href="../static/css/jquery.popup.css">
+
+<!-- CSS for loading page -->
+<link rel="stylesheet" href="../static/css/jquery.loading.css">
+
 <style type ="text/css">
     body{
         margin: 0 auto;
@@ -51,206 +57,6 @@
         border-collapse: collapse;
         text-align: center;
     }
-
-    .hidden {
-        display: none !important;
-        visibility: hidden !important;
-    }
-    .img-center {
-    display: block;
-    margin: auto;
-    width: 40%;
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-    }
-
-    .popup-trigger {
-        display: block;
-        margin: 0 auto;
-        padding: 20px;
-        max-width: 260px;
-        color: #2b8c08 !important;
-        font-size: 14px;
-        font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 20px;
-        cursor: pointer;
-    }
-    .popup-trigger1 {
-        display: block;
-        margin: 0 auto;
-        padding: 20px;
-        max-width: 260px;
-        color: #2b8c08 !important;
-        font-size: 14px;
-        font-weight: 700;
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 20px;
-        cursor: pointer;
-    }
-    .popup {
-        display: none;
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        width: 700px;
-        margin-left: -350px;
-        padding: 50px 30px;
-        background: #fff;
-        color: #333;
-        font-size: 19px;
-        line-height: 30px;
-        border: 10px solid #150E2D;
-        z-index: 9999;
-    }
-    .popup1 {
-        display: none;
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        width: 700px;
-        margin-left: -350px;
-        padding: 50px 30px;
-        background: #fff;
-        color: #333;
-        font-size: 19px;
-        line-height: 30px;
-        border: 10px solid #150E2D;
-        z-index: 9999;
-    }
-    .popup-mobile {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin: 30px 0 0;
-        width: 100%;
-    }
-    .popup-mobile1 {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin: 30px 0 0;
-        width: 100%;
-    }
-    .popup-btn-close {
-        position: absolute;
-        top: 8px;
-        right: 14px;
-        color: #4EBD79;
-        font-size: 14px;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-    .popup-btn-close1 {
-        position: absolute;
-        top: 8px;
-        right: 14px;
-        color: #4EBD79;
-        font-size: 14px;
-        font-weight: bold;
-        text-transform: uppercase;
-        cursor: pointer;
-    }
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Lato:300);
-
-
-.container{
-    text-align: center;
-    background-color: #feefff;
-    overflow: hidden;
-}
-/*
-.box:nth-child(2n-1){
-    background-color: rgba(0,0,0,0.05);
-}
-*/
-.box{
-    display: inline-block;
-    height: 200px;
-    width: 33.3%;
-    float:left;
-    position: relative;
-    margin:0 -4px -5px -2px;
-    transition: all .2s ease;
-}
-
-.box p{
-    color: #777;
-    font-family:  Lato,"Helvetica Neue" ;
-    font-weight: 300;
-    position: absolute;
-    font-size: 30px;
-    width: 100%;
-    height: 20px;
-    text-align: center;
-    bottom: 0px;
-    margin: 0;
-    top:160px;
-    background-color: #fff;
-    opacity: 0;
-    text-transform: uppercase;
-    transition: all .2s ease;
-}
-
-.box:hover p{
-    bottom:0px;
-    top:175px;
-    opacity: 1;
-    transition: all .2s ease;
-    z-index: 2;
-}
-
-
-
-/* MEDIA QUERIES */
-@media (max-width: 700px){
-.box{
-    width: 50%;
-}
-
-.box:nth-child(2n-1){
-    background-color: inherit;
-}
-
-.box:nth-child(4n),.box:nth-child(4n-3) {
-    background-color: rgba(0,0,0,0.05);
-}
-
-}
-
-
-#mloader{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 99999;
-    background-color: #000;
-    opacity: 0.7;
-    display:none;
-}
-
-
-#mloader .masterkey_blink {
-    font-size:70px;
-    font-weight:bold;
-    position: relative;
-    top: 45%;
-    -webkit-animation: masterkey_blink 3s linear infinite;
-}
-@-webkit-keyframes masterkey_blink {
-    15% { color: #E9967A; }
-    40% { color: black; }
-    75% { color: white; }
-}
 
 </style>
 </head>
@@ -285,7 +91,7 @@
                     <p> 4. Then, it will give you the recipes. </p>
                     <p> 5. Choose the best one you want to cook. </p>
                     <p> 6. Cooking time </p>
-                <span class="popup-btn-close1">close</span>
+                <span class="popup-btn-close">close</span>
             </div>
         </ul>
     </div>
@@ -435,6 +241,7 @@
 }
 </div>
 
+<div id="mloader"><div class="masterkey_blink">LOADING...</div></div>
 <div class="col-lg-2">
     <input type="button" value=" Pleassseeee wait..." onclick="loading()">
 </div>
@@ -596,108 +403,17 @@
 <script src="../static/js/jquery.fileupload-ui.js"></script>
 <!-- The main application script -->
 <script src="../static/js/main.js"></script>
+<!-- The popup script -->
+<script src="../static/js/jquery.popup.js"></script>
+<!-- The loading script -->
+<script src="../static/js/jquery.loading.js"></script>
+
 <!-- The XDomainRequest Transport is included for cross-domain file deletion for IE 8 and IE 9 -->
 <!--[if (gte IE 8)&(lt IE 10)]>
 <script src="js/cors/jquery.xdr-transport.js"></script>
 <![endif]-->
 {% endblock %}
 
-
-<script>
-// Popup Window
-var scrollTop = '';
-var newHeight = '100';
-
-$(window).bind('scroll', function() {
-  scrollTop = $( window ).scrollTop();
-  newHeight = scrollTop + 100;
-});
-
-$('.popup-trigger').click(function(e) {
-  e.stopPropagation();
-  if(jQuery(window).width() < 767) {
-    $(this).after( $( ".popup" ) );
-    $('.popup').show().addClass('popup-mobile').css('top', 0);
-    $('html, body').animate({
-      scrollTop: $('.popup').offset().top
-    }, 500);
-  } else {
-    $('.popup').removeClass('popup-mobile').css('top', newHeight).toggle();
-  };
-});
-
-$('html').click(function() {
-  $('.popup').hide();
-});
-
-$('.popup-btn-close').click(function(e){
-  $('.popup').hide();
-});
-
-$('.popup').click(function(e){
-  e.stopPropagation();
-});
-</script>
-
-
-<script>
-// Popup1 Window
-var scrollTop = '';
-var newHeight = '100';
-
-$(window).bind('scroll', function() {
-  scrollTop = $( window ).scrollTop();
-  newHeight = scrollTop + 100;
-});
-
-$('.popup-trigger1').click(function(e) {
-  e.stopPropagation();
-  if(jQuery(window).width() < 767) {
-    $(this).after( $( ".popup1" ) );
-    $('.popup1').show().addClass('popup-mobile1').css('top', 0);
-    $('html, body').animate({
-      scrollTop: $('.popup1').offset().top
-    }, 500);
-  } else {
-    $('.popup1').removeClass('popup-mobile1').css('top', newHeight).toggle();
-  };
-});
-
-$('html').click(function() {
-  $('.popup1').hide();
-});
-
-$('.popup-btn-close1').click(function(e){
-  $('.popup1').hide();
-});
-
-$('.popup1').click(function(e){
-  e.stopPropagation();
-});
-</script>
-
-
-<script>
-function loading(){
-    $.ajax({
-        type: "POST",
-        url: "http://422hopper.pythonanywhere.com/",
-        data: "n=1",
-        beforeSend: function() {
-            $('#mloader').show();
-        },
-        success: function(msg){
-            //alert( msg );
-        },
-        error: function(xhr, option, error){
-            alert(xhr.status);
-            alert(error);
-        },
-        complete: function(){
-            $('#mloader').hide();
-        }
-    });
-}
 </script>
 
 </body>
