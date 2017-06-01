@@ -1,47 +1,56 @@
 {
-    "bananas.jpg": [
-        "banana",
-        "cake",
-        "chocolate",
-        "milk",
-        "cream",
-        "coffee",
-        "water"
-    ],
-    "brussels.jpg": [
-        "pea",
-        "frozen peas",
-        "garbanzo",
-        "gooseberry",
-        "brussels sprout",
-        "indian pea",
-        "split peas"
-    ],
-    "lychee.jpg": [
-        "lychee",
-        "rambutan",
-        "strawberry",
-        "paracress",
-        "purple mangosteen",
-        "kiwi fruit",
-        "jackfruit"
-    ],
-    "strawberries.jpg": [
-        "strawberry",
-        "raspberry",
-        "goji berry",
-        "cherry",
-        "sweet cherry",
-        "straw",
-        "salmonberry"
-    ],
-    "tomato.jpg": [
+    "coppc.jpg": [
+        "pasta",
+        "macaroni",
         "tomato",
-        "cherry tomato",
-        "cherry",
-        "tomato sauce",
-        "tamarillo",
-        "ketchup",
-        "habanero pepper"
+        "spaghetti",
+        "basil",
+        "pepper",
+        "penne"
+    ],
+    "ctscj.jpg": [
+        "nachos",
+        "tomato",
+        "salsa",
+        "cheese",
+        "corn",
+        "chili",
+        "pepper"
+    ],
+    "onionpepper.jpg": [
+        "pepper",
+        "chili",
+        "sweet pepper",
+        "garlic",
+        "cayenne",
+        "cucumber",
+        "cabbage"
+    ],
+    "rgs.png": [
+        "steak",
+        "beef",
+        "fillet",
+        "pork",
+        "sirloin",
+        "pepper",
+        "rosemary"
+    ],
+    "sla.jpg": [
+        "salmon",
+        "lemon",
+        "fish",
+        "fillet",
+        "seafood",
+        "asparagus",
+        "salmon steak"
+    ],
+    "thpsp.jpg": [
+        "pork",
+        "mashed potatoes",
+        "garlic",
+        "chicken",
+        "sage",
+        "tenderloin",
+        "bacon"
     ]
 }

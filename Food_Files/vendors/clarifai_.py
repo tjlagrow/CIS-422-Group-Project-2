@@ -42,7 +42,7 @@ def get_standardized_result(api_result):
     output['tags'] = zip(tag_names, tag_scores)
     #print(output['tags'])
     # a dictionary which contains unnecessary or vague recommendations. Used to filter the responses to the user.
-    not_specific_ingredients = {'food', 'comestible', 'grass', 'aliment', 'salad', 'pasture', 'vegetable', 'sweet', 'legume', 'dessert', 'berry', 'juice', 'meat'}
+    not_specific_ingredients = {'food', 'sauce', 'barbecue', 'comestible', 'grass', 'aliment', 'salad', 'pasture', 'vegetable', 'sweet', 'legume', 'dessert', 'berry', 'juice', 'meat'}
     output_list = list(output['tags'])
     confirm_foods = []
     
