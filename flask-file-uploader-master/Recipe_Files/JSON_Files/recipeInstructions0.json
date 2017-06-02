@@ -1,183 +1,234 @@
 {
- "sourceName": "My Recipes", 
+ "sourceName": "Chow", 
  "cuisines": [], 
- "image": "https://spoonacular.com/recipeImages/apple-and-pear-slaw-93789.jpg", 
+ "image": "https://spoonacular.com/recipeImages/slow-cooked-stuffed-cabbage-recipe-2-93502.png", 
  "cheap": false, 
  "gaps": "no", 
- "id": 93789, 
+ "id": 93502, 
  "veryPopular": false, 
  "lowFodmap": false, 
- "title": "Apple-and-Pear Slaw", 
- "pricePerServing": 52.71, 
- "creditText": "My Recipes", 
+ "title": "Slow-Cooked Stuffed Cabbage Recipe", 
+ "pricePerServing": 187.92, 
+ "creditText": "Chow", 
  "extendedIngredients": [
   {
-   "originalString": "1/4 cup cider vinegar", 
+   "originalString": "1 1/2 cups roughly chopped apples", 
+   "aisle": "Produce", 
+   "name": "apples", 
+   "metaInformation": [
+    "roughly chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 1.5, 
+   "id": 9003, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "6 tablespoons cider vinegar", 
    "aisle": "Oil, Vinegar, Salad Dressing", 
    "name": "cider vinegar", 
    "metaInformation": [], 
    "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-cider-vinegar.jpg", 
-   "unitLong": "cups", 
-   "unitShort": "cup", 
-   "amount": 0.25, 
-   "id": 2048, 
-   "unit": "cup"
-  }, 
-  {
-   "originalString": "1 tablespoon brown sugar", 
-   "aisle": "Baking", 
-   "name": "brown sugar", 
-   "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
-   "unitLong": "tablespoon", 
+   "unitLong": "tablespoons", 
    "unitShort": "Tbsp", 
-   "amount": 1.0, 
-   "id": 19334, 
-   "unit": "tablespoon"
+   "amount": 6.0, 
+   "id": 2048, 
+   "unit": "tablespoons"
   }, 
   {
-   "originalString": "2 teaspoons poppy seeds", 
-   "aisle": "Spices and Seasonings;Baking", 
-   "name": "poppy seeds", 
-   "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/poppyseed.jpg", 
-   "unitLong": "teaspoons", 
-   "unitShort": "tsp", 
+   "originalString": "2 large eggs, beaten", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "eggs", 
+   "metaInformation": [
+    "large", 
+    "beaten"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/egg.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
    "amount": 2.0, 
-   "id": 2033, 
-   "unit": "teaspoons"
+   "id": 1123, 
+   "unit": ""
   }, 
   {
-   "originalString": "1/2 teaspoon salt", 
+   "originalString": "1 large head green cabbage, cored", 
+   "aisle": "Produce", 
+   "name": "green cabbage", 
+   "metaInformation": [
+    "green", 
+    "cored", 
+    "large"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cabbage.jpg", 
+   "unitLong": "head", 
+   "unitShort": "head", 
+   "amount": 1.0, 
+   "id": 11109, 
+   "unit": "head"
+  }, 
+  {
+   "originalString": "1 1/2 pound ground beef", 
+   "aisle": "Meat", 
+   "name": "ground beef", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/fresh-ground-beef.jpg", 
+   "unitLong": "pounds", 
+   "unitShort": "lb", 
+   "amount": 1.5, 
+   "id": 10023572, 
+   "unit": "pound"
+  }, 
+  {
+   "originalString": "2 teaspoons kosher salt", 
    "aisle": "Spices and Seasonings", 
-   "name": "salt", 
+   "name": "kosher salt", 
    "metaInformation": [], 
    "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
    "unitLong": "teaspoons", 
    "unitShort": "tsp", 
-   "amount": 0.5, 
-   "id": 2047, 
-   "unit": "teaspoon"
+   "amount": 2.0, 
+   "id": 1082047, 
+   "unit": "teaspoons"
   }, 
   {
-   "originalString": "1/4 teaspoon black pepper", 
+   "originalString": "3/4 cup freshly squeezed lemon juice", 
+   "aisle": "Produce", 
+   "name": "lemon juice", 
+   "metaInformation": [
+    "freshly squeezed"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/lemon-juice.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.75, 
+   "id": 9152, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 tablespoon finely grated lemon zest", 
+   "aisle": "Produce", 
+   "name": "lemon zest", 
+   "metaInformation": [
+    "finely grated"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/zest-lemon.jpg", 
+   "unitLong": "tablespoon", 
+   "unitShort": "Tbsp", 
+   "amount": 1.0, 
+   "id": 9156, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "3/4 cup packed light brown sugar", 
+   "aisle": "Baking", 
+   "name": "light brown sugar", 
+   "metaInformation": [
+    "light", 
+    "packed"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.75, 
+   "id": 19334, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "2/3 cup medium- or long-grain rice", 
+   "aisle": "Pasta and Rice", 
+   "name": "medium grain rice", 
+   "metaInformation": [
+    "long-grain"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/rice-white-uncooked.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.6666666666666666, 
+   "id": 10220052, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 1/2 cups roughly chopped onion", 
+   "aisle": "Produce", 
+   "name": "onion", 
+   "metaInformation": [
+    "roughly chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-onion.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 1.5, 
+   "id": 11282, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "1/2 teaspoon freshly ground black pepper", 
    "aisle": "Spices and Seasonings", 
    "name": "black pepper", 
    "metaInformation": [
-    "black"
+    "black", 
+    "freshly ground"
    ], 
    "image": "https://spoonacular.com/cdn/ingredients_100x100/pepper.jpg", 
    "unitLong": "teaspoons", 
    "unitShort": "tsp", 
-   "amount": 0.25, 
+   "amount": 0.5, 
    "id": 1002030, 
    "unit": "teaspoon"
   }, 
   {
-   "originalString": "2 cups thinly sliced Granny Smith apple (about 1 large apple)", 
-   "aisle": "Produce", 
-   "name": "granny smith apple", 
-   "metaInformation": [
-    "large", 
-    "thinly sliced", 
-    "( 1 apple)"
-   ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/red-delicious-apples.png", 
-   "unitLong": "cups", 
-   "unitShort": "cup", 
-   "amount": 2.0, 
-   "id": 1029003, 
-   "unit": "cups"
-  }, 
-  {
-   "originalString": "2 cups thinly sliced pear (about 1 large pear)", 
-   "aisle": "Produce", 
-   "name": "pear", 
-   "metaInformation": [
-    "large", 
-    "thinly sliced", 
-    "( 1 pear)"
-   ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
-   "unitLong": "cups", 
-   "unitShort": "cup", 
-   "amount": 2.0, 
-   "id": 9252, 
-   "unit": "cups"
-  }, 
-  {
-   "originalString": "1 (12-ounce) package cabbage-and-carrot coleslaw", 
-   "aisle": "Produce", 
-   "name": "carrot", 
+   "originalString": "2 (30-ounce cans) tomato sauce", 
+   "aisle": "Canned and Jarred", 
+   "name": "tomato sauce", 
    "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/carrots.jpg", 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/tomato-sauce-or-pasta-sauce.jpg", 
    "unitLong": "ounces", 
    "unitShort": "oz", 
-   "amount": 12.0, 
-   "id": 11124, 
+   "amount": 60.0, 
+   "id": 11549, 
    "unit": "ounce"
-  }
- ], 
- "healthScore": 16.0, 
- "imageType": "jpg", 
- "spoonacularScore": 58.0, 
- "sourceUrl": "http://www.myrecipes.com/recipe/apple-and-pear-slaw-10000000479074/", 
- "glutenFree": true, 
- "vegan": true, 
- "veryHealthy": false, 
- "weightWatcherSmartPoints": 0, 
- "analyzedInstructions": [
+  }, 
   {
-   "steps": [
-    {
-     "equipment": [
-      {
-       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
-       "id": 404783, 
-       "name": "bowl"
-      }
-     ], 
-     "step": "Combine first 5 ingredients in a small bowl; set aside.", 
-     "number": 1, 
-     "ingredients": []
-    }, 
-    {
-     "equipment": [
-      {
-       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
-       "id": 404783, 
-       "name": "bowl"
-      }
-     ], 
-     "step": "Combine apple, pear, and coleslaw in a large bowl; stir in dressing. Chill up to 2 hours.", 
-     "number": 2, 
-     "ingredients": [
-      {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
-       "id": 9003, 
-       "name": "apple"
-      }, 
-      {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
-       "id": 9252, 
-       "name": "pear"
-      }
-     ]
-    }
+   "originalString": "1 1/2 cups peeled, seeded, and roughly chopped tomatoes", 
+   "aisle": "Produce", 
+   "name": "tomatoes", 
+   "metaInformation": [
+    "peeled", 
+    "seeded", 
+    "roughly chopped"
    ], 
-   "name": ""
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/tomato.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 1.5, 
+   "id": 11529, 
+   "unit": "cups"
   }
  ], 
- "aggregateLikes": 0, 
- "instructions": "Combine first 5 ingredients in a small bowl; set aside.                                                                                                Combine apple, pear, and coleslaw in a large bowl; stir in dressing. Chill up to 2 hours.", 
- "spoonacularSourceUrl": "https://spoonacular.com/apple-and-pear-slaw-93789", 
+ "healthScore": 18.0, 
+ "imageType": "png", 
+ "spoonacularScore": 74.0, 
+ "sourceUrl": "http://www.chow.com/recipes/27738-slow-cooked-stuffed-cabbage", 
+ "glutenFree": true, 
+ "vegan": false, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 13, 
+ "analyzedInstructions": [], 
+ "aggregateLikes": 22, 
+ "instructions": null, 
+ "spoonacularSourceUrl": "https://spoonacular.com/slow-cooked-stuffed-cabbage-recipe-93502", 
  "dishTypes": [
-  "side dish"
+  "lunch", 
+  "main course", 
+  "main dish", 
+  "dinner"
  ], 
- "vegetarian": true, 
+ "vegetarian": false, 
  "ketogenic": false, 
  "readyInMinutes": 45, 
- "servings": 6, 
+ "servings": 10, 
  "sustainable": false, 
  "dairyFree": true, 
  "whole30": false

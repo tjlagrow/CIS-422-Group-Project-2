@@ -1,178 +1,269 @@
 {
- "sourceName": "Mother Rimmy", 
+ "sourceName": "Chef Druck", 
  "cuisines": [], 
- "image": "https://spoonacular.com/recipeImages/Dont-Pass-Up-This-Crunchy-and-Sweet-Apple-Broccoli-Slaw-530285.jpg", 
+ "image": "https://spoonacular.com/recipeImages/I-Need-to-Make-the-Butter-Sing-580423.jpg", 
  "cheap": false, 
  "gaps": "no", 
- "id": 530285, 
+ "cookingMinutes": 135, 
+ "id": 580423, 
  "veryPopular": false, 
  "lowFodmap": false, 
- "title": "Don\u2019t Pass Up This Crunchy and Sweet Apple Broccoli Slaw", 
- "pricePerServing": 68.43, 
- "creditText": "Mother Rimmy", 
+ "title": "I Need to Make the Butter Sing", 
+ "preparationMinutes": 10, 
+ "pricePerServing": 158.93, 
+ "creditText": "Chef Druck", 
  "extendedIngredients": [
   {
-   "originalString": "1 (12 ounce) package broccoli coleslaw mix", 
-   "aisle": "Produce", 
-   "name": "broccoli coleslaw mix", 
-   "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/broccoli-slaw.png", 
-   "unitLong": "ounces", 
-   "unitShort": "oz", 
-   "amount": 12.0, 
-   "id": 11741, 
-   "unit": "ounce"
-  }, 
-  {
-   "originalString": "1/3 cup packed brown sugar", 
+   "originalString": "4 Tablespoons of Brown Sugar", 
    "aisle": "Baking", 
    "name": "brown sugar", 
-   "metaInformation": [
-    "packed"
-   ], 
+   "metaInformation": [], 
    "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
-   "unitLong": "cups", 
-   "unitShort": "cup", 
-   "amount": 0.3333333333333333, 
+   "unitLong": "Tablespoons", 
+   "unitShort": "Tablespoons", 
+   "amount": 4.0, 
    "id": 19334, 
-   "unit": "cup"
+   "unit": "Tablespoons"
   }, 
   {
-   "originalString": "1 (3 ounce) package dried tart cherries", 
-   "aisle": "Produce", 
-   "name": "cherries", 
+   "originalString": "1 Can (27 ounces) of San Marzano peeled tomatoes", 
+   "aisle": "Canned and Jarred", 
+   "name": "canned tomatoes", 
    "metaInformation": [
-    "dried"
+    "peeled"
    ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/tomatoes-canned.jpg", 
    "unitLong": "ounces", 
    "unitShort": "oz", 
-   "amount": 3.0, 
-   "id": 9070, 
-   "unit": "ounce"
+   "amount": 27.0, 
+   "id": 10011693, 
+   "unit": "ounces"
   }, 
   {
-   "originalString": "1/3 cup cider vinegar", 
-   "aisle": "Oil, Vinegar, Salad Dressing", 
-   "name": "cider vinegar", 
+   "originalString": "2 Pounds of Ground Beef (preferably higher fat ground chuck)", 
+   "aisle": "Meat", 
+   "name": "ground beef", 
+   "metaInformation": [
+    "(preferably higher fat ground chuck)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/fresh-ground-beef.jpg", 
+   "unitLong": "Pounds", 
+   "unitShort": "Pounds", 
+   "amount": 2.0, 
+   "id": 10023572, 
+   "unit": "Pounds"
+  }, 
+  {
+   "originalString": "1/3 cups of Heavy Cream", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "heavy cream", 
    "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-cider-vinegar.jpg", 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/fluid-cream.jpg", 
    "unitLong": "cups", 
    "unitShort": "cup", 
    "amount": 0.3333333333333333, 
-   "id": 2048, 
-   "unit": "cup"
-  }, 
-  {
-   "originalString": "1/4 teaspoon fresh ground black pepper", 
-   "aisle": "Spices and Seasonings", 
-   "name": "ground pepper", 
-   "metaInformation": [
-    "fresh", 
-    "black"
-   ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/pepper.jpg", 
-   "unitLong": "teaspoons", 
-   "unitShort": "tsp", 
-   "amount": 0.25, 
-   "id": 1002030, 
-   "unit": "teaspoon"
-  }, 
-  {
-   "originalString": "2 1/4 cups chopped pink lady apples or other sweet apples", 
-   "aisle": "Produce", 
-   "name": "pink lady apples", 
-   "metaInformation": [
-    "sweet", 
-    "chopped"
-   ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
-   "unitLong": "cups", 
-   "unitShort": "cup", 
-   "amount": 2.25, 
-   "id": 1009003, 
+   "id": 1053, 
    "unit": "cups"
   }, 
   {
-   "originalString": "1/4 teaspoon salt", 
-   "aisle": "Spices and Seasonings", 
-   "name": "salt", 
-   "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
-   "unitLong": "teaspoons", 
-   "unitShort": "tsp", 
-   "amount": 0.25, 
-   "id": 2047, 
-   "unit": "teaspoon"
-  }, 
-  {
-   "originalString": "2 tablespoons unsalted sunflower seeds", 
-   "aisle": "Savory Snacks", 
-   "name": "sunflower seeds", 
-   "metaInformation": [
-    "unsalted"
-   ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/sunflower-seeds.jpg", 
-   "unitLong": "tablespoons", 
-   "unitShort": "Tbsp", 
-   "amount": 2.0, 
-   "id": 12036, 
-   "unit": "tablespoons"
-  }, 
-  {
-   "originalString": "1 1/2 tablespoons vegetable oil", 
+   "originalString": "2 Tablespoons of Olive Oil", 
    "aisle": "Oil, Vinegar, Salad Dressing", 
-   "name": "vegetable oil", 
+   "name": "olive oil", 
    "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/vegetable-oil.jpg", 
-   "unitLong": "tablespoons", 
-   "unitShort": "Tbsp", 
-   "amount": 1.5, 
-   "id": 4513, 
-   "unit": "tablespoons"
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/olive-oil.jpg", 
+   "unitLong": "Tablespoons", 
+   "unitShort": "Tablespoons", 
+   "amount": 2.0, 
+   "id": 4053, 
+   "unit": "Tablespoons"
+  }, 
+  {
+   "originalString": "1/4 cups of parmesan cheese, grated", 
+   "aisle": "Cheese", 
+   "name": "parmesan cheese", 
+   "metaInformation": [
+    "grated"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/parmesan-or-romano.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 1033, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "Salt and pepper to your liking", 
+   "aisle": "Spices and Seasonings", 
+   "name": "Salt & Pepper", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt-and-pepper.jpg", 
+   "unitLong": "servings", 
+   "unitShort": "servings", 
+   "amount": 8.0, 
+   "id": 1102047, 
+   "unit": "servings"
+  }, 
+  {
+   "originalString": "1 Can (27 ounces) of Tomato Puree", 
+   "aisle": "Canned and Jarred", 
+   "name": "tomato puree", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/tomato-paste.jpg", 
+   "unitLong": "ounces", 
+   "unitShort": "oz", 
+   "amount": 27.0, 
+   "id": 11547, 
+   "unit": "ounces"
+  }, 
+  {
+   "originalString": "1 large Yellow or Vidalia Onion, diced finely", 
+   "aisle": "Produce", 
+   "name": "vidalia onion", 
+   "metaInformation": [
+    "diced", 
+    "yellow", 
+    "large", 
+    "finely"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/sweet-onion.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 11294, 
+   "unit": ""
   }
  ], 
- "healthScore": 7.0, 
+ "healthScore": 15.0, 
  "imageType": "jpg", 
- "spoonacularScore": 40.0, 
- "sourceUrl": "http://motherrimmy.com/apple-broccoli-slaw/", 
+ "spoonacularScore": 69.0, 
+ "sourceUrl": "http://chefdruck.com/2012/04/i-need-to-make-the-butter-sing/", 
  "glutenFree": true, 
- "vegan": true, 
+ "vegan": false, 
  "veryHealthy": false, 
- "weightWatcherSmartPoints": 4, 
+ "weightWatcherSmartPoints": 15, 
  "analyzedInstructions": [
   {
    "steps": [
     {
      "equipment": [
       {
-       "image": "https://spoonacular.com/cdn/equipment_100x100/whisk.png", 
-       "id": 404661, 
-       "name": "whisk"
-      }, 
-      {
-       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
-       "id": 404783, 
-       "name": "bowl"
+       "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg", 
+       "id": 404752, 
+       "name": "pot"
       }
      ], 
-     "step": "Vinaigrette: combine first 5 ingredients in a small bowl, stirring well with a whisk.Slaw: combine apple, broccoli slaw and dried cherries; drizzle with vinaigrette, toss well to combine.Sprinkle with sunflower seeds; chill up to 3 hours.", 
+     "step": "In a large stockpot, heat the olive oil on medium heat.", 
      "number": 1, 
      "ingredients": [
       {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/sunflower-seeds.jpg", 
-       "id": 12036, 
-       "name": "sunflower seeds"
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/olive-oil.jpg", 
+       "id": 4053, 
+       "name": "olive oil"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Add the diced onion and saute for 4-5 minutes, until soft and glistening.", 
+     "length": {
+      "number": 5, 
+      "unit": "minutes"
+     }, 
+     "number": 2, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Add the ground beef and saute for another 4-5 minutes, until browned.", 
+     "length": {
+      "number": 5, 
+      "unit": "minutes"
+     }, 
+     "number": 3, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/fresh-ground-beef.jpg", 
+       "id": 10023572, 
+       "name": "ground beef"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Add the Parmesan and stir to mix.", 
+     "number": 4, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/parmesan-or-romano.jpg", 
+       "id": 1033, 
+       "name": "parmesan"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/potato-masher.jpg", 
+       "id": 404763, 
+       "name": "potato masher"
       }, 
       {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/broccoli-slaw.png", 
-       "id": 11741, 
-       "name": "broccoli slaw"
+       "image": "https://spoonacular.com/cdn/equipment_100x100/wooden-spoon.jpg", 
+       "id": 404732, 
+       "name": "wooden spoon"
+      }
+     ], 
+     "step": "Pour in the tomato puree and the crushed tomatoes. Mash up the crushed tomatoes with a wooden spoon or (even better if you have one) with a potato masher. I like to use both kinds of tomatoes to add a little more texture.", 
+     "number": 5, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/tomatoes-canned.jpg", 
+       "id": 11693, 
+       "name": "crushed tomatoes"
       }, 
       {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
-       "id": 9003, 
-       "name": "apple"
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/tomato-paste.jpg", 
+       "id": 11547, 
+       "name": "tomato puree"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg", 
+       "id": 404718, 
+       "name": "slow cooker"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg", 
+       "id": 404752, 
+       "name": "pot"
+      }
+     ], 
+     "step": "Add the brown sugar and either cover your stockpot and cook on low for 2 hours, or set it to cook on high in a slow cooker for 2 hours. Stir periodically.", 
+     "number": 6, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+       "id": 19334, 
+       "name": "brown sugar"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Add the heavy cream and cook for another 15 minutes to blend.Spoon over spaghetti or angel hair. Enjoy!", 
+     "length": {
+      "number": 15, 
+      "unit": "minutes"
+     }, 
+     "number": 7, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/fluid-cream.jpg", 
+       "id": 1053, 
+       "name": "heavy cream"
       }
      ]
     }
@@ -180,17 +271,20 @@
    "name": ""
   }
  ], 
- "aggregateLikes": 0, 
- "instructions": "Vinaigrette: combine first 5 ingredients in a small bowl, stirring well with a whisk.Slaw: combine apple, broccoli slaw and dried cherries; drizzle with vinaigrette, toss well to combine.Sprinkle with sunflower seeds; chill up to 3 hours.", 
- "spoonacularSourceUrl": "https://spoonacular.com/dont-pass-up-this-crunchy-and-sweet-apple-broccoli-slaw-530285", 
+ "aggregateLikes": 21, 
+ "instructions": "In a large stockpot, heat the olive oil on medium heat. Add the diced onion and saute for 4-5 minutes, until soft and glistening.Add the ground beef and saute for another 4-5 minutes, until browned. Add the Parmesan and stir to mix.Pour in the tomato puree and the crushed tomatoes. Mash up the crushed tomatoes with a wooden spoon or (even better if you have one) with a potato masher. I like to use both kinds of tomatoes to add a little more texture.Add the brown sugar and either cover your stockpot and cook on low for 2 hours, or set it to cook on high in a slow cooker for 2 hours. Stir periodically.Add the heavy cream and cook for another 15 minutes to blend.Spoon over spaghetti or angel hair. Enjoy!", 
+ "spoonacularSourceUrl": "https://spoonacular.com/i-need-to-make-the-butter-sing-580423", 
  "dishTypes": [
-  "side dish"
+  "lunch", 
+  "main course", 
+  "main dish", 
+  "dinner"
  ], 
- "vegetarian": true, 
+ "vegetarian": false, 
  "ketogenic": false, 
- "readyInMinutes": 45, 
+ "readyInMinutes": 145, 
  "servings": 8, 
  "sustainable": false, 
- "dairyFree": true, 
+ "dairyFree": false, 
  "whole30": false
 }

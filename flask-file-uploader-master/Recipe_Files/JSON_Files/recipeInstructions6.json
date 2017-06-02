@@ -1,146 +1,247 @@
 {
- "sourceName": "Martha Stewart", 
- "cuisines": [], 
- "image": "https://spoonacular.com/recipeImages/slow-cooker-pear-and-apple-butter-735858.jpg", 
+ "cuisines": [
+  "mexican"
+ ], 
+ "image": "https://spoonacular.com/recipeImages/easy-mexican-meatloaves-266709.jpg", 
  "cheap": false, 
  "gaps": "no", 
- "id": 735858, 
- "veryPopular": true, 
+ "cookingMinutes": 70, 
+ "id": 266709, 
+ "veryPopular": false, 
  "lowFodmap": false, 
- "title": "Slow-Cooker Pear and Apple Butter", 
- "pricePerServing": 161.0, 
- "creditText": "Martha Stewart", 
+ "title": "Easy Mexican Meatloaves", 
+ "preparationMinutes": 10, 
+ "pricePerServing": 144.76, 
  "extendedIngredients": [
   {
-   "originalString": "2 1/2 pounds Bartlett or Anjou pears (about 5)", 
-   "aisle": "Produce", 
-   "name": "anjou pears", 
+   "originalString": "2 lb. lean ground beef", 
+   "aisle": "Meat", 
+   "name": "lean ground beef", 
    "metaInformation": [
-    "( 5)"
+    "lean"
    ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/anjou-pear.jpg", 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/meat-ground-red.jpg", 
    "unitLong": "pounds", 
    "unitShort": "lb", 
-   "amount": 2.5, 
-   "id": 1009252, 
-   "unit": "pounds"
+   "amount": 2.0, 
+   "id": 23557, 
+   "unit": "lb"
   }, 
   {
-   "originalString": "1 cinnamon stick", 
-   "aisle": "Spices and Seasonings", 
-   "name": "cinnamon stick", 
-   "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
-   "unitLong": "", 
-   "unitShort": "", 
-   "amount": 1.0, 
-   "id": 1002010, 
-   "unit": ""
-  }, 
-  {
-   "originalString": "1/2 teaspoon coarse salt", 
-   "aisle": "Spices and Seasonings", 
-   "name": "coarse salt", 
-   "metaInformation": [], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
-   "unitLong": "teaspoons", 
-   "unitShort": "tsp", 
-   "amount": 0.5, 
-   "id": 2047, 
-   "unit": "teaspoon"
-  }, 
-  {
-   "originalString": "1 cup packed dark-brown sugar", 
-   "aisle": "Baking", 
-   "name": "dark brown sugar", 
+   "originalString": "1 pkg. (6 oz.) STOVE TOP Stuffing Mix for Chicken", 
+   "aisle": "Bakery/Bread;Pasta and Rice", 
+   "name": "stuffing mix", 
    "metaInformation": [
-    "packed"
+    "for chicken"
    ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/stuffing-mix.png", 
+   "unitLong": "ounces", 
+   "unitShort": "oz", 
+   "amount": 6.0, 
+   "id": 18081, 
+   "unit": "oz"
+  }, 
+  {
+   "originalString": "1 can (14-1/2 oz.) Mexican-style diced tomatoes, undrained", 
+   "aisle": "Canned and Jarred", 
+   "name": "canned tomatoes", 
+   "metaInformation": [
+    "diced", 
+    "mexican-style", 
+    "undrained", 
+    "canned"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/tomatoes-canned.jpg", 
+   "unitLong": "ounces", 
+   "unitShort": "oz", 
+   "amount": 14.0, 
+   "id": 10011693, 
+   "unit": "oz"
+  }, 
+  {
+   "originalString": "1 cup TACO BELL\u00c2\u00ae Thick & Chunky Salsa, divided", 
+   "aisle": "Pasta and Rice;Ethnic Foods", 
+   "name": "salsa", 
+   "metaInformation": [
+    "thick", 
+    "divided"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salsa.jpg", 
    "unitLong": "cup", 
    "unitShort": "cup", 
    "amount": 1.0, 
-   "id": 10019334, 
+   "id": 6164, 
    "unit": "cup"
   }, 
   {
-   "originalString": "2 1/2 pounds McIntosh or Gala apples (about 5)", 
+   "originalString": "2 eggs", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "eggs", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/egg.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 1123, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "4 cloves garlic, minced", 
    "aisle": "Produce", 
-   "name": "gala apples", 
+   "name": "garlic", 
    "metaInformation": [
-    "( 5)"
+    "minced"
    ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
-   "unitLong": "pounds", 
-   "unitShort": "lb", 
-   "amount": 2.5, 
-   "id": 9003, 
-   "unit": "pounds"
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic-roasted.jpg", 
+   "unitLong": "cloves", 
+   "unitShort": "cloves", 
+   "amount": 4.0, 
+   "id": 11215, 
+   "unit": "cloves"
+  }, 
+  {
+   "originalString": "2 Tbsp. brown sugar", 
+   "aisle": "Baking", 
+   "name": "brown sugar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
+   "unitLong": "Tbsps", 
+   "unitShort": "Tbsp", 
+   "amount": 2.0, 
+   "id": 19334, 
+   "unit": "Tbsp"
+  }, 
+  {
+   "originalString": "1-1/2 cups KRAFT Mexican Style Shredded Four Cheese with a TOUCH OF PHILADELPHIA, divided", 
+   "aisle": "?", 
+   "name": "four cheese", 
+   "metaInformation": [
+    "shredded", 
+    "with a touch of philadelphia, divided", 
+    "mexican style", 
+    "kraft"
+   ], 
+   "unitLong": "cup", 
+   "unitShort": "cup", 
+   "amount": 1.0, 
+   "unit": "cups"
   }
  ], 
- "healthScore": 3.0, 
+ "healthScore": 11.0, 
  "imageType": "jpg", 
- "spoonacularScore": 48.0, 
- "sourceUrl": "http://www.marthastewart.com/326858/slow-cooker-pear-and-apple-butter", 
- "glutenFree": true, 
- "vegan": true, 
+ "spoonacularScore": 47.0, 
+ "sourceUrl": "http://www.Kraftrecipes.com/recipes/easy-mexican-meatloaves-126816.aspx", 
+ "glutenFree": false, 
+ "vegan": false, 
  "veryHealthy": false, 
- "weightWatcherSmartPoints": 8, 
+ "weightWatcherSmartPoints": 5, 
  "analyzedInstructions": [
   {
    "steps": [
     {
-     "equipment": [], 
-     "step": "Remove cinnamon stick and reserve.", 
-     "number": 1, 
-     "ingredients": [
+     "equipment": [
       {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
-       "id": 1002010, 
-       "name": "cinnamon stick"
+       "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg", 
+       "id": 404784, 
+       "temperature": {
+        "number": 375.0, 
+        "unit": "Fahrenheit"
+       }, 
+       "name": "oven"
       }
-     ]
+     ], 
+     "step": "Heat oven to 375F.", 
+     "number": 1, 
+     "ingredients": []
     }, 
     {
      "equipment": [
       {
-       "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg", 
-       "id": 404718, 
-       "name": "slow cooker"
+       "image": "https://spoonacular.com/cdn/equipment_100x100/roasting-pan.jpg", 
+       "id": 404646, 
+       "name": "baking pan"
       }
      ], 
-     "step": "Transfer mixture to processor (in batches, if necessary) and process until smooth. Return to slow cooker, along with cinnamon stick, and cook on high, uncovered, until mixture is thick and browned, 4 hours. Discard cinnamon stick and let mixture cool.", 
+     "step": "Mix meat, stuffing mix, tomatoes, 1-1/4 cups cheese, 3/4 cup salsa, eggs and garlic until blended.  Shape into 2 loaves in 13x9-inch baking dish.", 
      "number": 2, 
      "ingredients": [
       {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
-       "id": 1002010, 
-       "name": "cinnamon stick"
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/stuffing-mix.png", 
+       "id": 18081, 
+       "name": "stuffing mix"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic.jpg", 
+       "id": 11215, 
+       "name": "garlic"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salsa.jpg", 
+       "id": 6164, 
+       "name": "salsa"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/egg.jpg", 
+       "id": 1123, 
+       "name": "egg"
       }
      ]
     }, 
     {
      "equipment": [], 
-     "step": "Transfer to airtight containers and refrigerate, up to 3 weeks, or freeze, up to 3 months.", 
+     "step": "Bake 50 min. Meanwhile, mix remaining salsa and sugar.", 
+     "length": {
+      "number": 50, 
+      "unit": "minutes"
+     }, 
      "number": 3, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salsa.jpg", 
+       "id": 6164, 
+       "name": "salsa"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Spread salsa mixture over meatloaves; top with remaining cheese.", 
+     "number": 4, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salsa.jpg", 
+       "id": 6164, 
+       "name": "salsa"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Bake 10 min. or until meatloaves are done (160F).", 
+     "length": {
+      "number": 10, 
+      "unit": "minutes"
+     }, 
+     "number": 5, 
      "ingredients": []
     }
    ], 
    "name": ""
   }
  ], 
- "aggregateLikes": 29088, 
- "instructions": "Remove cinnamon stick and reserve. Transfer mixture to processor (in batches, if necessary) and process until smooth. Return to slow cooker, along with cinnamon stick, and cook on high, uncovered, until mixture is thick and browned, 4 hours. Discard cinnamon stick and let mixture cool. Transfer to airtight containers and refrigerate, up to 3 weeks, or freeze, up to 3 months.", 
- "spoonacularSourceUrl": "https://spoonacular.com/slow-cooker-pear-and-apple-butter-735858", 
+ "aggregateLikes": 0, 
+ "instructions": "Heat oven to 375F.                                            Mix meat, stuffing mix, tomatoes, 1-1/4 cups cheese, 3/4 cup salsa, eggs and garlic until blended.  Shape into 2 loaves in 13x9-inch baking dish.                                            Bake 50 min. Meanwhile, mix remaining salsa and sugar.                                              Spread salsa mixture over meatloaves; top with remaining cheese.   Bake 10 min. or until meatloaves are done (160F).", 
+ "spoonacularSourceUrl": "https://spoonacular.com/easy-mexican-meatloaves-266709", 
  "dishTypes": [
-  "condiment", 
-  "dip", 
-  "spread"
+  "lunch", 
+  "main course", 
+  "main dish", 
+  "dinner"
  ], 
- "vegetarian": true, 
+ "vegetarian": false, 
  "ketogenic": false, 
- "readyInMinutes": 45, 
- "servings": 6, 
+ "readyInMinutes": 70, 
+ "servings": 10, 
  "sustainable": false, 
  "dairyFree": true, 
  "whole30": false
