@@ -342,32 +342,28 @@ function sendValue(){
       <li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
-
+    
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="item active">
-      <p class="img-center"><strong>l</strong></p><br>
+      {% if e is not none %}
+      {% for i in range(n) %}
+      <div class="item{{ i }} active">
+      <p class="img-center"><strong>{{ e[i].title }}</strong></p><br>
 
-      <p class="img-center"><strong></strong></p><br>
-
-      <p class="img-center"><strong>ll</strong></p><br>
-
-        <a href="#demo" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-reponsive img-thumbnail img-center" alt="Recipe Name">
+        <a href="#demo{{ i }}" data-toggle="collapse">
+          <img src="{{ e[i].image }}" class="img-reponsive img-thumbnail img-center" alt="{{ e[i].title }}">
         </a>
-        <div id="demo" class="collapse">
-          <p>Pre-Heat</p>
-          <p>Cut carrotsh</p>
-          <p>Boil</p>
+        <div id="demo{{ i }}" class="collapse">
+          <p>Cooking Time {{ e[i].readyInMinutes }}</p>
+
         </div>
       </div>
+
+    {% endfor %}
+    {% endif  %}
       <div class="item">
 
-        <p class="img-center"><strong>l</strong></p><br>
-
-        <p class="img-center"><strong></strong></p><br>
-
-        <p class="img-center"><strong>d</strong></p><br>
+       <p class="img-center"><strong></strong></p><br>
 
         <a href="#demo2" data-toggle="collapse">
           <img src="https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg" class="img-responsive img-thumbnail img-center" alt="Recipe Name" style = "display: block; height: 536px;">
@@ -389,25 +385,6 @@ function sendValue(){
         </div>
       </div>
 
-      <div class="item">
-        <p class="img-center"><strong>Recipe 4</strong></p><br>
-        <a href="#demo4" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-center img-thumbnail " alt="Recipe Name">
-        </a>
-        <div id="demo4" class="collapse">
-          <p>Loves lo45648864beach</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <p class="img-center"><strong>Recipe 5</strong></p><br>
-        <a href="#demo5" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-thumbnail img-center " alt="Recipe Name">
-        </a>
-        <div id="demo3" class="collapse">
-          <p>Loves lo45648864beach</p>
-        </div>
-      </div>
 <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>

@@ -9,6 +9,7 @@
 import sys
 import os
 import PIL
+import time
 from PIL import Image
 import simplejson
 import traceback
@@ -29,7 +30,7 @@ app.config['SECRET_KEY'] = 'hard to guess string'
 #app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/Food_Files/input_images/'
 #app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
 app.config['OUTPUT'] = 'Food_Files/output/foods.json'
-app.config['RECIPIE'] = 'CIS-422-Group-Project-2/Recipe_Files/JSON_Files/recipiesOutput.json'
+app.config['RECIPIE'] = 'Recipe_Files/JSON_Files/recipiesOutput.json'
 app.config['THUMBNAIL_FOLDER'] = 'Food_Files/input_images/thumbnail'
 app.config['UPLOAD_FOLDER'] = 'Food_Files/input_images/'
 #app.config['UPLOAD_FOLDER'] = '../Food_Files/input_images/'
@@ -158,12 +159,12 @@ def tag_images():
     # Activate Clarifai here.
     #s = ""
     #process_all_images()
-    anythin = read_file(app.config['OUTPUT'], 0)
+    #anythin = read_file(app.config['OUTPUT'], 0)
+
+    anythin = read_file(app.config['RECIPIE'], 1)
 
     #getIngredientsFromString(anythin)
     #session['anythin'] = anythin
-    print anythin
-
     return render_template('index.html', anythin = anythin) 
 
 def read_file(filename, output_type):
@@ -171,6 +172,7 @@ def read_file(filename, output_type):
         with open( filename ) as json_data:
                 d = json.load(json_data)
                 con_lis = []
+
         if output_type == 0:
         #print (d)
             for key, value in d.iteritems():
@@ -179,24 +181,37 @@ def read_file(filename, output_type):
             return con_lis
             
         elif output_type == 1:
+
+            recipes_list = []
             for key, value in d.iteritems():
-                con_lis.append(key) 
-            return d
+                recipe_dict = {}#print key, value
+                for key_, value_ in value.iteritems():
+                    #print key_, value_
+                    recipe_dict[key_] = value[key_]
+                recipes_list.append(recipe_dict)
+                   
+            
+            return recipes_list
     except:
         print ('false!!')
 
 
-@app.route('/topfive', methods=['POST'])
+@app.route('/recipe', methods=['POST'])
 def show_recipe_full():
-
     d = read_file(app.config['RECIPIE'], 1)
-    return render_template('index.html', d = d)
-
-@app.route('/recipe', methods=['GET', 'POST'])
-def show_top5():
-    e = read_file(app.config['RECIPIE'], 1)
-    print 'yah!'
     return render_template('templates/main.html')
+
+@app.route('/topfive', methods=['GET', 'POST'])
+def show_top5():
+    #clicked = None
+    #if request.method == "POST":
+    #      clicked=request.json['data']
+    #time.sleep(14)
+    e = read_file(app.config['RECIPIE'], 1)
+    num_recip = len(e)
+    print e[0]['title']
+    return render_template('index.html', e = e, n = num_recip)
+    
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
