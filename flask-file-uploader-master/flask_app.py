@@ -27,10 +27,10 @@ from lib.upload_file import uploadfile
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
-app.config['UPLOAD_FOLDER'] = '/../Food_Files/input_images/'
+app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/Food_Files/input_images/'
 #app.config['UPLOAD_FOLDER'] = 'data/'
 #app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail'
-app.config['THUMBNAIL_FOLDER'] = '/../data/thumbnail/'
+app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
 ALLOWED_EXTENSIONS = set(['gif', 'png', 'jpg', 'jpeg', 'bmp', 'JPG'])
