@@ -16,8 +16,10 @@ import json
 
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory, session
 from werkzeug import secure_filename
-#from Food_Files.tag_images import process_all_images
+from Food_Files.tag_images import process_all_images
 from lib.upload_file import uploadfile
+#from Recipe_Files.recipe import run
+
 
 
 app = Flask(__name__)
@@ -154,12 +156,15 @@ def get_file(filename):
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
     # Activate Clarifai here.
+    #s = ""
     #process_all_images()
     anythin = read_file(app.config['OUTPUT'], 0)
+
+    #getIngredientsFromString(anythin)
     #session['anythin'] = anythin
     print anythin
 
-    return render_template('index.html', anythin = anythin)
+    return render_template('index.html', anythin = anythin) 
 
 def read_file(filename, output_type):
     try:
@@ -170,7 +175,7 @@ def read_file(filename, output_type):
         #print (d)
             for key, value in d.iteritems():
             #for key, value in d.items():
-                con_lis.append([key, value[0], value[1], value[2], value[3], value[4], value[5], value[6]])
+                con_lis.append([value[0], value[1], value[2], value[3], value[4], value[5], value[6]])
             return con_lis
             
         elif output_type == 1:
@@ -181,8 +186,9 @@ def read_file(filename, output_type):
         print ('false!!')
 
 
-@app.route('/topfive', methods=['GET', 'POST'])
+@app.route('/topfive', methods=['POST'])
 def show_recipe_full():
+
     d = read_file(app.config['RECIPIE'], 1)
     return render_template('index.html', d = d)
 

@@ -79,7 +79,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" style="padding-right: 4px; color: #96e878; font-weight: bold; font-size: 17px">Hopper's Heapin'</a>
+      <a class="navbar-brand" href="/" style="padding-right: 4px; color: #96e878; font-weight: bold; font-size: 17px">Hopper's Heapin'</a>
       <img src="..\static\img\logo_w-o_name.jpg" style="height: 40px; float: left; padding-left: 5px; padding-right: 1px;" class="img-responsive img-circle logo-img">
     </div>
     <div class="collapse navbar-collapse" id="myNavbar" style="color: #96e878">
@@ -249,23 +249,14 @@
             <i class="glyphicon glyphicon-share-alt"></i>
             </button>
         </form>
-        <button class="btn" onClick="loading()">
-            <span onclick="">k</span>
-            <i class="glyphicon glyphicon-share-alt"></i>
-        </button>
-        <form action="/recipes" method="post" enctype="multipart/form-data">
-            <button class="btn" type="submit" value="Get Recipe"  onClick="loading(); GetCellValue()">Generate
+        <form action="/topfive" method="post" enctype="multipart/form-data">
+            <button id="generate_button" class="btn" type="submit" value="Get Recipe">Generate
             <i class="glyphicon glyphicon-list-alt"></i>
             </button>
         </form>
-
 </div>
-
-<!---
+<!--
 <div id="mloader"><div class="masterkey_blink">LOADING...</div></div>
-<div class="col-lg-2">
-    <input type="button" value=" Pleassseeee wait..." onclick="loading()">
-</div>
 -->
 
 <a href="#output" data-toggle="collapse">
@@ -274,38 +265,39 @@
 
 
 <script>
+
+$('#generate_button').click(GetCellValues);
 function myFunction(elem) {
     var firstRow = document.getElementById("cell"+ elem);
     firstRow.parentNode.removeChild(firstRow);
 }
 
 function GetCellValues() {
+        console.log("GetCellValues called");
         var table = document.getElementById('myTab');
-        for (var r = 0, n = table.rows.length; r < n; r++) {
-            for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {
+        for (var r = 1, n = table.rows.length; r < n; r++) {
+            for (var c = 1, m = table.rows[r].cells.length; c < m; c++) {
                 alert(table.rows[r].cells[c].innerHTML);
             }
         }
+        
 }
 
-$(function() {
-    $('button').click(function() {
-        var user = $('#txtUsername').val();
-        var pass = $('#txtPassword').val();
+function sendValue(){
         $.ajax({
-            url: '/signUpUser',
+            url: '/topfive',
             data: $('form').serialize(),
             type: 'POST',
             success: function(response) {
-                console.log(response);
+                console.log("ajax response:" + response);
             },
             error: function(error) {
                 console.log(error);
             }
         });
-    });
-});
+}
 </script>
+
 
 <div id ="output" data-toggle="collapse">
 <div class="container-fluid bg-1 text-center">
@@ -324,7 +316,7 @@ $(function() {
                     <td>
                     <a href="/../Food_Files/input_images/lychee.jpg" title="{{ pic[0] }}"><img src="../Food_Files/input_images/lychee.jpg"></a>
                     </td>
-                    {% for i in range(7) %}
+                    {% for i in range(6) %}
                     <td id = "cell{{ i }}">{{ pic[i + 1] }}
                     <button class= "btn-sm" onclick="myFunction({{ i }})">
                         <i class="glyphicon glyphicon-remove"></i>
@@ -339,8 +331,8 @@ $(function() {
 </div>
 </div>
 
-<div class="container-fluid bg-1 text-center">
-  <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto; padding-bottom: 30px">
+<div class="container-fluid bg-1 text-center" id="myCarousel">
+  <div class="container text-center" style="height:auto; padding-left: 0px; padding-right: 0px; width: auto; padding-bottom: 30px">
    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
