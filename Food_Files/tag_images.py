@@ -1,5 +1,5 @@
-from jinja2 import FileSystemLoader, Environment
-from shutil import copyfile
+#from jinja2 import FileSystemLoader, Environment
+#from shutil import copyfile
 import json
 import os
 import time
@@ -23,8 +23,8 @@ def settings(name):
         SETTINGS = {
             'api_keys_filepath' : './api_keys.json',
             # Uncomment for pythonanywhere 
-            #'input_images_dir' : '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/',
-            'input_images_dir' : 'input_images',
+            'input_images_dir' : '/../CIS-422-Group-Project-2/Food_Files/input_images/',
+            #'input_images_dir' : '/../input_images',
             'output_dir' : 'output',
             'static_dir' : 'static',
             'output_image_height' : 200,
