@@ -14,7 +14,7 @@ import simplejson
 import traceback
 import json
 
-from flask import Flask, request, render_template, redirect, url_for, send_from_directory
+from flask import Flask, request, render_template, redirect, url_for, send_from_directory, session
 from werkzeug import secure_filename
 #from Food_Files.tag_images import process_all_images
 from lib.upload_file import uploadfile
@@ -23,12 +23,12 @@ from lib.upload_file import uploadfile
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'hard to guess string'
 
-app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/Food_Files/input_images/'
-app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
-app.config['INPUT'] = '/templates/foods.json'
-#app.config['UPLOAD_FOLDER'] = '/../Food_Files/input_images/'
-#app.config['UPLOAD_FOLDER'] = 'data/'
-#app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail'
+#Uncomment to run on pythonanywhere
+#app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/Food_Files/input_images/'
+#app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
+app.config['OUTPUT'] = '/Food_Files/output/foods.json'
+
+app.config['THUMBNAIL_FOLDER'] = 'Food_Files/input_images/thumbnail'
 app.config['UPLOAD_FOLDER'] = 'Food_Files/input_images/'
 #app.config['UPLOAD_FOLDER'] = '../Food_Files/input_images/'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
@@ -36,13 +36,13 @@ app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 ALLOWED_EXTENSIONS = set(['gif', 'png', 'jpg', 'jpeg', 'bmp', 'JPG'])
 IGNORED_FILES = set(['.gitignore'])
 
-
 def allowed_file(filename):
     return '.' in filename and \
         filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
 def gen_file_name(filename):
+
     """
     If file was exist already, rename it and return a new name
     """
@@ -98,7 +98,7 @@ def upload():
 
                 # return json for js call back
                 result = uploadfile(name=filename, type=mime_type, size=size)
-
+            tag_images()
             return simplejson.dumps({"files": [result.get_file()]})
 
     if request.method == 'GET':
@@ -120,8 +120,18 @@ def upload():
 
         return simplejson.dumps({"files": file_display})
 
+    print 'here'
+    tag_images()
     return redirect(url_for('index'))
 
+@app.route('/tag_images', methods=['GET', 'POST'])
+def tag_images():
+    # Activate Clarifai here.
+    #process_all_images()
+    anythin = read_file(app.config['OUTPUT'], 0)
+    #session['anythin'] = anythin
+
+    return render_template('index.html', anythin = anythin)
 
 @app.route("/delete/<string:filename>", methods=['DELETE'])
 def delete(filename):
@@ -150,13 +160,8 @@ def get_thumbnail(filename):
 def get_file(filename):
     return send_from_directory(os.path.join(app.config['UPLOAD_FOLDER']), filename=filename)
 
-@app.route('/tag_images', methods=['GET', 'POST'])
-def tag_images():
-    # Activate Clarifai here.
-    #process_all_images()
-    anythin = read_file(app.config['INPUT'], 0)
-    
-    return render_template('index.html', anythin = anythin)
+#@app.route('/tag_images', methods=['GET', 'POST'])
+
 
 
 #@app.route('/table', methods=['GET', 'POST'])
@@ -164,14 +169,18 @@ def read_file(filename, output_type):
     try:
         with open(os.getcwd() + filename, 'r') as json_data:
                 d = json.load(json_data)
-                print (type(d))
+                #print (type(d))
                 con_lis = []
-        print ('starting')
+                #print (con_lis)
+        #print ('starting')
         #if not output_type:
-        print (d)
+        #print (d)
         for key, value in d.iteritems():
+        #for key, value in d.items():
+            #print ('in here')
             con_lis.append([key, value[0], value[1], value[2], value[3], value[4], value[5], value[6]])
-        print(con_lis)
+        
+        #print(con_lis)
         return con_lis
             
         #elif output_type == 1:
@@ -187,6 +196,7 @@ def show_recipe_full():
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    session['anythin'] = ''
     return render_template('index.html')
 
 
