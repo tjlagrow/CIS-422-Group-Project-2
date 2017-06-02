@@ -301,18 +301,20 @@
                 <th colspan="8">Found Ingredients</th>
             </tr>
         </thead>
-        {% for pic in d %}
-        <tbody>
-            <tr>
-                <td>
-                <a href="/../Food_Files/input_images/lychee.jpg" title="{{ pic[0] }}"><img src="/../Food_Files/input_images/lychee.jpg"></a>
-                </td>
-                {% for i in range(7) %}
-                <td>{{ pic[i + 1] }}</td>
-                {% endfor %}
-            </tr>
-        </tbody>
-        {% endfor %}
+        {% if anythin is not none %}
+            {% for pic in anythin %}
+            <tbody>
+                <tr>
+                    <td>
+                    <a href="/../Food_Files/input_images/lychee.jpg" title="{{ pic[0] }}"><img src="/../Food_Files/input_images/lychee.jpg"></a>
+                    </td>
+                    {% for i in range(7) %}
+                    <td>{{ pic[i + 1] }}</td>
+                    {% endfor %}
+                </tr>
+            </tbody>
+            {% endfor %}
+        {% endif %}
     </table>
   </div>
 
@@ -334,7 +336,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-      <p class="img-center"><strong>{{ d[0][0] }}</strong></p><br>
+      <p class="img-center"><strong>ll</strong></p><br>
         <a href="#demo" data-toggle="collapse">
           <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-reponsive img-thumbnail img-center" alt="Recipe Name">
         </a>
@@ -345,7 +347,7 @@
         </div>
       </div>
       <div class="item">
-        <p class="img-center"><strong>{{ d[1][0] }}</strong></p><br>
+        <p class="img-center"><strong>d</strong></p><br>
         <a href="#demo2" data-toggle="collapse">
           <img src="https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg" class="img-responsive img-thumbnail img-center" alt="Recipe Name" style = "display: block; height: 536px;">
         </a>
