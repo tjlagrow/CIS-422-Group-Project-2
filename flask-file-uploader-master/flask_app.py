@@ -22,9 +22,9 @@ from flask import Flask, request, render_template, redirect, url_for, send_from_
 from flask_bootstrap import Bootstrap
 from werkzeug import secure_filename
 sys.path.append(os.path.abspath("home/422Hopper/CIS-422-Group-Project-2/Food_Files"))
-from Food_Files.tag_images import process_all_images
+#from Food_Files.tag_images import process_all_images
 
-from Speech_File.record import record
+from Speech_Files.record import record
 
 
 from lib.upload_file import uploadfile

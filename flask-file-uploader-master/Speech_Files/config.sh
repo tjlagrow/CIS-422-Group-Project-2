@@ -2,11 +2,11 @@
 
 
 #updating pip:
-sudo apt-get install software-properties-common
-sudo apt-add-repository universe
-sudo apt-get update
-sudo apt-get install python-pip
+apt-get install software-properties-common
+apt-add-repository universe
+apt-get update
+apt-get install python-pip
 
 #installing pyaudio:
-sudo apt-get install portaudio19-dev
-sudo python3 -m pip install pyaudio
+apt-get install portaudio19-dev
+python -m pip install pyaudio
