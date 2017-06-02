@@ -1,0 +1,147 @@
+{
+ "sourceName": "Martha Stewart", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/slow-cooker-pear-and-apple-butter-735858.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "id": 735858, 
+ "veryPopular": true, 
+ "lowFodmap": false, 
+ "title": "Slow-Cooker Pear and Apple Butter", 
+ "pricePerServing": 161.0, 
+ "creditText": "Martha Stewart", 
+ "extendedIngredients": [
+  {
+   "originalString": "2 1/2 pounds Bartlett or Anjou pears (about 5)", 
+   "aisle": "Produce", 
+   "name": "anjou pears", 
+   "metaInformation": [
+    "( 5)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/anjou-pear.jpg", 
+   "unitLong": "pounds", 
+   "unitShort": "lb", 
+   "amount": 2.5, 
+   "id": 1009252, 
+   "unit": "pounds"
+  }, 
+  {
+   "originalString": "1 cinnamon stick", 
+   "aisle": "Spices and Seasonings", 
+   "name": "cinnamon stick", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 1002010, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/2 teaspoon coarse salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "coarse salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.5, 
+   "id": 2047, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1 cup packed dark-brown sugar", 
+   "aisle": "Baking", 
+   "name": "dark brown sugar", 
+   "metaInformation": [
+    "packed"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+   "unitLong": "cup", 
+   "unitShort": "cup", 
+   "amount": 1.0, 
+   "id": 10019334, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "2 1/2 pounds McIntosh or Gala apples (about 5)", 
+   "aisle": "Produce", 
+   "name": "gala apples", 
+   "metaInformation": [
+    "( 5)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "pounds", 
+   "unitShort": "lb", 
+   "amount": 2.5, 
+   "id": 9003, 
+   "unit": "pounds"
+  }
+ ], 
+ "healthScore": 3.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 48.0, 
+ "sourceUrl": "http://www.marthastewart.com/326858/slow-cooker-pear-and-apple-butter", 
+ "glutenFree": true, 
+ "vegan": true, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 8, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [], 
+     "step": "Remove cinnamon stick and reserve.", 
+     "number": 1, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+       "id": 1002010, 
+       "name": "cinnamon stick"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/slow-cooker.jpg", 
+       "id": 404718, 
+       "name": "slow cooker"
+      }
+     ], 
+     "step": "Transfer mixture to processor (in batches, if necessary) and process until smooth. Return to slow cooker, along with cinnamon stick, and cook on high, uncovered, until mixture is thick and browned, 4 hours. Discard cinnamon stick and let mixture cool.", 
+     "number": 2, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+       "id": 1002010, 
+       "name": "cinnamon stick"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Transfer to airtight containers and refrigerate, up to 3 weeks, or freeze, up to 3 months.", 
+     "number": 3, 
+     "ingredients": []
+    }
+   ], 
+   "name": ""
+  }
+ ], 
+ "aggregateLikes": 29088, 
+ "instructions": "Remove cinnamon stick and reserve. Transfer mixture to processor (in batches, if necessary) and process until smooth. Return to slow cooker, along with cinnamon stick, and cook on high, uncovered, until mixture is thick and browned, 4 hours. Discard cinnamon stick and let mixture cool. Transfer to airtight containers and refrigerate, up to 3 weeks, or freeze, up to 3 months.", 
+ "spoonacularSourceUrl": "https://spoonacular.com/slow-cooker-pear-and-apple-butter-735858", 
+ "dishTypes": [
+  "condiment", 
+  "dip", 
+  "spread"
+ ], 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 45, 
+ "servings": 6, 
+ "sustainable": false, 
+ "dairyFree": true, 
+ "whole30": false
+}

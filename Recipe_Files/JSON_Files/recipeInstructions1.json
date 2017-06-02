@@ -1,0 +1,221 @@
+{
+ "sourceName": "Foodista", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/Fall-Fruit-Compote-642554.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "id": 642554, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Fall Fruit Compote", 
+ "pricePerServing": 68.18, 
+ "creditText": "Foodista.com \u2013 The Cooking Encyclopedia Everyone Can Edit", 
+ "extendedIngredients": [
+  {
+   "originalString": "1/4 cup apple cider vinegar", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "apple cider vinegar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-cider-vinegar.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 2048, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/4 cup apple juice", 
+   "aisle": "Beverages", 
+   "name": "apple juice", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-juice.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 9016, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "2 Honeycrisp apples, cored and diced", 
+   "aisle": "Produce", 
+   "name": "apples", 
+   "metaInformation": [
+    "diced", 
+    "cored"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 9003, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "\u00bc cup brown sugar", 
+   "aisle": "Baking", 
+   "name": "brown sugar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 19334, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "\u00bc stick butter", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "butter", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg", 
+   "unitLong": "sticks", 
+   "unitShort": "stick", 
+   "amount": 0.25, 
+   "id": 1001, 
+   "unit": "stick"
+  }, 
+  {
+   "originalString": "1 cinnamon stick", 
+   "aisle": "Spices and Seasonings", 
+   "name": "cinnamon stick", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 1002010, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/2 cup dried cherries, chopped", 
+   "aisle": "Dried Fruits;Produce", 
+   "name": "dried cherries", 
+   "metaInformation": [
+    "dried", 
+    "chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries-dried.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 93822, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "2 pears, cored and diced", 
+   "aisle": "Produce", 
+   "name": "pears", 
+   "metaInformation": [
+    "diced", 
+    "cored"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 9252, 
+   "unit": ""
+  }
+ ], 
+ "healthScore": 0.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 7.0, 
+ "sourceUrl": "http://www.foodista.com/recipe/WKXKPMZ8/fall-fruit-compote", 
+ "glutenFree": true, 
+ "vegan": false, 
+ "veryHealthy": false, 
+ "dishTypes": [
+  "sauce"
+ ], 
+ "weightWatcherSmartPoints": 3, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg", 
+       "id": 404669, 
+       "name": "sauce pan"
+      }
+     ], 
+     "step": "Melt the butter in a medium saucepan over high heat.", 
+     "number": 1, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg", 
+       "id": 1001, 
+       "name": "butter"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Add the diced apples, pears, cherries, vinegar, apple juice, brown sugar, and cinnamon stick. Cook for 5 minutes. Lower the heat to medium and cook a few minutes more, until the fruit is tender and the liquid has boiled away.", 
+     "length": {
+      "number": 5, 
+      "unit": "minutes"
+     }, 
+     "number": 2, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+       "id": 1002010, 
+       "name": "cinnamon stick"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-juice.jpg", 
+       "id": 9016, 
+       "name": "apple juice"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+       "id": 19334, 
+       "name": "brown sugar"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+       "id": 9252, 
+       "name": "pear"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Add a bit more apple juice to keep the fruit from scorching. The compote will keep for a week, refrigerated.", 
+     "number": 3, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-juice.jpg", 
+       "id": 9016, 
+       "name": "apple juice"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Serve warm with potato latkes.", 
+     "number": 4, 
+     "ingredients": []
+    }
+   ], 
+   "name": ""
+  }
+ ], 
+ "aggregateLikes": 7, 
+ "instructions": "<ol><li>Melt the butter in a medium saucepan over high heat. Add the diced apples, pears, cherries, vinegar, apple juice, brown sugar, and cinnamon stick. Cook for 5 minutes. Lower the heat to medium and cook a few minutes more, until the fruit is tender and the liquid has boiled away. Add a bit more apple juice to keep the fruit from scorching. The compote will keep for a week, refrigerated. Serve warm with potato latkes.</li></ol>", 
+ "spoonacularSourceUrl": "https://spoonacular.com/fall-fruit-compote-642554", 
+ "license": "CC BY 3.0", 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 45, 
+ "servings": 8, 
+ "sustainable": false, 
+ "dairyFree": false, 
+ "whole30": false
+}

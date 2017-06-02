@@ -1,0 +1,470 @@
+{
+ "sourceName": "A Healthy Life for Me", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/apple-cherry-pear-almond-breakfast-muffins-812395.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "cookingMinutes": 30, 
+ "id": 812395, 
+ "veryPopular": true, 
+ "lowFodmap": false, 
+ "title": "Apple Cherry Pear Almond Breakfast Muffins", 
+ "preparationMinutes": 20, 
+ "pricePerServing": 79.81, 
+ "creditText": "A Healthy Life for Me", 
+ "extendedIngredients": [
+  {
+   "originalString": "1/2 cup almond meal", 
+   "aisle": "Gluten Free;Health Foods;Baking", 
+   "name": "almond meal", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/almond-meal-or-almond-flour.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 93740, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 apple, peeled, cored, cut into 1/4\" dice", 
+   "aisle": "Produce", 
+   "name": "apple", 
+   "metaInformation": [
+    "cored", 
+    "peeled", 
+    "cut into 1/4\" dice"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 9003, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 1/2 teaspoon baking powder", 
+   "aisle": "Baking", 
+   "name": "baking powder", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 1.5, 
+   "id": 18371, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/4 teaspoon baking soda", 
+   "aisle": "Baking", 
+   "name": "baking soda", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 18372, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/4 cup sliced blanched almonds", 
+   "aisle": "Nuts;Savory Snacks", 
+   "name": "blanched almonds", 
+   "metaInformation": [
+    "sliced"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/almonds-(sliced).jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 12062, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 cup + 2 tablespoons unsalted butter, room temperature", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "butter", 
+   "metaInformation": [
+    "unsalted", 
+    "room temperature"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 1001, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 1/2 teaspoon cinnamon", 
+   "aisle": "Spices and Seasonings", 
+   "name": "cinnamon", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 1.5, 
+   "id": 2010, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/2 cup dried cherries", 
+   "aisle": "Dried Fruits;Produce", 
+   "name": "dried cherries", 
+   "metaInformation": [
+    "dried"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries-dried.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 93822, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "2 large eggs, room temperature", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "eggs", 
+   "metaInformation": [
+    "large", 
+    "room temperature"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/egg.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 1123, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/2 cup granulated sugar", 
+   "aisle": "Baking", 
+   "name": "granulated sugar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 19335, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "zest from 1/2 lemon (1 tablespoon)", 
+   "aisle": "Produce", 
+   "name": "lemon zest", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/zest-lemon.jpg", 
+   "unitLong": "tablespoon", 
+   "unitShort": "Tbsp", 
+   "amount": 1.0, 
+   "id": 9156, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "2 tablespoon light brown sugar", 
+   "aisle": "Baking", 
+   "name": "light brown sugar", 
+   "metaInformation": [
+    "light"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
+   "unitLong": "tablespoons", 
+   "unitShort": "Tbsp", 
+   "amount": 2.0, 
+   "id": 19334, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "1/4 teaspoon nutmeg", 
+   "aisle": "Spices and Seasonings", 
+   "name": "nutmeg", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/nutmeg.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 2025, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1 pear, peeled, cored,cut into 1/4\" dice", 
+   "aisle": "Produce", 
+   "name": "pear", 
+   "metaInformation": [
+    "cored", 
+    "peeled", 
+    "cut into 1/4\" dice"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 9252, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/4 teaspoon salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 2047, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1 1/4 cup sef-rising flour", 
+   "aisle": "Baking", 
+   "name": "self rising flour", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/flour.png", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 1.25, 
+   "id": 20129, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "3/4 cup sour cream or plain yogurt (I used light sour cream)", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "sour cream", 
+   "metaInformation": [
+    "plain", 
+    "light", 
+    "sour", 
+    "(I used cream)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/sour-cream.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.75, 
+   "id": 1056, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "2 teaspoon vanilla extract", 
+   "aisle": "Baking", 
+   "name": "vanilla extract", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/vanilla-extract.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 2.0, 
+   "id": 2050, 
+   "unit": "teaspoon"
+  }
+ ], 
+ "healthScore": 1.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 26.0, 
+ "sourceUrl": "http://ahealthylifeforme.com/apple-cherry-pear-and-almond-breakfast-muffins/", 
+ "glutenFree": false, 
+ "vegan": false, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 10, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg", 
+       "id": 404784, 
+       "name": "oven"
+      }
+     ], 
+     "step": "Preheat oven to 350 degrees", 
+     "number": 1, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/muffin-tray.jpg", 
+       "id": 404671, 
+       "name": "muffin tray"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg", 
+       "id": 404784, 
+       "name": "oven"
+      }
+     ], 
+     "step": "Line 12 cup muffin tin with liners and spray with baking spray. Line a tray with almond slices and sit in oven for 4-5 minutes until almonds are just starting to toast, but not brown.", 
+     "length": {
+      "number": 5, 
+      "unit": "minutes"
+     }, 
+     "number": 2, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
+       "id": 404645, 
+       "name": "frying pan"
+      }
+     ], 
+     "step": "Remove pan and let cool.", 
+     "number": 3, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
+       "id": 404783, 
+       "name": "bowl"
+      }
+     ], 
+     "step": "Place flour, almond meal, baking powder, baking soda, cinnamon, nutmeg, and salt in a bowl and mix well to combine. Set aside", 
+     "number": 4, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg", 
+       "id": 18371, 
+       "name": "baking powder"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/almonds.jpg", 
+       "id": 93740, 
+       "name": "almond meal"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg", 
+       "id": 18372, 
+       "name": "baking soda"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+       "id": 2010, 
+       "name": "cinnamon"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/ground-nutmeg.jpg", 
+       "id": 2025, 
+       "name": "nutmeg"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+       "id": 2047, 
+       "name": "salt"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "In a mixer beat 1/2 cup of the butter and sugar until creamed.", 
+     "number": 5, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg", 
+       "id": 1001, 
+       "name": "butter"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
+       "id": 19335, 
+       "name": "sugar"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Add one egg at a time until mixed. Scrape down sides of mixer and add sour cream, zest and vanilla blend.", 
+     "number": 6, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/sour-cream.jpg", 
+       "id": 1056, 
+       "name": "sour cream"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/vanilla.jpg", 
+       "id": 2050, 
+       "name": "vanilla"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/egg.jpg", 
+       "id": 1123, 
+       "name": "egg"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Add flour ingredients and mix until just blended (do not over-mix)", 
+     "number": 7, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
+       "id": 404783, 
+       "name": "bowl"
+      }
+     ], 
+     "step": "Remove bowl from mixer and by hand add apple and cherries, mixing.Spoon mixture into each cup filling about 2/3 of the way.In a small bowl combine, pear, brown sugar, 2 tablespoons of butter and almonds and combine.", 
+     "number": 8, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+       "id": 19334, 
+       "name": "brown sugar"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg", 
+       "id": 1001, 
+       "name": "butter"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+       "id": 9252, 
+       "name": "pear"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Place on top of each muffin.", 
+     "number": 9, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Bake for 25-30 minutes or until the center of a muffin comes out clean.", 
+     "length": {
+      "number": 30, 
+      "unit": "minutes"
+     }, 
+     "number": 10, 
+     "ingredients": []
+    }
+   ], 
+   "name": ""
+  }
+ ], 
+ "aggregateLikes": 1389, 
+ "instructions": "Preheat oven to 350 degreesLine 12 cup muffin tin with liners and spray with baking spray. Line a tray with almond slices and sit in oven for 4-5 minutes until almonds are just starting to toast, but not brown. Remove pan and let cool.Place flour, almond meal, baking powder, baking soda, cinnamon, nutmeg, and salt in a bowl and mix well to combine. Set asideIn a mixer beat 1/2 cup of the butter and sugar until creamed. Add one egg at a time until mixed. Scrape down sides of mixer and add sour cream, zest and vanilla blend.Add flour ingredients and mix until just blended (do not over-mix)Remove bowl from mixer and by hand add apple and cherries, mixing.Spoon mixture into each cup filling about 2/3 of the way.In a small bowl combine, pear, brown sugar, 2 tablespoons of butter and almonds and combine.Place on top of each muffin.Bake for 25-30 minutes or until the center of a muffin comes out clean.", 
+ "spoonacularSourceUrl": "https://spoonacular.com/apple-cherry-pear-almond-breakfast-muffins-812395", 
+ "dishTypes": [
+  "morning meal", 
+  "brunch", 
+  "breakfast"
+ ], 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 50, 
+ "servings": 12, 
+ "sustainable": false, 
+ "dairyFree": false, 
+ "whole30": false
+}

@@ -1,6 +1,7 @@
 """
-getIngredients.py
-
+filename: getIngredients.py
+author: Theodore J. LaGrow
+language: python 2.7x
 """
 
 import unirest

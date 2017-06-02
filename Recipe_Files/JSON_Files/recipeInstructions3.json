@@ -1,0 +1,256 @@
+{
+ "sourceName": "Food.com", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/award_winning_green_tomato_mincemeat-123075.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "cookingMinutes": 75, 
+ "id": 123075, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Award Winning Green Tomato Mincemeat", 
+ "preparationMinutes": 40, 
+ "pricePerServing": 76.75, 
+ "creditText": "Food.com", 
+ "extendedIngredients": [
+  {
+   "originalString": "1/3 cup apple cider vinegar", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "apple cider vinegar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-cider-vinegar.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.3333333333333333, 
+   "id": 2048, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/3 cup balsamic vinegar", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "balsamic vinegar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/balsamic-vinegar.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.3333333333333333, 
+   "id": 2069, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 cup candied orange peel", 
+   "aisle": "Produce", 
+   "name": "candied orange peel", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/dried-fruit-mixed.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 9426, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "100 g shredded carrots", 
+   "aisle": "Produce", 
+   "name": "carrots", 
+   "metaInformation": [
+    "shredded"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/carrots.jpg", 
+   "unitLong": "grams", 
+   "unitShort": "g", 
+   "amount": 100.0, 
+   "id": 11124, 
+   "unit": "g"
+  }, 
+  {
+   "originalString": "2 cups dark brown sugar, firmly packed", 
+   "aisle": "Baking", 
+   "name": "dark brown sugar", 
+   "metaInformation": [
+    "dark", 
+    "packed"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 2.0, 
+   "id": 10019334, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "165 g chopped dried pears", 
+   "aisle": "Dried Fruits;Produce", 
+   "name": "dried pears", 
+   "metaInformation": [
+    "dried", 
+    "chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-dried.jpg", 
+   "unitLong": "grams", 
+   "unitShort": "g", 
+   "amount": 165.0, 
+   "id": 9259, 
+   "unit": "g"
+  }, 
+  {
+   "originalString": "1 kg granny smith apple, half-peeled and diced", 
+   "aisle": "Produce", 
+   "name": "granny smith apple", 
+   "metaInformation": [
+    "diced"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/red-delicious-apples.png", 
+   "unitLong": "kg", 
+   "unitShort": "kg", 
+   "amount": 1.0, 
+   "id": 1029003, 
+   "unit": "kg"
+  }, 
+  {
+   "originalString": "250 g thompson seedless grapes", 
+   "aisle": "Produce", 
+   "name": "grapes", 
+   "metaInformation": [
+    "seedless"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/white-grapes.jpg", 
+   "unitLong": "grams", 
+   "unitShort": "g", 
+   "amount": 250.0, 
+   "id": 9132, 
+   "unit": "g"
+  }, 
+  {
+   "originalString": "650 g green tomatoes, chopped", 
+   "aisle": "Produce", 
+   "name": "green tomatoes", 
+   "metaInformation": [
+    "green", 
+    "chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/green-tomato.jpg", 
+   "unitLong": "grams", 
+   "unitShort": "g", 
+   "amount": 650.0, 
+   "id": 11527, 
+   "unit": "g"
+  }, 
+  {
+   "originalString": "1 tablespoon ground cinnamon", 
+   "aisle": "Spices and Seasonings", 
+   "name": "ground cinnamon", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+   "unitLong": "tablespoon", 
+   "unitShort": "Tbsp", 
+   "amount": 1.0, 
+   "id": 2010, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "1/4 teaspoon ground cloves (omit if freezing, stir in once thawed)", 
+   "aisle": "Spices and Seasonings", 
+   "name": "ground cloves", 
+   "metaInformation": [
+    "thawed", 
+    "(omit if freezing, stir in once )"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cloves.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 2011, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/4 teaspoon ground nutmeg", 
+   "aisle": "Spices and Seasonings", 
+   "name": "ground nutmeg", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/nutmeg.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 2025, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/4 cup fresh lemon juice", 
+   "aisle": "Produce", 
+   "name": "lemon juice", 
+   "metaInformation": [
+    "fresh"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/lemon-juice.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 9152, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "2 tablespoons blackstrap molasses", 
+   "aisle": "Baking", 
+   "name": "molasses", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/molasses.png", 
+   "unitLong": "tablespoons", 
+   "unitShort": "Tbsp", 
+   "amount": 2.0, 
+   "id": 19304, 
+   "unit": "tablespoons"
+  }, 
+  {
+   "originalString": "1 teaspoon salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "teaspoon", 
+   "unitShort": "tsp", 
+   "amount": 1.0, 
+   "id": 2047, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/4 cup water", 
+   "aisle": "Beverages", 
+   "name": "water", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/water.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 14412, 
+   "unit": "cup"
+  }
+ ], 
+ "healthScore": 3.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 22.0, 
+ "sourceUrl": "http://www.food.com/recipe/award-winning-green-tomato-mincemeat-465631", 
+ "glutenFree": true, 
+ "vegan": true, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 5, 
+ "analyzedInstructions": [], 
+ "aggregateLikes": 1, 
+ "instructions": null, 
+ "spoonacularSourceUrl": "https://spoonacular.com/award-winning-green-tomato-mincemeat-123075", 
+ "dishTypes": [
+  "antipasti", 
+  "starter", 
+  "snack", 
+  "appetizer", 
+  "antipasto", 
+  "hor d'oeuvre"
+ ], 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 115, 
+ "servings": 20, 
+ "sustainable": false, 
+ "dairyFree": true, 
+ "whole30": false
+}
