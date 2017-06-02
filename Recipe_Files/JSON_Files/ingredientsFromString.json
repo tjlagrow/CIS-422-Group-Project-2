@@ -1,20 +1,7 @@
 {
- "processedInMs": 25, 
- "annotations": [
-  {
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/carrots.jpg", 
-   "tag": "ingredient", 
-   "annotation": "carrots"
-  }, 
-  {
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/tomato.jpg", 
-   "tag": "ingredient", 
-   "annotation": "tomato"
-  }, 
-  {
-   "image": "https://spoonacular.com/menuItemImages/mayonnaise-dish.jpg", 
-   "tag": "ingredient", 
-   "annotation": "mayo"
-  }
+ "ingredients": [
+  "carrots", 
+  "tomato", 
+  "mayo"
  ]
 }
