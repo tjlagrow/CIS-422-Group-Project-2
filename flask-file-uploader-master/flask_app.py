@@ -68,7 +68,7 @@ def create_thumbnail(image):
         return True
 
     except:
-        print traceback.format_exc()
+        print (traceback.format_exc())
         return False
 
 @app.route("/upload", methods=['GET', 'POST'])
@@ -153,30 +153,29 @@ def get_file(filename):
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
     # Activate Clarifai here.
+    #process_all_images()
     anythin = read_file(app.config['INPUT'], 0)
-    #process_all_images()
-    return render_template('index.html', d = anythin)
+    
+    return render_template('index.html', anythin = anythin)
 
-    read_file(app.config['INPUT'])
-    #process_all_images()
-    #subprocess.call(['python3','../Food_Files/tag_images.py'])
-    return redirect(url_for('index'))
 
 #@app.route('/table', methods=['GET', 'POST'])
 def read_file(filename, output_type):
     try:
-        with open(os.getcwd() + filename) as json_data:
+        with open(os.getcwd() + filename, 'r') as json_data:
                 d = json.load(json_data)
-                #print (d)
+                print (type(d))
                 con_lis = []
-        print 'starting'
-        if output_type == 0:
-            for key, value in d.iteritems():
-                con_lis.append([key, value[0], value[1], value[2], value[3], value[4], value[5]])
-            return con_lis
+        print ('starting')
+        #if not output_type:
+        print (d)
+        for key, value in d.iteritems():
+            con_lis.append([key, value[0], value[1], value[2], value[3], value[4], value[5], value[6]])
+        print(con_lis)
+        return con_lis
             
-        elif output_type == 1:
-             print 'not ready'
+        #elif output_type == 1:
+        print ('not ready')
     except:
         print ('false!!')
 
