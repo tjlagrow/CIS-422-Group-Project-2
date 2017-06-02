@@ -27,7 +27,7 @@ app.config['SECRET_KEY'] = 'hard to guess string'
 #app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/Food_Files/input_images/'
 #app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
 app.config['OUTPUT'] = '/Food_Files/output/foods.json'
-app.config['RECIPIE'] = 'CIS-422-Group-Project-2/Recipe_Files/output/recipiesOutput.json'
+app.config['RECIPIE'] = 'CIS-422-Group-Project-2/Recipe_Files/JSON_Files/recipiesOutput.json'
 app.config['THUMBNAIL_FOLDER'] = 'Food_Files/input_images/thumbnail'
 app.config['UPLOAD_FOLDER'] = 'Food_Files/input_images/'
 #app.config['UPLOAD_FOLDER'] = '../Food_Files/input_images/'
@@ -174,6 +174,8 @@ def read_file(filename, output_type):
             return con_lis
             
         elif output_type == 1:
+            for key, value in d.iteritems():
+                con_lis.append(key, 
             return d
     except:
         print ('false!!')
