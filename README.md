@@ -1,5 +1,5 @@
 # Hopper's Heapin' Jalapeños
-## CIS-422-Group-Project-2 (<a href="http://422hopper.pythonanywhere.com/" target="_blank">Application!</a>) 
+## CIS-422-Group-Project-2 (<a href="http://422hopper.pythonanywhere.com/" target="_blank">Application Demo! Click Me!</a>) 
 
 This is the GitHub repository for the second group project for CIS 422 Software Methodologies taught by Dr. Michael Young.
 
