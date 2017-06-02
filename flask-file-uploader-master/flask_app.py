@@ -26,7 +26,7 @@ app.config['SECRET_KEY'] = 'hard to guess string'
 #Uncomment to run on pythonanywhere
 #app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/Food_Files/input_images/'
 #app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
-app.config['OUTPUT'] = '/Food_Files/output/foods.json'
+app.config['OUTPUT'] = 'Food_Files/output/foods.json'
 app.config['RECIPIE'] = 'CIS-422-Group-Project-2/Recipe_Files/JSON_Files/recipiesOutput.json'
 app.config['THUMBNAIL_FOLDER'] = 'Food_Files/input_images/thumbnail'
 app.config['UPLOAD_FOLDER'] = 'Food_Files/input_images/'
@@ -57,6 +57,7 @@ def gen_file_name(filename):
 
 
 def create_thumbnail(image):
+    #create small thumbmail
     try:
         base_width = 80
         img = Image.open(os.path.join(app.config['UPLOAD_FOLDER'], image))
@@ -98,7 +99,7 @@ def upload():
 
                 # return json for js call back
                 result = uploadfile(name=filename, type=mime_type, size=size)
-            tag_images()
+            #tag_images()
             return simplejson.dumps({"files": [result.get_file()]})
 
     if request.method == 'GET':
@@ -113,7 +114,6 @@ def upload():
         file_display = []
 
         for f in files:
-            #size = os.path.getsize(os.path.join(app.config['UPLOAD_FOLDER'], f))
             size = os.path.getsize(f)
             file_saved = uploadfile(name=f, size=size)
             file_display.append(file_saved.get_file())
@@ -121,15 +121,6 @@ def upload():
         return simplejson.dumps({"files": file_display})
 
     return redirect(url_for('index'))
-
-@app.route('/tag_images', methods=['GET', 'POST'])
-def tag_images():
-    # Activate Clarifai here.
-    #process_all_images()
-    anythin = read_file(app.config['OUTPUT'], 0)
-    #session['anythin'] = anythin
-
-    return render_template('index.html', anythin = anythin)
 
 @app.route("/delete/<string:filename>", methods=['DELETE'])
 def delete(filename):
@@ -150,23 +141,32 @@ def delete(filename):
 # serve static files
 @app.route("/thumbnail/<string:filename>", methods=['GET'])
 def get_thumbnail(filename):
+    print (app.config['THUMBNAIL_FOLDER'])
+    print filename
     return send_from_directory(app.config['THUMBNAIL_FOLDER'], filename=filename)
 
 
-@app.route("/data/<string:filename>", methods=['GET'])
+@app.route("/input_images/<string:filename>", methods=['GET'])
 def get_file(filename):
     return send_from_directory(os.path.join(app.config['UPLOAD_FOLDER']), filename=filename)
 
-#@app.route('/table', methods=['GET', 'POST'])
+
+@app.route('/tag_images', methods=['GET', 'POST'])
+def tag_images():
+    # Activate Clarifai here.
+    #process_all_images()
+    anythin = read_file(app.config['OUTPUT'], 0)
+    #session['anythin'] = anythin
+    print anythin
+
+    return render_template('index.html', anythin = anythin)
+
 def read_file(filename, output_type):
     try:
-        with open(os.getcwd() + filename, 'r') as json_data:
+        with open( filename ) as json_data:
                 d = json.load(json_data)
-                #print (type(d))
                 con_lis = []
-                #print (con_lis)
-        #print ('starting')
-        if not output_type == 0:
+        if output_type == 0:
         #print (d)
             for key, value in d.iteritems():
             #for key, value in d.items():
@@ -175,16 +175,22 @@ def read_file(filename, output_type):
             
         elif output_type == 1:
             for key, value in d.iteritems():
-                con_lis.append(key, 
+                con_lis.append(key) 
             return d
     except:
         print ('false!!')
 
 
-@app.route('/recipes', methods=['GET', 'POST'])
+@app.route('/topfive', methods=['GET', 'POST'])
 def show_recipe_full():
     d = read_file(app.config['RECIPIE'], 1)
     return render_template('index.html', d = d)
+
+@app.route('/recipe', methods=['GET', 'POST'])
+def show_top5():
+    e = read_file(app.config['RECIPIE'], 1)
+    print 'yah!'
+    return render_template('templates/main.html')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():

@@ -245,16 +245,16 @@
 
  
         <form action="/tag_images" method="post" enctype="multipart/form-data">
-            <button class="btn" type="submit" value="Find Foods">Skip
+            <button class="btn" type="submit" value="Find Foods">Find Foods
             <i class="glyphicon glyphicon-share-alt"></i>
             </button>
         </form>
         <button class="btn" onClick="loading()">
-            <span onclick="">Generate</span>
+            <span onclick="">k</span>
             <i class="glyphicon glyphicon-share-alt"></i>
         </button>
         <form action="/recipes" method="post" enctype="multipart/form-data">
-            <button class="btn" type="submit" value="Get Recipe">Generate
+            <button class="btn" type="submit" value="Get Recipe"  onClick="loading(); GetCellValue()">Generate
             <i class="glyphicon glyphicon-list-alt"></i>
             </button>
         </form>
@@ -278,6 +278,33 @@ function myFunction(elem) {
     var firstRow = document.getElementById("cell"+ elem);
     firstRow.parentNode.removeChild(firstRow);
 }
+
+function GetCellValues() {
+        var table = document.getElementById('myTab');
+        for (var r = 0, n = table.rows.length; r < n; r++) {
+            for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {
+                alert(table.rows[r].cells[c].innerHTML);
+            }
+        }
+}
+
+$(function() {
+    $('button').click(function() {
+        var user = $('#txtUsername').val();
+        var pass = $('#txtPassword').val();
+        $.ajax({
+            url: '/signUpUser',
+            data: $('form').serialize(),
+            type: 'POST',
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(error) {
+                console.log(error);
+            }
+        });
+    });
+});
 </script>
 
 <div id ="output" data-toggle="collapse">
@@ -295,7 +322,7 @@ function myFunction(elem) {
             {% for pic in anythin %}
                 <tr id = "myRow">
                     <td>
-                    <a href="/../Food_Files/input_images/lychee.jpg" title="{{ pic[0] }}"><img src="/../Food_Files/input_images/lychee.jpg"></a>
+                    <a href="/../Food_Files/input_images/lychee.jpg" title="{{ pic[0] }}"><img src="../Food_Files/input_images/lychee.jpg"></a>
                     </td>
                     {% for i in range(7) %}
                     <td id = "cell{{ i }}">{{ pic[i + 1] }}
