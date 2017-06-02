@@ -19,7 +19,7 @@ from flask import Flask, request, render_template, redirect, url_for, send_from_
 from flask_bootstrap import Bootstrap
 from werkzeug import secure_filename
 sys.path.append(os.path.abspath("home/422Hopper/CIS-422-Group-Project-2/Food_Files"))
-#import cloudy_vision
+from Food_Files.tag_images import process_all_images
 
 
 from lib.upload_file import uploadfile
@@ -31,7 +31,7 @@ app.config['INPUT'] = '/templates/foods.json'
 #app.config['UPLOAD_FOLDER'] = '/../Food_Files/input_images/'
 #app.config['UPLOAD_FOLDER'] = 'data/'
 app.config['THUMBNAIL_FOLDER'] = 'data/thumbnail'
-app.config['UPLOAD_FOLDER'] = '../Food_Files/input_images/'
+app.config['UPLOAD_FOLDER'] = 'Food_Files/input_images/'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 
 ALLOWED_EXTENSIONS = set(['gif', 'png', 'jpg', 'jpeg', 'bmp', 'JPG'])
@@ -157,7 +157,8 @@ def get_file(filename):
 def tag_images():
     # Activate Clarifai here.
     read_file(app.config['INPUT'])
-    subprocess.call(['python3','../Food_Files/tag_images.py'])
+    process_all_images()
+    #subprocess.call(['python3','../Food_Files/tag_images.py'])
     return redirect(url_for('index'))
 
 #@app.route('/table', methods=['GET', 'POST'])
