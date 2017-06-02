@@ -32,7 +32,7 @@ else:
 
 	
 
-def getRecipies(numbOfRecipies, incoming_ingredients):
+def getRecipies(numbOfRecipies, incomingIngredients):
 	"""
 	This method will take in incoming list of ingredients and convert
 	the items to be able to be parsed into the spoonacular API call.
@@ -42,7 +42,7 @@ def getRecipies(numbOfRecipies, incoming_ingredients):
 
 	# formating the ingredients list to correct format for API call
 	ingredients = ""
-	for i in incoming_ingredients:
+	for i in incomingIngredients:
 		# handling multiple words for ingredient
 		if len(i) != 1:
 			i.replace(" ", "+")
@@ -103,13 +103,13 @@ def getInstructions(number, i):
 
 
 
-def APICalls(INCOMING_INGREDIENTS):
+def APICalls(incomingIngredients):
 	"""
 	This function will call both methods to the spoonacular API
 	"""
 
 	# calling the recipies by ingredients API call passing the global variable
-	getRecipies(NUMBER_OF_RECIPIES, INCOMING_INGREDIENTS)
+	getRecipies(NUMBER_OF_RECIPIES, incomingIngredients)
 
 	# opening the JSON file produced by the first API call
 	with open('JSON_Files/getRecipiesByIngredients.json', 'r') as f:
@@ -174,13 +174,19 @@ def outputJSON():
 	with open("JSON_Files/recipiesOutput.json", "w") as fout:
 		json.dump(outputFileDict, fout, indent=1)
 
-def run(INCOMING_INGREDIENTS):
+def run(incomingIngredients):
 	"""
 	This function is used to be called easier for flask
 	"""
-	APICalls(INCOMING_INGREDIENTS)   # Part 1: gathering meta data
-	outputJSON() # Part 2: formatting necessary data
+	# given an arguament so the function can be called from flask
+	APICalls(incomingIngredients)    # Part 1: gathering meta data
+	outputJSON()                     # Part 2: formatting necessary data
 
 
 if __name__ == "__main__":
-	run()
+	"""
+	### UNCOMMENT FOR TESTING ###
+
+	f_list = ["apples", "beef", "brown sugar", "tomato"]
+	run(f_lsit)
+	"""

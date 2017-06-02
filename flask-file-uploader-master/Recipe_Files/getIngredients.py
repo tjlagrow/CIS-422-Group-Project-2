@@ -25,10 +25,10 @@ else:
 #################################################################
 
 
-def getIngredientsFromString():
-
-	# stub string
-	string = "Hello, world! This is a test. I have a tomato in the fridge.  There is a bundle of carrots next to it with three potatos.  There is a jar of mayo next to it."
+def getIngredientsFromString(string):
+	"""
+	A function to call the spoonacular API to grab the ingredience from a string
+	"""
 	
 	# making Spoonacular API call
 	response = unirest.post("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/detect",
@@ -46,9 +46,11 @@ def getIngredientsFromString():
 	b = response.raw_body
 	# loading data into a json format
 	b_json = json.loads(b)
-	
+	# dictonary to hold the outgoing items for the json file
 	ingredients = {}
+	# start the correct tagging
 	ingredients["ingredients"] = []
+	# parse the given JSON file recieved from spoonacular
 	for i in range(len(b_json["annotations"])):
 		ingredients["ingredients"].append(b_json["annotations"][i]["annotation"])
 	# putting the extracted data into a json file	
@@ -57,5 +59,8 @@ def getIngredientsFromString():
 
 
 if __name__ == "__main__":
-	getIngredientsFromString()
+	# stub string
+	string = "Hello, world! This is a test. I have a tomato in the fridge.  There is a bundle of carrots next to it with three potatoes.  There is a jar of mayo next to it."
+	# given an arguament so the function can be called from flask
+	getIngredientsFromString(string)
 

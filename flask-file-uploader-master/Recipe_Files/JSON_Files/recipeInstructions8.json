@@ -1,167 +1,267 @@
 {
- "sourceName": "BBC Good Food", 
+ "sourceName": "The Kitchen Magpie", 
  "cuisines": [], 
- "image": "https://spoonacular.com/recipeImages/Apple--pear---cherry-compote-210079.jpg", 
+ "image": "https://spoonacular.com/recipeImages/Charlynns-Green-Tomato-Chow-570819.jpg", 
  "cheap": false, 
  "gaps": "no", 
- "cookingMinutes": 20, 
- "id": 210079, 
+ "cookingMinutes": 0, 
+ "id": 570819, 
  "veryPopular": false, 
  "lowFodmap": false, 
- "title": "Apple, pear & cherry compote", 
- "preparationMinutes": 30, 
- "pricePerServing": 131.39, 
- "creditText": "BBC Good Food", 
+ "title": "Charlynn\u2019s Green Tomato Chow", 
+ "preparationMinutes": 20, 
+ "pricePerServing": 257.7, 
+ "creditText": "The Kitchen Magpie", 
  "extendedIngredients": [
   {
-   "originalString": "8 eating apples, peeled, cored and cut into chunks", 
+   "originalString": "16 apples (in cheesecloth)-any kind of apples will do, my grandmother usually used the crab apples from her backyard. This is for natural pectin in the relish.", 
    "aisle": "Produce", 
    "name": "apples", 
    "metaInformation": [
-    "cored", 
-    "peeled", 
-    "cut into chunks"
+    "for natural pectin in the relish.", 
+    "(in cheesecloth)"
    ], 
    "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
    "unitLong": "", 
    "unitShort": "", 
-   "amount": 8.0, 
+   "amount": 16.0, 
    "id": 9003, 
    "unit": ""
   }, 
   {
-   "originalString": "4 medium Bramley apples, peeled, cored and cut into chunks", 
-   "aisle": "Produce", 
-   "name": "bramley apples", 
-   "metaInformation": [
-    "cored", 
-    "medium", 
-    "peeled", 
-    "cut into chunks"
-   ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
-   "unitLong": "", 
-   "unitShort": "", 
-   "amount": 4.0, 
-   "id": 1009003, 
-   "unit": ""
-  }, 
-  {
-   "originalString": "280g dried sour cherries (or dried cranberries)", 
-   "aisle": "Produce", 
-   "name": "cherries", 
-   "metaInformation": [
-    "dried", 
-    "sour", 
-    "(or cranberries)"
-   ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
-   "unitLong": "grams", 
-   "unitShort": "g", 
-   "amount": 280.0, 
-   "id": 9070, 
-   "unit": "g"
-  }, 
-  {
-   "originalString": "8 firm pears, peeled, cored and thickly sliced", 
-   "aisle": "Produce", 
-   "name": "pears", 
-   "metaInformation": [
-    "firm", 
-    "cored", 
-    "peeled", 
-    "sliced"
-   ], 
-   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
-   "unitLong": "", 
-   "unitShort": "", 
-   "amount": 8.0, 
-   "id": 9252, 
-   "unit": ""
-  }, 
-  {
-   "originalString": "6 tbsp sugar, or to taste", 
+   "originalString": "2 cups brown sugar", 
    "aisle": "Baking", 
-   "name": "sugar", 
+   "name": "brown sugar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 2.0, 
+   "id": 19334, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "1 cup cider vinegar", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "cider vinegar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-cider-vinegar.jpg", 
+   "unitLong": "cup", 
+   "unitShort": "cup", 
+   "amount": 1.0, 
+   "id": 2048, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "30 green tomatoes", 
+   "aisle": "Produce", 
+   "name": "green tomatoes", 
    "metaInformation": [
-    "to taste"
+    "green"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/green-tomato.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 30.0, 
+   "id": 11527, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "16 onions", 
+   "aisle": "Produce", 
+   "name": "onions", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-onion.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 16.0, 
+   "id": 11282, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "\u00bd cup pickling spices (in cheesecloth)", 
+   "aisle": "Spices and Seasonings", 
+   "name": "pickling spices", 
+   "metaInformation": [
+    "(in cheesecloth)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pickling-spices.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 1012001, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "3 cups white sugar", 
+   "aisle": "Baking", 
+   "name": "white sugar", 
+   "metaInformation": [
+    "white"
    ], 
    "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
-   "unitLong": "tablespoons", 
-   "unitShort": "Tbsp", 
-   "amount": 6.0, 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 3.0, 
    "id": 19335, 
-   "unit": "tbsp"
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "2 cups white vinegar", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "white vinegar", 
+   "metaInformation": [
+    "white"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/vinegar-(white).jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 2.0, 
+   "id": 2053, 
+   "unit": "cups"
   }
  ], 
- "healthScore": 4.0, 
+ "healthScore": 19.0, 
  "imageType": "jpg", 
- "spoonacularScore": 41.0, 
- "sourceUrl": "http://www.bbcgoodfood.com/recipes/355604/apple-pear-and-cherry-compote", 
+ "spoonacularScore": 80.0, 
+ "sourceUrl": "http://www.thekitchenmagpie.com/charlynns-green-tomato-chow", 
  "glutenFree": true, 
  "vegan": true, 
  "veryHealthy": false, 
- "weightWatcherSmartPoints": 1, 
+ "weightWatcherSmartPoints": 20, 
  "analyzedInstructions": [
   {
    "steps": [
     {
-     "equipment": [
-      {
-       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
-       "id": 404645, 
-       "name": "frying pan"
-      }
-     ], 
-     "step": "Put the apples and pears in a pan withthe sugar and 50ml water. Bring to asimmer, then gently cook, covered, for15 mins or so until the Bramley applehas collapsed to a pur\u00e9e and the eatingapple and pear are tender (stir to makesure it doesn\u2019t catch on the bottom).Stir in the cherries or cranberries for1 min, taste and add a little more sugarif necessary. Can be chilled for 3-5 days.", 
-     "length": {
-      "number": 16, 
-      "unit": "minutes"
-     }, 
+     "equipment": [], 
+     "step": "Slice and mix the tomatoes and onions in a non-reactive container.", 
      "number": 1, 
      "ingredients": [
       {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
-       "id": 9070, 
-       "name": "cherries"
-      }, 
-      {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
-       "id": 9003, 
-       "name": "apple"
-      }, 
-      {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
-       "id": 9252, 
-       "name": "pear"
-      }, 
-      {
-       "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
-       "id": 19335, 
-       "name": "sugar"
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-onion.jpg", 
+       "id": 11282, 
+       "name": "onion"
       }
      ]
     }, 
     {
      "equipment": [], 
-     "step": "Serve with vanilla ice cream, if you like. See 'Goes well with' for ideas for using up the compote.", 
+     "step": "Add \u00bd cup pickling salt.", 
      "number": 2, 
      "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Let mixture sit overnight.", 
+     "number": 3, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Mixture will stink up the house, better to put it in the garage if you don\u2019t want the smell of onions all through the place.", 
+     "number": 4, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-onion.jpg", 
+       "id": 11282, 
+       "name": "onion"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg", 
+       "id": 404752, 
+       "name": "pot"
+      }
+     ], 
+     "step": "Drain mixture well, put in a large stockpot.", 
+     "number": 5, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/cheesecloth.jpg", 
+       "id": 404647, 
+       "name": "cheesecloth"
+      }
+     ], 
+     "step": "Add:apples (in cheesecloth)-any kind of apples will do, my grandmother usually used the crab apples from her backyard.cups white sugarcups brown sugar/2 cup pickling spices (in cheesecloth)cup cider vinegarcups white vinegar", 
+     "number": 6, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/pickling-spices.jpg", 
+       "id": 1012001, 
+       "name": "pickling spices"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/vinegar-(white).jpg", 
+       "id": 2053, 
+       "name": "distilled white vinegar"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+       "id": 19334, 
+       "name": "brown sugar"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "It won\u2019t look like enough liquid in the pot-I added 2 more cups of vinegar, and it came out watery and really tart. Just make sure you bring it to a boil slowly to avoid scorching, and then the liquid will come out of the apples. Bring it to a boil, then lower the temp to a good simmer. Cook for an hour and a half, or until veggies reach desired consistency.", 
+     "number": 7, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/vinegar-(white).jpg", 
+       "id": 2053, 
+       "name": "vinegar"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/stock-pot.jpg", 
+       "id": 404752, 
+       "name": "pot"
+      }
+     ], 
+     "step": "Remove the apples from the pot and can the chow!", 
+     "number": 8, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }
+     ]
     }
    ], 
    "name": ""
   }
  ], 
- "aggregateLikes": 56, 
- "instructions": "Put the apples and pears in a pan withthe sugar and 50ml water. Bring to asimmer, then gently cook, covered, for15 mins or so until the Bramley applehas collapsed to a pur\u00e9e and the eatingapple and pear are tender (stir to makesure it doesn\u2019t catch on the bottom).Stir in the cherries or cranberries for1 min, taste and add a little more sugarif necessary. Can be chilled for 3-5 days.Serve with vanilla ice cream, if you like. See 'Goes well with' for ideas for using up the compote.", 
- "spoonacularSourceUrl": "https://spoonacular.com/apple-pear-cherry-compote-210079", 
+ "aggregateLikes": 63, 
+ "instructions": "Slice and mix the tomatoes and onions in a non-reactive container. Add \u00bd cup pickling salt. Let mixture sit overnight. Mixture will stink up the house, better to put it in the garage if you don\u2019t want the smell of onions all through the place.Drain mixture well, put in a large stockpot. Add:apples (in cheesecloth)-any kind of apples will do, my grandmother usually used the crab apples from her backyard.cups white sugarcups brown sugar/2 cup pickling spices (in cheesecloth)cup cider vinegarcups white vinegarIt won\u2019t look like enough liquid in the pot-I added 2 more cups of vinegar, and it came out watery and really tart. Just make sure you bring it to a boil slowly to avoid scorching, and then the liquid will come out of the apples. Bring it to a boil, then lower the temp to a good simmer. Cook for an hour and a half, or until veggies reach desired consistency. Remove the apples from the pot and can the chow!", 
+ "spoonacularSourceUrl": "https://spoonacular.com/charlynns-green-tomato-chow-570819", 
  "dishTypes": [
-  "sauce"
+  "side dish"
  ], 
  "vegetarian": true, 
  "ketogenic": false, 
- "readyInMinutes": 50, 
- "servings": 12, 
+ "readyInMinutes": 20, 
+ "servings": 14, 
  "sustainable": false, 
  "dairyFree": true, 
  "whole30": false
