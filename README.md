@@ -1,10 +1,15 @@
 # Hopper's Heapin' Jalapeños
-## CIS-422-Group-Project-2 (<a href="http://422hopper.pythonanywhere.com/" target="_blank">Demo</a>) 
+## CIS-422-Group-Project-2 (<a href="http://422hopper.pythonanywhere.com/" target="_blank">Application!</a>) 
 
 This is the GitHub repository for the second group project for CIS 422 Software Methodologies taught by Dr. Michael Young.
 
 ![alt text](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/Other_Files/Picture1.png)
 
+### Looking for documentation?
+You should start at the [wiki pages!](https://github.com/tjlagrow/CIS-422-Group-Project-2/wiki)
+
+
+### History of group:
 Founded in 2017, Hopper's Heapin' Jalapenos is composed of several [contributors](https://github.com/tjlagrow/CIS-422-Group-Project-2/wiki/Contributors). 
 
 Have you ever opened your fridge on an empty stomach, only to be discouraged to cook anything 
@@ -18,9 +23,9 @@ How does this work? This app is a light-weight mobile and web-based platform tha
 generate recipes.
 
 We do this by taking the files you upload and running them through an image tagging API.
-You can then clarify what your ingredients are through your voice, which is captured by 
-a voice recognition API. Once we have your confirmed list of ingredients sorted out, we 
-then use a recipe API to display the top recipes out there! No typing, no hassle! 
+You can then clarify what your ingredients are through a selection table. Once we have 
+your confirmed list of ingredients sorted out, we then use a recipe API to display the 
+top recipes out there! No typing, no hassle! 
 
 ## Important Links Starting Out
 
