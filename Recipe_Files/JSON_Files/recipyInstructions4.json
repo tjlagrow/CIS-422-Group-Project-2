@@ -1,0 +1,324 @@
+{
+ "sourceName": "Closet Cooking", 
+ "cuisines": [
+  "asian", 
+  "korean"
+ ], 
+ "image": "https://spoonacular.com/recipeImages/kimchi_version-17840.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "id": 17840, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Kimchi", 
+ "pricePerServing": 166.74, 
+ "creditText": "Closet Cooking", 
+ "extendedIngredients": [
+  {
+   "originalString": "1/4 cup carrot (shredded)", 
+   "aisle": "Produce", 
+   "name": "carrot", 
+   "metaInformation": [
+    "shredded", 
+    "()"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/carrots.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 11124, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 cup coarse salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "coarse salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 2047, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 cup daikon radish (shredded)", 
+   "aisle": "Produce", 
+   "name": "daikon radish", 
+   "metaInformation": [
+    "shredded", 
+    "()"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/daikon.jpg", 
+   "unitLong": "cup", 
+   "unitShort": "cup", 
+   "amount": 1.0, 
+   "id": 11430, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 cup fish sauce (or soy sauce for a vegetarian version)", 
+   "aisle": "Ethnic Foods", 
+   "name": "fish sauce", 
+   "metaInformation": [
+    "for a vegetarian version)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/asian-fish-sauce.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 6179, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 Fuji apple (grated)", 
+   "aisle": "Produce", 
+   "name": "fuji apple", 
+   "metaInformation": [
+    "grated", 
+    "()"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 0.5, 
+   "id": 1019003, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/2 cup garlic (chopped)", 
+   "aisle": "Produce", 
+   "name": "garlic", 
+   "metaInformation": [
+    "chopped", 
+    "()"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic-roasted.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 11215, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 tablespoon ginger (grated)", 
+   "aisle": "Produce;Ethnic Foods;Spices and Seasonings", 
+   "name": "ginger", 
+   "metaInformation": [
+    "grated", 
+    "()"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/ginger.jpg", 
+   "unitLong": "tablespoon", 
+   "unitShort": "Tbsp", 
+   "amount": 1.0, 
+   "id": 11216, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "1 bunch green onions (sliced)", 
+   "aisle": "Produce", 
+   "name": "green onions", 
+   "metaInformation": [
+    "sliced", 
+    "()"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/green-onion.jpg", 
+   "unitLong": "bunch", 
+   "unitShort": "bunch", 
+   "amount": 1.0, 
+   "id": 11291, 
+   "unit": "bunch"
+  }, 
+  {
+   "originalString": "1 large (5 pound) napa cabbage (or two medium sized)", 
+   "aisle": "Produce", 
+   "name": "napa cabbage leaves", 
+   "metaInformation": [
+    "medium sized", 
+    "large", 
+    "(or two )"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/napa-cabbage.jpg", 
+   "unitLong": "pounds", 
+   "unitShort": "lb", 
+   "amount": 5.0, 
+   "id": 10011970, 
+   "unit": "pound"
+  }, 
+  {
+   "originalString": "1 small onion (grated)", 
+   "aisle": "Produce", 
+   "name": "onion", 
+   "metaInformation": [
+    "grated", 
+    "small", 
+    "()"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-onion.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 11282, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/2 Asian pear (grated)", 
+   "aisle": "Produce", 
+   "name": "pear", 
+   "metaInformation": [
+    "grated", 
+    "()"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 0.5, 
+   "id": 9252, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/4 cup sweet rice flour (mochi)", 
+   "aisle": "Gluten Free;Health Foods;Baking", 
+   "name": "sweet rice flour", 
+   "metaInformation": [
+    "sweet", 
+    "(mochi)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/white-powder.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 10020061, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 cup water", 
+   "aisle": "Beverages", 
+   "name": "water", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/water.jpg", 
+   "unitLong": "cup", 
+   "unitShort": "cup", 
+   "amount": 1.0, 
+   "id": 14412, 
+   "unit": "cup"
+  }
+ ], 
+ "healthScore": 9.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 44.0, 
+ "sourceUrl": "http://www.closetcooking.com/2010/06/kimchi-version-20.html", 
+ "glutenFree": true, 
+ "vegan": false, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 1, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [], 
+     "step": "Cut the napa cabbage in half, remove the core and slice the cabbage into 1 inch wide strips.2. Soak the cabbage in cold water for 10 minutes.3.", 
+     "length": {
+      "number": 10, 
+      "unit": "minutes"
+     }, 
+     "number": 1, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/water.jpg", 
+       "id": 14412, 
+       "name": "water"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
+       "id": 404783, 
+       "name": "bowl"
+      }
+     ], 
+     "step": "Place a layer of cabbage into a large bowl and sprinkle some salt onto the cabbage. Repeat until all of the cabbage is in the bowl and salted. (Use two bowls if needed.)4.", 
+     "number": 2, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+       "id": 2047, 
+       "name": "salt"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Let the cabbage sit for 1 1/2 hours mixing it up every 1/2 hour.5. Rinse the cabbage three times, drain and set aside.6.", 
+     "number": 3, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg", 
+       "id": 404669, 
+       "name": "sauce pan"
+      }
+     ], 
+     "step": "Mix the flour and water in a small sauce pan and bring to a simmer while stirring.7.", 
+     "number": 4, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/water.jpg", 
+       "id": 14412, 
+       "name": "water"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Remove from heat and let it cool.8.", 
+     "number": 5, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Mix flour mixture and the remaining ingredients, save the cabbage.9.", 
+     "number": 6, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Mix the porridge into the cabbage well using your hands to make sure that it covers all of the cabbage.10.", 
+     "number": 7, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Place the cabbage mixture into sealable containers leaving about an inch of space at the top.11. Seal the container and let ferment at room temperature for 2-3 days.12.", 
+     "number": 8, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Place the container in the fridge and let ferment for a couple more days.", 
+     "number": 9, 
+     "ingredients": []
+    }
+   ], 
+   "name": ""
+  }
+ ], 
+ "aggregateLikes": 0, 
+ "instructions": "Directions:1. Cut the napa cabbage in half, remove the core and slice the cabbage into 1 inch wide strips.2. Soak the cabbage in cold water for 10 minutes.3. Place a layer of cabbage into a large bowl and sprinkle some salt onto the cabbage. Repeat until all of the cabbage is in the bowl and salted. (Use two bowls if needed.)4. Let the cabbage sit for 1 1/2 hours mixing it up every 1/2 hour.5. Rinse the cabbage three times, drain and set aside.6. Mix the flour and water in a small sauce pan and bring to a simmer while stirring.7. Remove from heat and let it cool.8. Mix flour mixture and the remaining ingredients, save the cabbage.9. Mix the porridge into the cabbage well using your hands to make sure that it covers all of the cabbage.10. Place the cabbage mixture into sealable containers leaving about an inch of space at the top.11. Seal the container and let ferment at room temperature for 2-3 days.12. Place the container in the fridge and let ferment for a couple more days.", 
+ "spoonacularSourceUrl": "https://spoonacular.com/kimchi-17840", 
+ "dishTypes": [
+  "side dish"
+ ], 
+ "vegetarian": false, 
+ "ketogenic": false, 
+ "readyInMinutes": 45, 
+ "servings": 8, 
+ "sustainable": false, 
+ "dairyFree": true, 
+ "whole30": false
+}

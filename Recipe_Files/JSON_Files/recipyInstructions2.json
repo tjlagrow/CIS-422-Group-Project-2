@@ -1,0 +1,201 @@
+{
+ "sourceName": "Williams Sonoma", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/classic-crudits-2-14444.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "id": 14444, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Classic Crudit\u00e9s", 
+ "pricePerServing": 354.66, 
+ "creditText": "Williams Sonoma", 
+ "extendedIngredients": [
+  {
+   "originalString": "1 Bosc pear, cored", 
+   "aisle": "Produce", 
+   "name": "bosc pear", 
+   "metaInformation": [
+    "cored"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 9252, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 carrot, peeled", 
+   "aisle": "Produce", 
+   "name": "carrot", 
+   "metaInformation": [
+    "peeled"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/carrots.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 11124, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 small celery root, peeled", 
+   "aisle": "Produce", 
+   "name": "celery root", 
+   "metaInformation": [
+    "small", 
+    "peeled"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/celeriac.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 11141, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "2 endive, quartered, root end kept intact", 
+   "aisle": "Produce", 
+   "name": "endive", 
+   "metaInformation": [
+    "quartered"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/escarole.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 11213, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 fennel bulb", 
+   "aisle": "Produce", 
+   "name": "fennel bulb", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/fennel.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 11957, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 Granny Smith apple, cored", 
+   "aisle": "Produce", 
+   "name": "granny smith apple", 
+   "metaInformation": [
+    "cored"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/red-delicious-apples.png", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 1029003, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 jicama, peeled", 
+   "aisle": "Produce", 
+   "name": "jicama", 
+   "metaInformation": [
+    "peeled"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/jicama.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 11603, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/4 cup plus 1 Tbs. fresh lemon juice", 
+   "aisle": "Produce", 
+   "name": "lemon juice", 
+   "metaInformation": [
+    "fresh"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/lemon-juice.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 9152, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 cup extra-virgin olive oil", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "olive oil", 
+   "metaInformation": [
+    "extra-virgin"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/olive-oil.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 4053, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "8-oz. piece of Parmigiano-Reggiano cheese", 
+   "aisle": "Cheese", 
+   "name": "parmigiano reggiano cheese", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/parmesan-or-romano.jpg", 
+   "unitLong": "ounces", 
+   "unitShort": "oz", 
+   "amount": 8.0, 
+   "id": 1033, 
+   "unit": "oz"
+  }, 
+  {
+   "originalString": "1 head radicchio, cut into 1/2-inch wedges", 
+   "aisle": "Produce", 
+   "name": "radicchio", 
+   "metaInformation": [
+    "cut into 1/2-inch wedges"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/radicchio.jpg", 
+   "unitLong": "head", 
+   "unitShort": "head", 
+   "amount": 1.0, 
+   "id": 11952, 
+   "unit": "head"
+  }, 
+  {
+   "originalString": "Salt and freshly ground pepper, to taste", 
+   "aisle": "Spices and Seasonings", 
+   "name": "salt and pepper", 
+   "metaInformation": [
+    "freshly ground", 
+    "to taste"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt-and-pepper.jpg", 
+   "unitLong": "servings", 
+   "unitShort": "servings", 
+   "amount": 6.0, 
+   "id": 1102047, 
+   "unit": "servings"
+  }
+ ], 
+ "healthScore": 76.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 86.0, 
+ "sourceUrl": "http://www.williams-sonoma.com/recipe/classic-crudites.html", 
+ "glutenFree": true, 
+ "vegan": false, 
+ "veryHealthy": true, 
+ "weightWatcherSmartPoints": 10, 
+ "analyzedInstructions": [], 
+ "aggregateLikes": 0, 
+ "instructions": null, 
+ "spoonacularSourceUrl": "https://spoonacular.com/classic-crudits-14444", 
+ "dishTypes": [], 
+ "vegetarian": false, 
+ "ketogenic": false, 
+ "readyInMinutes": 6, 
+ "servings": 6, 
+ "sustainable": false, 
+ "dairyFree": false, 
+ "whole30": false
+}

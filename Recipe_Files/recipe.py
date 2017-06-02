@@ -1,49 +1,32 @@
 # Theodore LaGrow
-# 50 requests / day
-# https://market.mashape.com/spoonacular/recipe-food-nutrition#
-# https://market.mashape.com/tlagrow/applications/joppers-jeapin-jalapenos
 
 import unirest
-import datetime
-import os.path
+import os
+import json
+from shutil import copyfile
+
+NUMBER_OF_RECIPIES = 5
+
+INCOMING_INGREDIENTS = 0
+
 
 ##############################################################
 
 # Need the API Key
-if os.path.isfile("./RECIPE_API_KEY.txt") != True:
+if os.path.isfile("./SPOONACULAR_API_KEY.txt") != True:
 	exit("API Key does not exist.")
 else:
-	key = open("RECIPE_API_KEY.txt", "r")
+	key = open("SPOONACULAR_API_KEY.txt", "r")
 	SPOONACULAR_API_KEY = key.read()
 	
 
 #################################################################
 
-getDate = datetime.datetime.now()
-currentDate = "%s/%s/%s" % (getDate.month, getDate.day, getDate.year)
-incoming_ingredients  = ["apples", "flour", "sugar"]
-print "date: ", currentDate
+	
 
-# check the date
-checkData = open("currentDate.txt", "r")
-cD = checkData.read()
-print "cD:", cD
-if cD != currentDate: #reset if necessary
-	resetRequests = open("numOfRequests.txt", "w")
-	resetRequests.write("0")
+def getRecipies():
 
-####################################################
-
-numbOfRequests = open("numOfRequests.txt", "r") #need to keep track of number of requests in 1 day
-
-re = numbOfRequests.read()
-requests = int(re)
-print "Current number of requests before call:", requests
-if requests < 46:
-
-	######################################################
-
-	fillIngredients="true"
+	incoming_ingredients = ["apple", "pear", "carrots", "hamburger"]
 
 	ingredients = ""
 	for i in incoming_ingredients:
@@ -52,63 +35,93 @@ if requests < 46:
 		else:
 			ingredients = ingredients + "%2C" + i
 
+	fillIngredients="true"
 	limitLicense="false"
-
-	number=1
-
+	number= NUMBER_OF_RECIPIES
 	ranking=1
 
-	###################################################
-	
 
-	""" UNCOMMENT TO GET REQUESTS
-
-	responseLink = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients={}&ingredients={}&limitLicense={}&number={}&ranking={}".format(fillIngredients, ingredients, limitLicense, number, ranking)
-	print responseLink
-	
+	responseLink = "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/findByIngredients?fillIngredients={}&ingredients={}&limitLicense={}&number={}&ranking={}".format(fillIngredients, ingredients, limitLicense, number, ranking)		
 	response = unirest.get(responseLink,
 		headers={
 		"X-Mashape-Key": SPOONACULAR_API_KEY,
 		"Accept": "application/json"
-  }
-)
-	print ""
-	print ""
-	b = response.body
-	print b
-	output = open("outputJSON.txt", "w")
-	b = str(b)
-	output.write(b)
-	print ""
-	print ""
-	"""
+	  }
+	)
+
+	b = response.raw_body
+	b_json = json.loads(b)
+	with open("JSON_Files/getRecipiesByIngredients.json", "w") as f:
+		json.dump(b_json, f, indent=1)
+
+
+
+def getInstructions(number, i):
+
+	response = unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/{}/information?includeNutrition=false".format(number),
+	  headers={
+	    "X-Mashape-Key": SPOONACULAR_API_KEY,
+	    "Accept": "application/json"
+	  }
+	)
+
+	b = response.raw_body
+	b_json = json.loads(b)
+	file = "JSON_Files/recipyInstructions{}.json".format(i)
 	
-	##################################################
-
-	""" TO GET THE DIRECTIONS OF THE RECIPE
-
-	response = unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/extract?forceExtraction=false&url=http%3A%2F%2Fwww.melskitchencafe.com%2Fthe-best-fudgy-brownies%2F",
-  headers={
-    "X-Mashape-Key":
-  }
-
-	"""
-
-	###################################################
-
-	numbOfRequests.close()
-
-	# Need to update the count document
-	numbOfRequests = open("numOfRequests.txt", "w")
-	requests += number # everytime a new request is made
-	numbOfRequests.write(str(requests))
-	numbOfRequests.close()
+	with open(file, "w") as f:
+		json.dump(b_json, f, indent=1)
 
 
 
-else:
-	print "There have been too many requests today."
-	tomorrow = "%s/%s/%s" % (getDate.month, getDate.day + 1, getDate.year)
-	print "Please try again tomorrow:", tomorrow
+def getExtended():
+
+	getRecipies()
+
+	with open('JSON_Files/getRecipiesByIngredients.json', 'r') as fin:
+		file = json.loads(fin.read())
+	
+	recipesID = []
+	for i in range(len(file)):
+		recipesID.append(file[i]["id"])
+
+	i = 0
+	for recipy in recipesID:
+		getInstructions(recipy, i)
+		i += 1
+
+def outputJSON():
+
+	outputFileDict = {}
+
+	for i in range(NUMBER_OF_RECIPIES):
+
+		curDict = {}
+
+		curTitle = "recipy{}".format(i)
+
+		current = "JSON_Files/recipyInstructions{}.json".format(i)
+		with open(current, 'r') as f:
+			f_json = json.loads(f.read())
+			curDict["title"] = f_json["title"]
+			curDict["image"] = f_json["image"]
+			curDict["readyInMinutes"] = f_json["readyInMinutes"]
+			curDict["instructions"] = f_json["instructions"]
+			ingredients_list = []
+			for i in range(len(f_json["extendedIngredients"])):
+				ingredients_list.append(f_json["extendedIngredients"][i]["originalString"])
+			curDict["ingredients"] = ingredients_list
+		outputFileDict[curTitle] = curDict
+
+	with open("JSON_Files/recipiesOutput.json", "w") as fout:
+		json.dump(outputFileDict, fout, indent=1)
 
 
+def run():
+	getExtended() 
+	outputJSON()
+
+if __name__ == "__main__":
+	run()
+	
+	

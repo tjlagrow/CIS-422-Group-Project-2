@@ -1,0 +1,95 @@
+{
+ "recipy4": {
+  "readyInMinutes": 45, 
+  "image": "https://spoonacular.com/recipeImages/kimchi_version-17840.jpg", 
+  "instructions": "Directions:1. Cut the napa cabbage in half, remove the core and slice the cabbage into 1 inch wide strips.2. Soak the cabbage in cold water for 10 minutes.3. Place a layer of cabbage into a large bowl and sprinkle some salt onto the cabbage. Repeat until all of the cabbage is in the bowl and salted. (Use two bowls if needed.)4. Let the cabbage sit for 1 1/2 hours mixing it up every 1/2 hour.5. Rinse the cabbage three times, drain and set aside.6. Mix the flour and water in a small sauce pan and bring to a simmer while stirring.7. Remove from heat and let it cool.8. Mix flour mixture and the remaining ingredients, save the cabbage.9. Mix the porridge into the cabbage well using your hands to make sure that it covers all of the cabbage.10. Place the cabbage mixture into sealable containers leaving about an inch of space at the top.11. Seal the container and let ferment at room temperature for 2-3 days.12. Place the container in the fridge and let ferment for a couple more days.", 
+  "ingredients": [
+   "1/4 cup carrot (shredded)", 
+   "1/2 cup coarse salt", 
+   "1 cup daikon radish (shredded)", 
+   "1/2 cup fish sauce (or soy sauce for a vegetarian version)", 
+   "1/2 Fuji apple (grated)", 
+   "1/2 cup garlic (chopped)", 
+   "1 tablespoon ginger (grated)", 
+   "1 bunch green onions (sliced)", 
+   "1 large (5 pound) napa cabbage (or two medium sized)", 
+   "1 small onion (grated)", 
+   "1/2 Asian pear (grated)", 
+   "1/4 cup sweet rice flour (mochi)", 
+   "1 cup water"
+  ], 
+  "title": "Kimchi"
+ }, 
+ "recipy1": {
+  "readyInMinutes": 3, 
+  "image": "https://spoonacular.com/recipeImages/sweet-juice-sensation-2-119356.jpg", 
+  "instructions": null, 
+  "ingredients": [
+   "1 apple, stem removed", 
+   "1 large carrot, topped", 
+   "1 grapefruit, peeled", 
+   "1 orange, peeled", 
+   "1 pear (rind and seeds removed) or 1/2 cantaloupe (rind and seeds removed)"
+  ], 
+  "title": "Sweet Juice Sensation"
+ }, 
+ "recipy0": {
+  "readyInMinutes": 45, 
+  "image": "https://spoonacular.com/recipeImages/apple-and-pear-slaw-93789.jpg", 
+  "instructions": "Combine first 5 ingredients in a small bowl; set aside.                                                                                                Combine apple, pear, and coleslaw in a large bowl; stir in dressing. Chill up to 2 hours.", 
+  "ingredients": [
+   "1/4 cup cider vinegar", 
+   "1 tablespoon brown sugar", 
+   "2 teaspoons poppy seeds", 
+   "1/2 teaspoon salt", 
+   "1/4 teaspoon black pepper", 
+   "2 cups thinly sliced Granny Smith apple (about 1 large apple)", 
+   "2 cups thinly sliced pear (about 1 large pear)", 
+   "1 (12-ounce) package cabbage-and-carrot coleslaw"
+  ], 
+  "title": "Apple-and-Pear Slaw"
+ }, 
+ "recipy3": {
+  "readyInMinutes": 123, 
+  "image": "https://spoonacular.com/recipeImages/roasted-winter-fruits-and-vegetables-with-farro-porridge-706908.jpg", 
+  "instructions": "To prepare porridge, bring 9 cups water and 1/2 teaspoon salt to a boil over high heat in a large Dutch oven; stir in farro. Reduce heat, and simmer 1 hour or until farro has released its starch. Remove from heat. Stir in cheese and butter.                                                                                                 Preheat oven to 400. While farro cooks, prepare vegetables. Prepare 2 (24 x 18-inch) sheets of foil. Place beets in center of 1 sheet. Place carrots in center of other sheet. Sprinkle each with 1 tablespoon oil, 1/4 teaspoon salt, 1/4 teaspoon pepper, and 5 thyme sprigs. Seal packets tightly. Place packets directly on the floor of the oven. Roast carrots at 400 for 25 minutes or until tender, turning every 10 minutes. Roast beets 50 minutes or until very tender, turning every 20 minutes. Remove from oven. Peel and quarter beets.                                                                                                 Heat remaining 2 tablespoons oil in a large cast-iron skillet over medium heat. Add pears and apple, cut side down, to skillet; cook 4 minutes. Reduce heat to medium-low; cook 12 minutes or until caramelized. Turn fruit over. Add sage to pan. Roast at 400 for 10 minutes. Add chestnuts to pan; roast an additional 5 minutes. Discard sage. Sprinkle with remaining 1/2 teaspoon salt and 1/4 teaspoon pepper. Add beets and carrots to pan; heat thoroughly. Quarter pears; cut apple into 8 wedges.", 
+  "ingredients": [
+   "9 cups water", 
+   "1/2 teaspoon kosher salt", 
+   "2 cups uncooked pearled farro", 
+   "3 ounces pecorino Romano cheese, grated (about 3/4 cup)", 
+   "2 tablespoons butter", 
+   "1 pound medium beets (preferably Chioggia or gold), trimmed and scrubbed", 
+   "12 ounces baby carrots, trimmed", 
+   "1/4 cup olive oil, divided", 
+   "1 teaspoon kosher salt, divided", 
+   "3/4 teaspoon freshly ground black pepper, divided", 
+   "10 thyme sprigs, divided", 
+   "2 Bosc pears, halved vertically", 
+   "1 Honeycrisp apple, halved vertically", 
+   "3 sage sprigs", 
+   "1 cup bottled roasted chestnuts"
+  ], 
+  "title": "Roasted Winter Fruits and Vegetables with Farro Porridge"
+ }, 
+ "recipy2": {
+  "readyInMinutes": 6, 
+  "image": "https://spoonacular.com/recipeImages/classic-crudits-2-14444.jpg", 
+  "instructions": null, 
+  "ingredients": [
+   "1 Bosc pear, cored", 
+   "1 carrot, peeled", 
+   "1 small celery root, peeled", 
+   "2 endive, quartered, root end kept intact", 
+   "1 fennel bulb", 
+   "1 Granny Smith apple, cored", 
+   "1 jicama, peeled", 
+   "1/4 cup plus 1 Tbs. fresh lemon juice", 
+   "1/2 cup extra-virgin olive oil", 
+   "8-oz. piece of Parmigiano-Reggiano cheese", 
+   "1 head radicchio, cut into 1/2-inch wedges", 
+   "Salt and freshly ground pepper, to taste"
+  ], 
+  "title": "Classic Crudit\u00e9s"
+ }
+}
