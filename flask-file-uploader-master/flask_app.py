@@ -27,7 +27,7 @@ app.config['SECRET_KEY'] = 'hard to guess string'
 #app.config['UPLOAD_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/Food_Files/input_images/'
 #app.config['THUMBNAIL_FOLDER'] = '/home/422Hopper/CIS-422-Group-Project-2/flask-file-uploader-master/data/thumbnail/'
 app.config['OUTPUT'] = '/Food_Files/output/foods.json'
-
+app.config['RECIPIE'] = 'CIS-422-Group-Project-2/Recipe_Files/output/recipiesOutput.json'
 app.config['THUMBNAIL_FOLDER'] = 'Food_Files/input_images/thumbnail'
 app.config['UPLOAD_FOLDER'] = 'Food_Files/input_images/'
 #app.config['UPLOAD_FOLDER'] = '../Food_Files/input_images/'
@@ -120,8 +120,6 @@ def upload():
 
         return simplejson.dumps({"files": file_display})
 
-    print 'here'
-    tag_images()
     return redirect(url_for('index'))
 
 @app.route('/tag_images', methods=['GET', 'POST'])
@@ -149,7 +147,6 @@ def delete(filename):
         except:
             return simplejson.dumps({filename: 'False'})
 
-
 # serve static files
 @app.route("/thumbnail/<string:filename>", methods=['GET'])
 def get_thumbnail(filename):
@@ -160,10 +157,6 @@ def get_thumbnail(filename):
 def get_file(filename):
     return send_from_directory(os.path.join(app.config['UPLOAD_FOLDER']), filename=filename)
 
-#@app.route('/tag_images', methods=['GET', 'POST'])
-
-
-
 #@app.route('/table', methods=['GET', 'POST'])
 def read_file(filename, output_type):
     try:
@@ -173,26 +166,23 @@ def read_file(filename, output_type):
                 con_lis = []
                 #print (con_lis)
         #print ('starting')
-        #if not output_type:
+        if not output_type == 0:
         #print (d)
-        for key, value in d.iteritems():
-        #for key, value in d.items():
-            #print ('in here')
-            con_lis.append([key, value[0], value[1], value[2], value[3], value[4], value[5], value[6]])
-        
-        #print(con_lis)
-        return con_lis
+            for key, value in d.iteritems():
+            #for key, value in d.items():
+                con_lis.append([key, value[0], value[1], value[2], value[3], value[4], value[5], value[6]])
+            return con_lis
             
-        #elif output_type == 1:
-        print ('not ready')
+        elif output_type == 1:
+            return d
     except:
         print ('false!!')
 
 
 @app.route('/recipes', methods=['GET', 'POST'])
 def show_recipe_full():
-    read_file()
-    return 0
+    d = read_file(app.config['RECIPIE'], 1)
+    return render_template('index.html', d = d)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
