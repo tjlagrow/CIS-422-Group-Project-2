@@ -1,7 +1,13 @@
 """
-filename: recipe.py
-author: Theodore J. LaGrow
-language: python 2.7x
+filename: 
+	recipe.py
+author: 
+	Theodore J. LaGrow
+language: 
+	python 2.7x
+use: 
+	This program is the heart of the project! Should take string of ingredients 
+	and output JSON of recipes!
 """
 
 import unirest
