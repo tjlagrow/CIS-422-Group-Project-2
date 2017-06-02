@@ -1,0 +1,145 @@
+{
+ "sourceName": "The Naptime Chef", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/dried_cherry_apple_streusel_pie-48333.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "id": 48333, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Dried Cherry Apple Streusel Pie", 
+ "pricePerServing": 235.15, 
+ "creditText": "The Naptime Chef", 
+ "extendedIngredients": [
+  {
+   "originalString": "4 cups thinly sliced apples", 
+   "aisle": "Produce", 
+   "name": "apples", 
+   "metaInformation": [
+    "thinly sliced"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 4.0, 
+   "id": 9003, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "1/3 cup dark brown sugar", 
+   "aisle": "Baking", 
+   "name": "dark brown sugar", 
+   "metaInformation": [
+    "dark"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.3333333333333333, 
+   "id": 10019334, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 cup dried cherries", 
+   "aisle": "Dried Fruits;Produce", 
+   "name": "dried cherries", 
+   "metaInformation": [
+    "dried"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries-dried.jpg", 
+   "unitLong": "cup", 
+   "unitShort": "cup", 
+   "amount": 1.0, 
+   "id": 93822, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "\u00bc cup all-purpose flour", 
+   "aisle": "Baking", 
+   "name": "flour", 
+   "metaInformation": [
+    "all-purpose"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/flour.png", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 20081, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 tsp ground cinnamon", 
+   "aisle": "Spices and Seasonings", 
+   "name": "ground cinnamon", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+   "unitLong": "teaspoon", 
+   "unitShort": "tsp", 
+   "amount": 1.0, 
+   "id": 2010, 
+   "unit": "tsp"
+  }, 
+  {
+   "originalString": "1 pinch kosher salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "kosher salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "pinch", 
+   "unitShort": "pinch", 
+   "amount": 1.0, 
+   "id": 1082047, 
+   "unit": "pinch"
+  }, 
+  {
+   "originalString": "\u00be cup sugar", 
+   "aisle": "Baking", 
+   "name": "sugar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.75, 
+   "id": 19335, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "4 Tbsps cold unsalted butter cut into pieces", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "unsalted butter", 
+   "metaInformation": [
+    "unsalted", 
+    "cold", 
+    "cut into pieces"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg", 
+   "unitLong": "Tbsps", 
+   "unitShort": "Tbsps", 
+   "amount": 4.0, 
+   "id": 1145, 
+   "unit": "Tbsps"
+  }
+ ], 
+ "healthScore": 1.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 18.0, 
+ "sourceUrl": "http://www.thenaptimechef.com/2012/02/dried-cherry-apple-streusel-pie-king-arthur-flour-giveaway-naptime-everyday/", 
+ "glutenFree": false, 
+ "vegan": false, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 25, 
+ "analyzedInstructions": [], 
+ "aggregateLikes": 6, 
+ "instructions": null, 
+ "spoonacularSourceUrl": "https://spoonacular.com/dried-cherry-apple-streusel-pie-48333", 
+ "dishTypes": [
+  "dessert"
+ ], 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 40, 
+ "servings": 3, 
+ "sustainable": false, 
+ "dairyFree": false, 
+ "whole30": false
+}

@@ -1,6 +1,0 @@
-{
-"results":[
-{"id":572049,"usedIngredientCount":3,"missedIngredientCount":3,"likes":0,"title":"Ranch Burgers","image":"https://spoonacular.com/recipeImages/Ranch-Burgers-572049.jpg","imageType":"jpg","calories":577,"protein":"33g","fat":"32g","carbs":"37g"},
-{"id":182567,"usedIngredientCount":3,"missedIngredientCount":3,"likes":0,"title":"The Classic Hamburger","image":"https://spoonacular.com/recipeImages/The-Classic-Hamburger-182567.jpg","imageType":"jpg","calories":717,"protein":"44g","fat":"47g","carbs":"26g"},
-{"id":852175,"usedIngredientCount":3,"missedIngredientCount":4,"likes":0,"title":"Smashed Potato Burgers","image":"https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg","imageType":"jpg","calories":606,"protein":"27g","fat":"41g","carbs":"35g"},
-{"id":99330,"usedIngredientCount":3,"missedIngredientCount":4,"likes":0,"title":"Gold Nugget Burger","image":"https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg","imageType":"jpg","calories":832,"protein":"48g","fat":"55g","carbs":"35g"}],"baseUri":"https://spoonacular.com/recipeImages/","offset":0,"number":4,"totalResults":1455,"processingTimeMs":3034}

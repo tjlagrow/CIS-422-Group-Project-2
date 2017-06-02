@@ -1,0 +1,596 @@
+{
+ "sourceName": "Eating Well", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/mincemeat-tart-696409.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "cookingMinutes": 75, 
+ "id": 696409, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Mincemeat Tart", 
+ "preparationMinutes": 45, 
+ "pricePerServing": 55.71, 
+ "creditText": "Eating Well", 
+ "extendedIngredients": [
+  {
+   "originalString": "1 teaspoon active dry yeast", 
+   "aisle": "Baking", 
+   "name": "active yeast", 
+   "metaInformation": [
+    "dry"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/yeast-granules.jpg", 
+   "unitLong": "teaspoon", 
+   "unitShort": "tsp", 
+   "amount": 1.0, 
+   "id": 18375, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "2 juicy apples, such as McIntosh, peeled, cored and diced", 
+   "aisle": "Produce", 
+   "name": "apples", 
+   "metaInformation": [
+    "diced", 
+    " such as mcintosh, peeled, cored and ", 
+    "juicy"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 9003, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 tablespoon butter", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "butter", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg", 
+   "unitLong": "tablespoon", 
+   "unitShort": "Tbsp", 
+   "amount": 1.0, 
+   "id": 1001, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "1 tablespoon canola oil", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "canola oil", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/vegetable-oil.jpg", 
+   "unitLong": "tablespoon", 
+   "unitShort": "Tbsp", 
+   "amount": 1.0, 
+   "id": 4582, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "1/2 cup chopped dried tart cherries, or dried cranberries", 
+   "aisle": "Produce", 
+   "name": "cherries", 
+   "metaInformation": [
+    "dried", 
+    "chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 9070, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 cup packed dark brown sugar", 
+   "aisle": "Baking", 
+   "name": "dark brown sugar", 
+   "metaInformation": [
+    "dark", 
+    "packed"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 10019334, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 cup chopped dried figs", 
+   "aisle": "Dried Fruits;Produce", 
+   "name": "dried figs", 
+   "metaInformation": [
+    "dried", 
+    "chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/figs-dried.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 9094, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 large egg, lightly beaten with 2 teaspoons water, for glazing", 
+   "aisle": "Milk, Eggs, Other Dairy", 
+   "name": "egg", 
+   "metaInformation": [
+    "with 2 teaspoons water, for glazing", 
+    "large", 
+    "lightly beaten"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/egg.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 1123, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 1/4 cups all-purpose flour, divided", 
+   "aisle": "Baking", 
+   "name": "flour", 
+   "metaInformation": [
+    "all-purpose", 
+    "divided"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/flour.png", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 1.25, 
+   "id": 20081, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "1/4 teaspoon ground allspice", 
+   "aisle": "Spices and Seasonings", 
+   "name": "ground allspice", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/allspice-ground.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 2001, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/2 teaspoon ground cinnamon", 
+   "aisle": "Spices and Seasonings", 
+   "name": "ground cinnamon", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.5, 
+   "id": 2010, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/8 teaspoon ground cloves, cloves", 
+   "aisle": "Spices and Seasonings", 
+   "name": "ground cloves", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cloves.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.125, 
+   "id": 2011, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "2 tablespoons lemon juice", 
+   "aisle": "Produce", 
+   "name": "lemon juice", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/lemon-juice.jpg", 
+   "unitLong": "tablespoons", 
+   "unitShort": "Tbsp", 
+   "amount": 2.0, 
+   "id": 9152, 
+   "unit": "tablespoons"
+  }, 
+  {
+   "originalString": "1/2 unpeeled navel orange, scrubbed and chopped", 
+   "aisle": "Produce", 
+   "name": "navel orange", 
+   "metaInformation": [
+    "unpeeled", 
+    "scrubbed", 
+    "chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/mandarin-or-tangerines-or-clementines.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 0.5, 
+   "id": 9202, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "3 tablespoons brandy or orange juice", 
+   "aisle": "Beverages", 
+   "name": "orange juice", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/orange-juice.jpg", 
+   "unitLong": "tablespoons", 
+   "unitShort": "Tbsp", 
+   "amount": 3.0, 
+   "id": 9206, 
+   "unit": "tablespoons"
+  }, 
+  {
+   "originalString": "2 ripe pears, peeled, cored and diced", 
+   "aisle": "Produce", 
+   "name": "pears", 
+   "metaInformation": [
+    "diced", 
+    "cored", 
+    "ripe", 
+    "peeled"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 9252, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1/2 cup raisins", 
+   "aisle": "Dried Fruits;Produce;Baking", 
+   "name": "raisins", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/raisins.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 9299, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/4 teaspoon salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 2047, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "Pinch of salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "pinch", 
+   "unitShort": "pinch", 
+   "amount": 1.0, 
+   "id": 2047, 
+   "unit": "pinch"
+  }, 
+  {
+   "originalString": "1 tablespoon plus 1 teaspoon sugar, divided", 
+   "aisle": "Baking", 
+   "name": "sugar", 
+   "metaInformation": [
+    "divided"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
+   "unitLong": "tablespoon", 
+   "unitShort": "Tbsp", 
+   "amount": 1.0, 
+   "id": 19335, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "1/2 cup warm water", 
+   "aisle": "Beverages", 
+   "name": "water", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/water.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 14412, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 1/2 cups water", 
+   "aisle": "Beverages", 
+   "name": "water", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/water.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 1.5, 
+   "id": 14412, 
+   "unit": "cups"
+  }
+ ], 
+ "healthScore": 2.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 20.0, 
+ "sourceUrl": "http://www.eatingwell.com/recipes/mincemeat_tart.html", 
+ "glutenFree": false, 
+ "vegan": false, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 4, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/tart-pan.jpg", 
+       "id": 406922, 
+       "name": "tart form"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg", 
+       "id": 404784, 
+       "temperature": {
+        "number": 375.0, 
+        "unit": "Fahrenheit"
+       }, 
+       "name": "oven"
+      }
+     ], 
+     "step": "Place rack in lower third of oven; preheat to 375F. Coat an 11-inch tart pan, preferably with a removable bottom, with cooking spray.Set one-fourth of the dough aside.", 
+     "number": 1, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/tart-pan.jpg", 
+       "id": 406922, 
+       "name": "tart form"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
+       "id": 404645, 
+       "name": "frying pan"
+      }
+     ], 
+     "step": "Roll out the remaining dough on a lightly floured surface into a 15-inch circle. Fit the dough into the prepared tart pan, letting it hang over the edge of the pan.", 
+     "number": 2, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
+       "id": 404645, 
+       "name": "frying pan"
+      }
+     ], 
+     "step": "Spread the mincemeat filling in the pan. Fold the edge of the dough in over the filling.", 
+     "number": 3, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Roll out the reserved dough on the floured surface.", 
+     "number": 4, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/cookie-cutters.jpg", 
+       "id": 221429, 
+       "name": "cookie cutter"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/chefs-knife.jpg", 
+       "id": 404745, 
+       "name": "knife"
+      }
+     ], 
+     "step": "Cut out desired shapes with cookie cutters or a paring knife and set them on top of the mincemeat. Lightly brush the cut-outs and border of the dough with egg glaze and sprinkle with the remaining 1 teaspoon sugar.", 
+     "number": 5, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
+       "id": 19335, 
+       "name": "sugar"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/egg.jpg", 
+       "id": 1123, 
+       "name": "egg"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/aluminum-foil.png", 
+       "id": 404765, 
+       "name": "aluminum foil"
+      }
+     ], 
+     "step": "Bake until the crust is golden on top and browned on the bottom, 30 to 40 minutes. If the top of the tart is browning too quickly, cover it loosely with foil.", 
+     "length": {
+      "number": 30, 
+      "unit": "minutes"
+     }, 
+     "number": 6, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/wire-rack.jpg", 
+       "id": 405900, 
+       "name": "wire rack"
+      }
+     ], 
+     "step": "Place the tart on a wire rack to cool slightly.", 
+     "number": 7, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
+       "id": 404645, 
+       "name": "frying pan"
+      }
+     ], 
+     "step": "Remove the rim of the pan and serve the tart warm or at room temperature.", 
+     "number": 8, 
+     "ingredients": []
+    }
+   ], 
+   "name": "Place the dough in an oiled bowl, cover with plastic wrap, and let rise until doubled in bulk, 45 minutes to 1 hour.To assemble and bake tart"
+  }, 
+  {
+   "steps": [
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/sauce-pan.jpg", 
+       "id": 404669, 
+       "name": "sauce pan"
+      }
+     ], 
+     "step": "Combine apples, pears, chopped orange, raisins, figs, cherries (or cranberries), brown sugar, lemon juice, cinnamon, allspice, cloves and pinch of salt in a large saucepan.", 
+     "number": 1, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-dark.jpg", 
+       "id": 19334, 
+       "name": "brown sugar"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/lemon-juice.jpg", 
+       "id": 9152, 
+       "name": "lemon juice"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/allspice-ground.jpg", 
+       "id": 2001, 
+       "name": "allspice"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
+       "id": 9070, 
+       "name": "cherries"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cinnamon.jpg", 
+       "id": 2010, 
+       "name": "cinnamon"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/raisins.jpg", 
+       "id": 9299, 
+       "name": "raisins"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cloves.jpg", 
+       "id": 1002011, 
+       "name": "clove"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+       "id": 9252, 
+       "name": "pear"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+       "id": 2047, 
+       "name": "salt"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/mixing-bowl.jpg", 
+       "id": 405907, 
+       "name": "mixing bowl"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
+       "id": 404645, 
+       "name": "frying pan"
+      }
+     ], 
+     "step": "Add 1 1/2 cups water, bring to a simmer, cover the pan and cook over low heat, stirring occasionally, until the fruits are very tender, 60 to 70 minutes. Uncover the pan and continue cooking until the mincemeat is very thick and the juices have evaporated, about 10 minutes longer. Stir in brandy (or orange juice) and butter and let cool to room temperature.To make dough: Meanwhile, stir together 1/2 cup flour, 1 tablespoon sugar, yeast and 1/2 cup warm waterin a mixing bowl; let stand until the yeast starts to bubble, about 5 minutes. Stir in oil and 1/4 teaspoon salt. Stir in the remaining flour, 1/4 cup at a time, until the dough becomes too difficult to stir. Turn the dough out onto a lightly floured surface and knead, adding flour if necessary, until the dough is firm and satiny but not dry, about 5 minutes. (Be careful not to add too much flour.)", 
+     "length": {
+      "number": 80, 
+      "unit": "minutes"
+     }, 
+     "number": 2, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/orange-juice.jpg", 
+       "id": 9206, 
+       "name": "orange juice"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/butter-sliced.jpg", 
+       "id": 1001, 
+       "name": "butter"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/flour.png", 
+       "id": 20081, 
+       "name": "all purpose flour"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
+       "id": 19335, 
+       "name": "sugar"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/water.jpg", 
+       "id": 14412, 
+       "name": "water"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/yeast.jpg", 
+       "id": 18375, 
+       "name": "yeast"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+       "id": 2047, 
+       "name": "salt"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/vegetable-oil.jpg", 
+       "id": 4582, 
+       "name": "cooking oil"
+      }
+     ]
+    }
+   ], 
+   "name": "To make filling"
+  }
+ ], 
+ "aggregateLikes": 4, 
+ "instructions": "To make filling: Combine apples, pears, chopped orange, raisins, figs, cherries (or cranberries), brown sugar, lemon juice, cinnamon, allspice, cloves and pinch of salt in a large saucepan. Add 1 1/2 cups water, bring to a simmer, cover the pan and cook over low heat, stirring occasionally, until the fruits are very tender, 60 to 70 minutes. Uncover the pan and continue cooking until the mincemeat is very thick and the juices have evaporated, about 10 minutes longer. Stir in brandy (or orange juice) and butter and let cool to room temperature.To make dough: Meanwhile, stir together 1/2 cup flour, 1 tablespoon sugar, yeast and 1/2 cup warm waterin a mixing bowl; let stand until the yeast starts to bubble, about 5 minutes. Stir in oil and 1/4 teaspoon salt. Stir in the remaining flour, 1/4 cup at a time, until the dough becomes too difficult to stir. Turn the dough out onto a lightly floured surface and knead, adding flour if necessary, until the dough is firm and satiny but not dry, about 5 minutes. (Be careful not to add too much flour.) Place the dough in an oiled bowl, cover with plastic wrap, and let rise until doubled in bulk, 45 minutes to 1 hour.To assemble and bake tart: Place rack in lower third of oven; preheat to 375F. Coat an 11-inch tart pan, preferably with a removable bottom, with cooking spray.Set one-fourth of the dough aside. Roll out the remaining dough on a lightly floured surface into a 15-inch circle. Fit the dough into the prepared tart pan, letting it hang over the edge of the pan. Spread the mincemeat filling in the pan. Fold the edge of the dough in over the filling.Roll out the reserved dough on the floured surface. Cut out desired shapes with cookie cutters or a paring knife and set them on top of the mincemeat. Lightly brush the cut-outs and border of the dough with egg glaze and sprinkle with the remaining 1 teaspoon sugar.Bake until the crust is golden on top and browned on the bottom, 30 to 40 minutes. If the top of the tart is browning too quickly, cover it loosely with foil. Place the tart on a wire rack to cool slightly. Remove the rim of the pan and serve the tart warm or at room temperature.", 
+ "spoonacularSourceUrl": "https://spoonacular.com/mincemeat-tart-696409", 
+ "dishTypes": [
+  "dessert"
+ ], 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 120, 
+ "servings": 12, 
+ "sustainable": false, 
+ "dairyFree": false, 
+ "whole30": false
+}

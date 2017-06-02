@@ -1,0 +1,168 @@
+{
+ "sourceName": "BBC Good Food", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/Apple--pear---cherry-compote-210079.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "cookingMinutes": 20, 
+ "id": 210079, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Apple, pear & cherry compote", 
+ "preparationMinutes": 30, 
+ "pricePerServing": 131.39, 
+ "creditText": "BBC Good Food", 
+ "extendedIngredients": [
+  {
+   "originalString": "8 eating apples, peeled, cored and cut into chunks", 
+   "aisle": "Produce", 
+   "name": "apples", 
+   "metaInformation": [
+    "cored", 
+    "peeled", 
+    "cut into chunks"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 8.0, 
+   "id": 9003, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "4 medium Bramley apples, peeled, cored and cut into chunks", 
+   "aisle": "Produce", 
+   "name": "bramley apples", 
+   "metaInformation": [
+    "cored", 
+    "medium", 
+    "peeled", 
+    "cut into chunks"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 4.0, 
+   "id": 1009003, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "280g dried sour cherries (or dried cranberries)", 
+   "aisle": "Produce", 
+   "name": "cherries", 
+   "metaInformation": [
+    "dried", 
+    "sour", 
+    "(or cranberries)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
+   "unitLong": "grams", 
+   "unitShort": "g", 
+   "amount": 280.0, 
+   "id": 9070, 
+   "unit": "g"
+  }, 
+  {
+   "originalString": "8 firm pears, peeled, cored and thickly sliced", 
+   "aisle": "Produce", 
+   "name": "pears", 
+   "metaInformation": [
+    "firm", 
+    "cored", 
+    "peeled", 
+    "sliced"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 8.0, 
+   "id": 9252, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "6 tbsp sugar, or to taste", 
+   "aisle": "Baking", 
+   "name": "sugar", 
+   "metaInformation": [
+    "to taste"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
+   "unitLong": "tablespoons", 
+   "unitShort": "Tbsp", 
+   "amount": 6.0, 
+   "id": 19335, 
+   "unit": "tbsp"
+  }
+ ], 
+ "healthScore": 4.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 41.0, 
+ "sourceUrl": "http://www.bbcgoodfood.com/recipes/355604/apple-pear-and-cherry-compote", 
+ "glutenFree": true, 
+ "vegan": true, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 1, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
+       "id": 404645, 
+       "name": "frying pan"
+      }
+     ], 
+     "step": "Put the apples and pears in a pan withthe sugar and 50ml water. Bring to asimmer, then gently cook, covered, for15 mins or so until the Bramley applehas collapsed to a pur\u00e9e and the eatingapple and pear are tender (stir to makesure it doesn\u2019t catch on the bottom).Stir in the cherries or cranberries for1 min, taste and add a little more sugarif necessary. Can be chilled for 3-5 days.", 
+     "length": {
+      "number": 16, 
+      "unit": "minutes"
+     }, 
+     "number": 1, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
+       "id": 9070, 
+       "name": "cherries"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+       "id": 9252, 
+       "name": "pear"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/sugar-cubes.jpg", 
+       "id": 19335, 
+       "name": "sugar"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Serve with vanilla ice cream, if you like. See 'Goes well with' for ideas for using up the compote.", 
+     "number": 2, 
+     "ingredients": []
+    }
+   ], 
+   "name": ""
+  }
+ ], 
+ "aggregateLikes": 56, 
+ "instructions": "Put the apples and pears in a pan withthe sugar and 50ml water. Bring to asimmer, then gently cook, covered, for15 mins or so until the Bramley applehas collapsed to a pur\u00e9e and the eatingapple and pear are tender (stir to makesure it doesn\u2019t catch on the bottom).Stir in the cherries or cranberries for1 min, taste and add a little more sugarif necessary. Can be chilled for 3-5 days.Serve with vanilla ice cream, if you like. See 'Goes well with' for ideas for using up the compote.", 
+ "spoonacularSourceUrl": "https://spoonacular.com/apple-pear-cherry-compote-210079", 
+ "dishTypes": [
+  "sauce"
+ ], 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 50, 
+ "servings": 12, 
+ "sustainable": false, 
+ "dairyFree": true, 
+ "whole30": false
+}

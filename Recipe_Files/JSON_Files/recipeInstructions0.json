@@ -1,0 +1,184 @@
+{
+ "sourceName": "My Recipes", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/apple-and-pear-slaw-93789.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "id": 93789, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Apple-and-Pear Slaw", 
+ "pricePerServing": 52.71, 
+ "creditText": "My Recipes", 
+ "extendedIngredients": [
+  {
+   "originalString": "1/4 cup cider vinegar", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "cider vinegar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-cider-vinegar.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.25, 
+   "id": 2048, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 tablespoon brown sugar", 
+   "aisle": "Baking", 
+   "name": "brown sugar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
+   "unitLong": "tablespoon", 
+   "unitShort": "Tbsp", 
+   "amount": 1.0, 
+   "id": 19334, 
+   "unit": "tablespoon"
+  }, 
+  {
+   "originalString": "2 teaspoons poppy seeds", 
+   "aisle": "Spices and Seasonings;Baking", 
+   "name": "poppy seeds", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/poppyseed.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 2.0, 
+   "id": 2033, 
+   "unit": "teaspoons"
+  }, 
+  {
+   "originalString": "1/2 teaspoon salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.5, 
+   "id": 2047, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/4 teaspoon black pepper", 
+   "aisle": "Spices and Seasonings", 
+   "name": "black pepper", 
+   "metaInformation": [
+    "black"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pepper.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 1002030, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "2 cups thinly sliced Granny Smith apple (about 1 large apple)", 
+   "aisle": "Produce", 
+   "name": "granny smith apple", 
+   "metaInformation": [
+    "large", 
+    "thinly sliced", 
+    "( 1 apple)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/red-delicious-apples.png", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 2.0, 
+   "id": 1029003, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "2 cups thinly sliced pear (about 1 large pear)", 
+   "aisle": "Produce", 
+   "name": "pear", 
+   "metaInformation": [
+    "large", 
+    "thinly sliced", 
+    "( 1 pear)"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 2.0, 
+   "id": 9252, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "1 (12-ounce) package cabbage-and-carrot coleslaw", 
+   "aisle": "Produce", 
+   "name": "carrot", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/carrots.jpg", 
+   "unitLong": "ounces", 
+   "unitShort": "oz", 
+   "amount": 12.0, 
+   "id": 11124, 
+   "unit": "ounce"
+  }
+ ], 
+ "healthScore": 16.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 58.0, 
+ "sourceUrl": "http://www.myrecipes.com/recipe/apple-and-pear-slaw-10000000479074/", 
+ "glutenFree": true, 
+ "vegan": true, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 0, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
+       "id": 404783, 
+       "name": "bowl"
+      }
+     ], 
+     "step": "Combine first 5 ingredients in a small bowl; set aside.", 
+     "number": 1, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
+       "id": 404783, 
+       "name": "bowl"
+      }
+     ], 
+     "step": "Combine apple, pear, and coleslaw in a large bowl; stir in dressing. Chill up to 2 hours.", 
+     "number": 2, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/pears-bosc.jpg", 
+       "id": 9252, 
+       "name": "pear"
+      }
+     ]
+    }
+   ], 
+   "name": ""
+  }
+ ], 
+ "aggregateLikes": 0, 
+ "instructions": "Combine first 5 ingredients in a small bowl; set aside.                                                                                                Combine apple, pear, and coleslaw in a large bowl; stir in dressing. Chill up to 2 hours.", 
+ "spoonacularSourceUrl": "https://spoonacular.com/apple-and-pear-slaw-93789", 
+ "dishTypes": [
+  "side dish"
+ ], 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 45, 
+ "servings": 6, 
+ "sustainable": false, 
+ "dairyFree": true, 
+ "whole30": false
+}

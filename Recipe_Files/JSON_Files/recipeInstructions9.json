@@ -1,0 +1,196 @@
+{
+ "sourceName": "Mother Rimmy", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/Dont-Pass-Up-This-Crunchy-and-Sweet-Apple-Broccoli-Slaw-530285.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "id": 530285, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Don\u2019t Pass Up This Crunchy and Sweet Apple Broccoli Slaw", 
+ "pricePerServing": 68.43, 
+ "creditText": "Mother Rimmy", 
+ "extendedIngredients": [
+  {
+   "originalString": "1 (12 ounce) package broccoli coleslaw mix", 
+   "aisle": "Produce", 
+   "name": "broccoli coleslaw mix", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/broccoli-slaw.png", 
+   "unitLong": "ounces", 
+   "unitShort": "oz", 
+   "amount": 12.0, 
+   "id": 11741, 
+   "unit": "ounce"
+  }, 
+  {
+   "originalString": "1/3 cup packed brown sugar", 
+   "aisle": "Baking", 
+   "name": "brown sugar", 
+   "metaInformation": [
+    "packed"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-sugar-light.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.3333333333333333, 
+   "id": 19334, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 (3 ounce) package dried tart cherries", 
+   "aisle": "Produce", 
+   "name": "cherries", 
+   "metaInformation": [
+    "dried"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
+   "unitLong": "ounces", 
+   "unitShort": "oz", 
+   "amount": 3.0, 
+   "id": 9070, 
+   "unit": "ounce"
+  }, 
+  {
+   "originalString": "1/3 cup cider vinegar", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "cider vinegar", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple-cider-vinegar.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.3333333333333333, 
+   "id": 2048, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/4 teaspoon fresh ground black pepper", 
+   "aisle": "Spices and Seasonings", 
+   "name": "ground pepper", 
+   "metaInformation": [
+    "fresh", 
+    "black"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/pepper.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 1002030, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "2 1/4 cups chopped pink lady apples or other sweet apples", 
+   "aisle": "Produce", 
+   "name": "pink lady apples", 
+   "metaInformation": [
+    "sweet", 
+    "chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 2.25, 
+   "id": 1009003, 
+   "unit": "cups"
+  }, 
+  {
+   "originalString": "1/4 teaspoon salt", 
+   "aisle": "Spices and Seasonings", 
+   "name": "salt", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 2047, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "2 tablespoons unsalted sunflower seeds", 
+   "aisle": "Savory Snacks", 
+   "name": "sunflower seeds", 
+   "metaInformation": [
+    "unsalted"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/sunflower-seeds.jpg", 
+   "unitLong": "tablespoons", 
+   "unitShort": "Tbsp", 
+   "amount": 2.0, 
+   "id": 12036, 
+   "unit": "tablespoons"
+  }, 
+  {
+   "originalString": "1 1/2 tablespoons vegetable oil", 
+   "aisle": "Oil, Vinegar, Salad Dressing", 
+   "name": "vegetable oil", 
+   "metaInformation": [], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/vegetable-oil.jpg", 
+   "unitLong": "tablespoons", 
+   "unitShort": "Tbsp", 
+   "amount": 1.5, 
+   "id": 4513, 
+   "unit": "tablespoons"
+  }
+ ], 
+ "healthScore": 7.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 40.0, 
+ "sourceUrl": "http://motherrimmy.com/apple-broccoli-slaw/", 
+ "glutenFree": true, 
+ "vegan": true, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 4, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/whisk.png", 
+       "id": 404661, 
+       "name": "whisk"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/bowl.jpg", 
+       "id": 404783, 
+       "name": "bowl"
+      }
+     ], 
+     "step": "Vinaigrette: combine first 5 ingredients in a small bowl, stirring well with a whisk.Slaw: combine apple, broccoli slaw and dried cherries; drizzle with vinaigrette, toss well to combine.Sprinkle with sunflower seeds; chill up to 3 hours.", 
+     "number": 1, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/sunflower-seeds.jpg", 
+       "id": 12036, 
+       "name": "sunflower seeds"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/broccoli-slaw.png", 
+       "id": 11741, 
+       "name": "broccoli slaw"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }
+     ]
+    }
+   ], 
+   "name": ""
+  }
+ ], 
+ "aggregateLikes": 0, 
+ "instructions": "Vinaigrette: combine first 5 ingredients in a small bowl, stirring well with a whisk.Slaw: combine apple, broccoli slaw and dried cherries; drizzle with vinaigrette, toss well to combine.Sprinkle with sunflower seeds; chill up to 3 hours.", 
+ "spoonacularSourceUrl": "https://spoonacular.com/dont-pass-up-this-crunchy-and-sweet-apple-broccoli-slaw-530285", 
+ "dishTypes": [
+  "side dish"
+ ], 
+ "vegetarian": true, 
+ "ketogenic": false, 
+ "readyInMinutes": 45, 
+ "servings": 8, 
+ "sustainable": false, 
+ "dairyFree": true, 
+ "whole30": false
+}

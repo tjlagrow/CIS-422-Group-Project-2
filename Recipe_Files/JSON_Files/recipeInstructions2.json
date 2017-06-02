@@ -1,0 +1,476 @@
+{
+ "sourceName": "My Recipes", 
+ "cuisines": [], 
+ "image": "https://spoonacular.com/recipeImages/roasted-duck-with-roasted-fruit-compote-74806.jpg", 
+ "cheap": false, 
+ "gaps": "no", 
+ "id": 74806, 
+ "veryPopular": false, 
+ "lowFodmap": false, 
+ "title": "Roasted Duck with Roasted Fruit Compote", 
+ "pricePerServing": 544.55, 
+ "creditText": "My Recipes", 
+ "extendedIngredients": [
+  {
+   "originalString": "1 (4-pound) frozen dressed domestic duck, thawed", 
+   "aisle": "Meat", 
+   "name": "duck", 
+   "metaInformation": [
+    "frozen", 
+    "thawed"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/duck-raw.jpg", 
+   "unitLong": "pounds", 
+   "unitShort": "lb", 
+   "amount": 4.0, 
+   "id": 5139, 
+   "unit": "pound"
+  }, 
+  {
+   "originalString": "1/2 teaspoon kosher salt, divided", 
+   "aisle": "Spices and Seasonings", 
+   "name": "kosher salt", 
+   "metaInformation": [
+    "divided"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.5, 
+   "id": 1082047, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/4 teaspoon freshly ground white pepper, divided", 
+   "aisle": "Spices and Seasonings", 
+   "name": "white pepper", 
+   "metaInformation": [
+    "white", 
+    "divided", 
+    "freshly ground"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/white-pepper.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 0.25, 
+   "id": 2032, 
+   "unit": "teaspoon"
+  }, 
+  {
+   "originalString": "1/2 cup coarsely chopped celery", 
+   "aisle": "Produce", 
+   "name": "celery", 
+   "metaInformation": [
+    "coarsely chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/celery.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 11143, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1/2 cup coarsely chopped carrot", 
+   "aisle": "Produce", 
+   "name": "carrot", 
+   "metaInformation": [
+    "coarsely chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/carrots.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.5, 
+   "id": 11124, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 small onion, quartered", 
+   "aisle": "Produce", 
+   "name": "onion", 
+   "metaInformation": [
+    "small", 
+    "quartered"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-onion.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 11282, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 garlic clove, minced", 
+   "aisle": "Produce", 
+   "name": "garlic clove", 
+   "metaInformation": [
+    "minced"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic-roasted.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 11215, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "1 orange, halved and seeded", 
+   "aisle": "Produce", 
+   "name": "orange", 
+   "metaInformation": [
+    "halved", 
+    "seeded"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/orange.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 9200, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "2/3 cup dry red wine", 
+   "aisle": "Alcoholic Beverages", 
+   "name": "dry red wine", 
+   "metaInformation": [
+    "dry red"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/red-wine.jpg", 
+   "unitLong": "cups", 
+   "unitShort": "cup", 
+   "amount": 0.6666666666666666, 
+   "id": 14097, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 cup pitted cherries", 
+   "aisle": "Produce", 
+   "name": "cherries", 
+   "metaInformation": [
+    "pitted"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
+   "unitLong": "cup", 
+   "unitShort": "cup", 
+   "amount": 1.0, 
+   "id": 9070, 
+   "unit": "cup"
+  }, 
+  {
+   "originalString": "1 1/2 teaspoons chopped fresh rosemary", 
+   "aisle": "Produce", 
+   "name": "fresh rosemary", 
+   "metaInformation": [
+    "fresh", 
+    "chopped"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/rosemary.jpg", 
+   "unitLong": "teaspoons", 
+   "unitShort": "tsp", 
+   "amount": 1.5, 
+   "id": 2063, 
+   "unit": "teaspoons"
+  }, 
+  {
+   "originalString": "1 peach, cut into (1-inch) pieces", 
+   "aisle": "Produce", 
+   "name": "peach", 
+   "metaInformation": [
+    "cut into (1-inch) pieces "
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/peaches.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 1.0, 
+   "id": 9236, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "2 Bartlett or Anjou pears, cut into (1-inch) pieces", 
+   "aisle": "Produce", 
+   "name": "anjou pears", 
+   "metaInformation": [
+    "cut into (1-inch) pieces "
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/anjou-pear.jpg", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 1009252, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "2 Golden Delicious apples, cut into (1-inch) pieces", 
+   "aisle": "Produce", 
+   "name": "red delicious apples", 
+   "metaInformation": [
+    "cut into (1-inch) pieces "
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/red-delicious-apples.png", 
+   "unitLong": "", 
+   "unitShort": "", 
+   "amount": 2.0, 
+   "id": 1029003, 
+   "unit": ""
+  }, 
+  {
+   "originalString": "2 tablespoons dry white wine", 
+   "aisle": "Alcoholic Beverages", 
+   "name": "dry white wine", 
+   "metaInformation": [
+    "dry white"
+   ], 
+   "image": "https://spoonacular.com/cdn/ingredients_100x100/white-wine.jpg", 
+   "unitLong": "tablespoons", 
+   "unitShort": "Tbsp", 
+   "amount": 2.0, 
+   "id": 14106, 
+   "unit": "tablespoons"
+  }
+ ], 
+ "healthScore": 54.0, 
+ "imageType": "jpg", 
+ "spoonacularScore": 76.0, 
+ "sourceUrl": "http://www.myrecipes.com/recipe/roasted-duck-with-roasted-fruit-compote-10000001031638/", 
+ "glutenFree": true, 
+ "vegan": false, 
+ "veryHealthy": false, 
+ "weightWatcherSmartPoints": 68, 
+ "analyzedInstructions": [
+  {
+   "steps": [
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg", 
+       "id": 404784, 
+       "name": "oven"
+      }
+     ], 
+     "step": "Preheat oven to 375.", 
+     "number": 1, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "To prepare duck, rinse duck under cold water; pat dry. Sprinkle 1/4 teaspoon salt and 1/8 teaspoon pepper in body cavity.", 
+     "number": 2, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/duck-raw.jpg", 
+       "id": 5139, 
+       "name": "duck"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+       "id": 2047, 
+       "name": "salt"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Place celery, carrot, onion, and garlic in cavity; tie ends of legs together with string. Lift wing tips up and over back; tuck under duck.", 
+     "number": 3, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/carrots.jpg", 
+       "id": 11124, 
+       "name": "carrot"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/celery.jpg", 
+       "id": 11143, 
+       "name": "celery"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/garlic.jpg", 
+       "id": 11215, 
+       "name": "garlic"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/brown-onion.jpg", 
+       "id": 11282, 
+       "name": "onion"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/duck-raw.jpg", 
+       "id": 5139, 
+       "name": "duck"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/roasting-pan.jpg", 
+       "id": 404629, 
+       "name": "roasting pan"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/broiler-pan.jpg", 
+       "id": 404698, 
+       "name": "broiler pan"
+      }
+     ], 
+     "step": "Place duck on the rack of a broiler pan or roasting pan coated with cooking spray.", 
+     "number": 4, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/duck-raw.jpg", 
+       "id": 5139, 
+       "name": "duck"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
+       "id": 404645, 
+       "name": "frying pan"
+      }
+     ], 
+     "step": "Place rack in pan. Rub cut sides of orange halves over duck; pierce skin over breast several times with a fork.", 
+     "number": 5, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/orange.jpg", 
+       "id": 9200, 
+       "name": "orange"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/duck-raw.jpg", 
+       "id": 5139, 
+       "name": "duck"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/food-thermometer.jpg", 
+       "id": 404789, 
+       "name": "kitchen thermometer"
+      }
+     ], 
+     "step": "Bake at 375 for 1 hour and 45 minutes or until a thermometer registers 180, basting every 30 minutes with red wine.", 
+     "length": {
+      "number": 75, 
+      "unit": "minutes"
+     }, 
+     "number": 6, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [], 
+     "step": "Let stand 10 minutes. Discard skin; sprinkle duck with the remaining 1/4 teaspoon salt and 1/8 teaspoon pepper. Cover; keep warm.", 
+     "length": {
+      "number": 10, 
+      "unit": "minutes"
+     }, 
+     "number": 7, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/duck-raw.jpg", 
+       "id": 5139, 
+       "name": "duck"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/salt.jpg", 
+       "id": 2047, 
+       "name": "salt"
+      }
+     ]
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/pan.png", 
+       "id": 404645, 
+       "name": "frying pan"
+      }
+     ], 
+     "step": "Drain pan drippings.", 
+     "number": 8, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/oven.jpg", 
+       "id": 404784, 
+       "name": "oven"
+      }
+     ], 
+     "step": "Increase oven temperature to 475.", 
+     "number": 9, 
+     "ingredients": []
+    }, 
+    {
+     "equipment": [
+      {
+       "image": "https://spoonacular.com/cdn/equipment_100x100/roasting-pan.jpg", 
+       "id": 404629, 
+       "name": "roasting pan"
+      }
+     ], 
+     "step": "To prepare compote, combine cherries and next 4 ingredients (through apple) in bottom of roasting pan coated with cooking spray, tossing gently.", 
+     "number": 10, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/cherries.jpg", 
+       "id": 9070, 
+       "name": "cherries"
+      }, 
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/apple.jpg", 
+       "id": 9003, 
+       "name": "apple"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Bake at 475 for 25 minutes or until very tender, stirring occasionally. Stir in 2 tablespoons white wine; bake an additional 5 minutes.", 
+     "length": {
+      "number": 30, 
+      "unit": "minutes"
+     }, 
+     "number": 11, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/white-wine.jpg", 
+       "id": 14106, 
+       "name": "white wine"
+      }
+     ]
+    }, 
+    {
+     "equipment": [], 
+     "step": "Serve with duck.", 
+     "number": 12, 
+     "ingredients": [
+      {
+       "image": "https://spoonacular.com/cdn/ingredients_100x100/duck-raw.jpg", 
+       "id": 5139, 
+       "name": "duck"
+      }
+     ]
+    }
+   ], 
+   "name": ""
+  }
+ ], 
+ "aggregateLikes": 0, 
+ "instructions": "Preheat oven to 375.                                                                                                To prepare duck, rinse duck under cold water; pat dry. Sprinkle 1/4 teaspoon salt and 1/8 teaspoon pepper in body cavity. Place celery, carrot, onion, and garlic in cavity; tie ends of legs together with string. Lift wing tips up and over back; tuck under duck. Place duck on the rack of a broiler pan or roasting pan coated with cooking spray. Place rack in pan. Rub cut sides of orange halves over duck; pierce skin over breast several times with a fork. Bake at 375 for 1 hour and 45 minutes or until a thermometer registers 180, basting every 30 minutes with red wine. Let stand 10 minutes. Discard skin; sprinkle duck with the remaining 1/4 teaspoon salt and 1/8 teaspoon pepper. Cover; keep warm. Drain pan drippings.                                                                                                Increase oven temperature to 475.                                                                                                To prepare compote, combine cherries and next 4 ingredients (through apple) in bottom of roasting pan coated with cooking spray, tossing gently. Bake at 475 for 25 minutes or until very tender, stirring occasionally. Stir in 2 tablespoons white wine; bake an additional 5 minutes. Serve with duck.", 
+ "spoonacularSourceUrl": "https://spoonacular.com/roasted-duck-with-roasted-fruit-compote-74806", 
+ "dishTypes": [], 
+ "vegetarian": false, 
+ "ketogenic": false, 
+ "readyInMinutes": 45, 
+ "servings": 4, 
+ "sustainable": false, 
+ "dairyFree": true, 
+ "whole30": false
+}
