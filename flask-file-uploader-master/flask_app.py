@@ -15,11 +15,16 @@ import traceback
 import json
 import subprocess
 
+import pyaudio
+import wave
+
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory, jsonify
 from flask_bootstrap import Bootstrap
 from werkzeug import secure_filename
 sys.path.append(os.path.abspath("home/422Hopper/CIS-422-Group-Project-2/Food_Files"))
 from Food_Files.tag_images import process_all_images
+
+from Speech_File.record import record
 
 
 from lib.upload_file import uploadfile
@@ -161,7 +166,8 @@ def get_file(filename):
 def tag_images():
     # Activate Clarifai here.
     read_file(app.config['INPUT'])
-    process_all_images()
+    record()
+    #process_all_images()
     #subprocess.call(['python3','../Food_Files/tag_images.py'])
     return redirect(url_for('index'))
 
