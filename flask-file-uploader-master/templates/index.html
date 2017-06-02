@@ -337,6 +337,7 @@ function sendValue(){
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      {% for i in range(n) %}
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
@@ -345,36 +346,21 @@ function sendValue(){
     
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      {% if e is not none %}
-      {% for i in range(n) %}
-      <div class="item{{ i }} active">
-      <p class="img-center"><strong>{{ e[i].title }}</strong></p><br>
-
+     {% if e is not none %}
+     {% for i in range(n) %}
+      <div class="item{% if i == 0 %} active{% endif %}">  
+        <p class="img-center"><strong>{{ e[i].title }}</strong></p><br>
         <a href="#demo{{ i }}" data-toggle="collapse">
           <img src="{{ e[i].image }}" class="img-reponsive img-thumbnail img-center" alt="{{ e[i].title }}">
         </a>
         <div id="demo{{ i }}" class="collapse">
           <p>Cooking Time {{ e[i].readyInMinutes }}</p>
-
         </div>
       </div>
-
-    {% endfor %}
-    {% endif  %}
-      <div class="item">
-
-       <p class="img-center"><strong></strong></p><br>
-
-        <a href="#demo2" data-toggle="collapse">
-          <img src="https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg" class="img-responsive img-thumbnail img-center" alt="Recipe Name" style = "display: block; height: 536px;">
-        </a>
-        <div id="demo2" class="collapse">
-          <p>Boil Noddles</p>
-          <p>lonfdsafasfdasdfasdf</p>
-          <p>Let the Chicken rest</p>
-        </div>
+     {% endfor %}
+     {% endif  %}
       </div>
-
+      <!---
       <div class="item">
         <p class="img-center"><strong>Recipe 3</strong></p><br>
         <a href="#demo3" data-toggle="collapse">
@@ -384,6 +370,7 @@ function sendValue(){
           <p>Loves lo45648864beach</p>
         </div>
       </div>
+      -->
 
 <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
