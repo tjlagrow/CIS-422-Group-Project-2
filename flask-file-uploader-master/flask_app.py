@@ -16,11 +16,16 @@ import json
 import subprocess
 import jinja2
 
+import pyaudio
+import wave
+
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory, jsonify
 from flask_bootstrap import Bootstrap
 from werkzeug import secure_filename
 sys.path.append(os.path.abspath("home/422Hopper/CIS-422-Group-Project-2/Food_Files"))
-from Food_Files.tag_images import process_all_images
+#from Food_Files.tag_images import process_all_images
+
+from Speech_Files.record import record
 
 
 from lib.upload_file import uploadfile
@@ -161,9 +166,17 @@ def get_file(filename):
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
     # Activate Clarifai here.
+<<<<<<< HEAD
     anythin = read_file(app.config['INPUT'], 0)
     #process_all_images()
     return render_template('index.html', d = anythin)
+=======
+    read_file(app.config['INPUT'])
+    record()
+    #process_all_images()
+    #subprocess.call(['python3','../Food_Files/tag_images.py'])
+    return redirect(url_for('index'))
+>>>>>>> b823a73a0761cf52a1fcba5763138e8c684e985d
 
 #@app.route('/table', methods=['GET', 'POST'])
 def read_file(filename, output_type):
