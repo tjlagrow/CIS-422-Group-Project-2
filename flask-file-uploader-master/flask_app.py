@@ -14,6 +14,7 @@ import simplejson
 import traceback
 import json
 import subprocess
+import jinja2
 
 from flask import Flask, request, render_template, redirect, url_for, send_from_directory, jsonify
 from flask_bootstrap import Bootstrap
@@ -160,31 +161,32 @@ def get_file(filename):
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
     # Activate Clarifai here.
-    read_file(app.config['INPUT'])
-    process_all_images()
-    #subprocess.call(['python3','../Food_Files/tag_images.py'])
-    return redirect(url_for('index'))
+    anythin = read_file(app.config['INPUT'], 0)
+    #process_all_images()
+    return render_template('index.html', d = anythin)
 
 #@app.route('/table', methods=['GET', 'POST'])
-def read_file(filename):
-    #json_data = json.load(open(app.config['OUTPUT_PATH']))
-    #text = request.form['text']
-    #return jsonify(title= recipe.title, text= recipe.steps, image = image)
+def read_file(filename, output_type):
     try:
         with open(os.getcwd() + filename) as json_data:
-            d = json.load(json_data)
-            print(d)
-            print d[0]
+                d = json.load(json_data)
+                #print (d)
+                con_lis = []
+        print 'starting'
+        if output_type == 0:
+            for key, value in d.iteritems():
+                con_lis.append([key, value[0], value[1], value[2], value[3], value[4], value[5]])
+            return con_lis
+            
+        elif output_type == 1:
+             print 'not ready'
     except:
-        print 'false!!'
-    a = request.args.get('a', 4, type=int)
-    b = request.args.get('b', 5, type=int)
-    return jsonify(result=a + b)
+        print ('false!!')
 
 
 @app.route('/recipes', methods=['GET', 'POST'])
 def show_recipe_full():
-    read_file
+    read_file()
     return 0
 
 @app.route('/', methods=['GET', 'POST'])

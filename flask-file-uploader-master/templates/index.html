@@ -30,7 +30,7 @@
     body{
         margin: 0 auto;
         text-align: center;
-        background-color: #ffc778;
+        background-color: #ffd484;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
     }
@@ -48,9 +48,10 @@
         letter-spacing: 5px;
         background-color: #ffffff
         opacity: 0.9;
+        
     }
     .navbar-nav  li a:hover {
-        color: #2b8c08 !important;
+        color: #96e878
     }
     table, th, td{
         border: 2px solid #e8efff;
@@ -69,21 +70,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#" style="padding-right: 4px; color: #e60303;   font-size: 17px">Hopper's Heapin'</a>
+      <a class="navbar-brand" href="#" style="padding-right: 4px; color: #96e878; font-weight: bold; font-size: 17px">Hopper's Heapin'</a>
       <img src="..\static\img\logo_w-o_name.jpg" style="height: 40px; float: left; padding-left: 5px; padding-right: 1px;" class="img-responsive img-circle logo-img">
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar" style="color: #96e878">
         <ul class="nav navbar-nav navbar-right">
-            <li><a class="popup-trigger">about</a></li>
-            <div class="popup">
-                <h1>About</h1>
+            <li><a class="popup-trigger" style="color: #96e878">about</a></li>
+            <div class="popup" >
+                <h1 style="color: #96e878">About</h1>
                     <p>When you feel like you want to cook but don't know what to cook? </p>
                     <p>This app is to help you to find the best recipe with the ingredients you have in your refrigerater.</p>
                 <span class="popup-btn-close">close</span>
             </div>
-            <li><a class="popup-trigger1">Instructions</a></li>
+            <li><a class="popup-trigger1" style="color: #96e878">Instructions</a></li>
             <div class="popup1">
-                <h1>Instruction Steps</h1>
+                <h1 style="color: #96e878">Instruction Steps</h1>
                     <p> 1. Take pictures of the ingredients you want to use.</p>
                     <p> 2. Upload the pictures you taken. </p>
                     <p> 3. Generate </p>
@@ -100,7 +101,7 @@
 <!-- First Container -->
 <div class="container-fluid text-center">
   <div class="container text-center" style="height:auto\9; padding-top: 15px; padding-left: 0px; padding-right: 0px; width:auto\9;">
-  <h1> Welcome! </h1>
+  <h1 style="color: #c971db"> Welcome! </h1>
     <img src="..\static\img\header_process.JPG" style="height:auto; width: auto; padding-left: 10px; padding-right: 5px;" class="img-responsive img-center">
   </div>
   <div class="container text-center" id = upload style="height:auto\9; padding-top: 15px; padding-left: 0px; padding-right: 0px; width:auto\9;">
@@ -242,45 +243,44 @@
             <span onclick="">Generate</span>
             <i class="glyphicon glyphicon-share-alt"></i>
         </button>
-}
+
 </div>
 
+<!---
 <div id="mloader"><div class="masterkey_blink">LOADING...</div></div>
 <div class="col-lg-2">
     <input type="button" value=" Pleassseeee wait..." onclick="loading()">
 </div>
-
+-->
 
 <a href="#output" data-toggle="collapse">
-    <img src="" class="img-circle person" alt="table">
+    <img src="" class="img-circle img-center" alt="table">
 </a>
 
 
 <div id ="output" data-toggle="collapse">
 <div class="container-fluid bg-1 text-center">
-
-  <div class="container text-center" id = upload style="height:auto; padding-left: 0px; padding-right: 0px; width: auto;">
-    {% for pic in pictures %}
-    <table class="table table-striped table-hover ">
+  <div class="col-4" style="height:auto\9; padding-left: 0px; padding-right: 0px; width: auto\9;">
+    <table class="table table-striped table-hover" style="height:auto\9; padding-left: 0px; padding-right: 0px; width: auto\9;">
         <thead>
             <tr>
-                <th>#</th>
-                <th>Image file name</th>
-                <th>API Ingredients</th>
-                <th>Column head</th>
-                <th>Column head</th>
+                <th>Uploaded Image</th>
+                <th colspan="8">Found Ingredients</th>
             </tr>
         </thead>
+        {% for pic in d %}
         <tbody>
             <tr>
-                <td>{{pic.image}}</td>
-                {% for ingredient in ingredients %}
-                <td>{{pic.ingredient}}</td>
+                <td>
+                <a href="/../Food_Files/input_images/lychee.jpg" title="{{ pic[0] }}"><img src="/../Food_Files/input_images/lychee.jpg"></a>
+                </td>
+                {% for i in range(7) %}
+                <td>{{ pic[i + 1] }}</td>
                 {% endfor %}
             </tr>
         </tbody>
+        {% endfor %}
     </table>
-    {% endfor %}
   </div>
 
 </div>
@@ -301,7 +301,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-      <p class="img-center"><strong>Recipe 1</strong></p><br>
+      <p class="img-center"><strong>{{ d[0][0] }}</strong></p><br>
         <a href="#demo" data-toggle="collapse">
           <img src="https://spoonacular.com/recipeImages/gold-nugget-burger-99330.jpg" class="img-reponsive img-thumbnail img-center" alt="Recipe Name">
         </a>
@@ -311,9 +311,8 @@
           <p>Boil</p>
         </div>
       </div>
-
       <div class="item">
-        <p class="img-center"><strong>Recipe 2</strong></p><br>
+        <p class="img-center"><strong>{{ d[1][0] }}</strong></p><br>
         <a href="#demo2" data-toggle="collapse">
           <img src="https://spoonacular.com/recipeImages/smashed-potato-burgers-852175.jpg" class="img-responsive img-thumbnail img-center" alt="Recipe Name" style = "display: block; height: 536px;">
         </a>
