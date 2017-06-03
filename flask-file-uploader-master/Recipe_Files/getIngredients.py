@@ -7,6 +7,8 @@ language:
 	python 2.7x
 use:
 	If given a string of words, should output a JSON of ingredients.
+notes:
+	***THIS PROGRAM IS NOT WORKING ON FLASK, USE FOR STUB PURPOSES AND DEVELOPMENT IN FUTURE.***
 """
 
 import unirest

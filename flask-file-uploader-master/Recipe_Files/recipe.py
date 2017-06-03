@@ -184,9 +184,10 @@ def run(incomingIngredients):
 
 
 if __name__ == "__main__":
-	
+	"""
 	### UNCOMMENT FOR TESTING ###
 
 	f_list = ["apples", "beef", "brown sugar", "tomato"]
 	run(f_list)
+	"""
 	
