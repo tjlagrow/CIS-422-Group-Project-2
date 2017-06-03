@@ -1,3 +1,3 @@
-## This is the Other_Files folder for the Hopper's Heapin' Jalapeños.
+## This is the Test_Files folder for the Hopper's Heapin' Jalapeños.
 
-Please refer to the [README](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/README.md) in the root directory.  This will help you install, navigate, understand, and use this wonderful piece of software!
+This is a folder that contains files and test as the code is being developed.  Most likely this file will be extremely bare as we get closer to submitting a final version.
