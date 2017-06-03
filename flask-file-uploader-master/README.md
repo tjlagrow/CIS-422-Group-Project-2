@@ -18,8 +18,8 @@ $ pip install -r requirements.txt
 - Run it:
 
 ```
-$ python app.py
+$ python flask_app.py
 ```
 
-- Go to http://127.0.0.1
+- Go to http://localhost:5000
 
