@@ -19,7 +19,7 @@ from flask import Flask, request, render_template, redirect, url_for, send_from_
 from werkzeug import secure_filename
 from Food_Files.tag_images import process_all_images
 from lib.upload_file import uploadfile
-#from Recipe_Files.recipe import run
+from Recipe_Files.recipe import run
 
 
 
@@ -60,7 +60,7 @@ def gen_file_name(filename):
 
 
 def create_thumbnail(image):
-    #create small thumbmail
+    #create small thumbmail to preview to show the user what they have taken an pic of or uploaded
     try:
         base_width = 80
         img = Image.open(os.path.join(app.config['UPLOAD_FOLDER'], image))
@@ -126,6 +126,7 @@ def upload():
     return redirect(url_for('index'))
 
 @app.route("/delete/<string:filename>", methods=['DELETE'])
+#this is the delete route created to delete pics that were uploaded, but didn't want to submit to get recipe
 def delete(filename):
     file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     file_thumb_path = os.path.join(app.config['THUMBNAIL_FOLDER'], filename)
@@ -157,10 +158,10 @@ def get_file(filename):
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
     # Activate Clarifai here
-    #process_all_images()
+    process_all_images()
     anythin = read_file(app.config['OUTPUT'], 0)
 
-    #session['anythin'] = anythin
+    session['anythin'] = anythin
     return render_template('index.html', n = 0, anythin = anythin) 
 
 def read_file(filename, output_type):
@@ -172,44 +173,47 @@ def read_file(filename, output_type):
         if output_type == 0:
         #print (d)
             for key, value in d.iteritems():
-            #This value is accessed 7 times due to design decision to only show the top seven found indrigrents from the uploaded image
+            #This value is accessed 7 times due to design decision to only show the top seven found ingredients from the uploaded image
                 con_lis.append([value[0], value[1], value[2], value[3], value[4], value[5], value[6]])
             return con_lis
             
         elif output_type == 1:
 
+            for key, value in d.iteritems():
+            #This value is accessed 3 top 
+                con_lis.append(value[0])
+                con_lis.append(value[1]) 
+                con_lis.append(value[2])
+
+            return con_lis    
+        elif output_type == 2:
             recipes_list = []
             for key, value in d.iteritems():
-                recipe_dict = {}#print key, value
+                recipe_dict = {}
                 for key_, value_ in value.iteritems():
                     #print key_, value_
                     recipe_dict[key_] = value[key_]
                 recipes_list.append(recipe_dict)
-                   
-            
             return recipes_list
+            
     except:
         print ('false!!')
 
 
 @app.route('/recipe', methods=['POST'])
 def show_recipe_full():
-    d = read_file(app.config['RECIPIE'], 1)
-    return render_template('templates/main.html')
+    d = read_file(app.config['RECIPIE'], 2)
+    return render_template('templates/recipe.html')
 
 @app.route('/topfive', methods=['GET', 'POST'])
 def show_top5():
-    clicked = None
-    print 'start'
-    if request.method == "POST":
-          #clicked=request.json['data']
-          print 'gotcha'
-    time.sleep(3)
-    e = read_file(app.config['RECIPIE'], 1)
+    indrigrents = read_file(app.config['OUTPUT'], 1)
+    run(indrigrents)
+    #sleep to ensure that the recipe.py write to the json file first, before we output the display
+    e = read_file(app.config['RECIPIE'], 2)
     num_recip = len(e)
     return render_template('index.html', e = e, n = num_recip)
     
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     session['anythin'] = ''

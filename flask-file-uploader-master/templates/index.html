@@ -245,7 +245,7 @@
 
 <div style = "overflow: hidden;" >
         <form action="/tag_images" method="post" enctype="multipart/form-data">
-            <button class="btn" type="submit" value="Find Foods">Find Foods
+            <button class="btn" type="submit" value="Find Foods" style="margin-bottom: 8px">Find Foods
             <i class="glyphicon glyphicon-share-alt"></i>
             </button>
         </form>
@@ -257,15 +257,9 @@
 </div>
 
 
-<!-- Loading screen --> 
-<!--
-<div id="mloader"><div class="masterkey_blink">LOADING...</div></div>
--->
-
 <a href="#output" data-toggle="collapse">
     <img src="" class="img-circle img-center" alt="table">
 </a>
-
 
 <script>
 
@@ -289,10 +283,12 @@ function GetCellValues() {
 
 function sendValue(input){
         console.log("sendValues called");
+        
         $.ajax({
             url: '/topfive',
-            data: json,
+            data: input,
             type: 'POST',
+            contentType: 'application/json;charset=UTF-8',
             success: function(response) {
                 console.log("ajax response:" + response);
             },
@@ -344,8 +340,9 @@ function sendValue(input){
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      
-      <li data-target="#myCarousel" data-slide-to="1"></li>
+      {% for i in range(n-1) %}
+      <li data-target="#myCarousel" data-slide-to="{{ i+1 }}"></li>
+      {% endfor %}
     </ol>
     
     <!-- Wrapper for slides -->
@@ -358,7 +355,9 @@ function sendValue(input){
           <img src="{{ e[i].image }}" class="img-reponsive img-thumbnail img-center" alt="{{ e[i].title }}">
         </a>
         <div id="demo{{ i }}" class="collapse">
-          <p>Cooking Time {{ e[i].readyInMinutes }}</p>
+          <p>Cooking Time: {{ e[i].readyInMinutes }} minutes</p>
+          <p> Ingredients: {{ e[i].ingredients }} </p>
+          <p>Instructions: {{ e[i].instructions }} </p>
         </div>
       </div>
      {% endfor %}

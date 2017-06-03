@@ -21,10 +21,11 @@ NUMBER_OF_RECIPIES = 10
 ##############################################################
 
 # A verification of the API in the correct folder
-if os.path.isfile("./../../Keys/SPOONACULAR_API_KEY.txt") != True:
+if os.path.isfile("SPOON_API_KEY.txt") != True:
+	 #os.path.isfile("./../../Keys/SPOONACULAR_API_KEY.txt") != True:
 	exit("API Key does not exist.")
 else:
-	key = open("./../../Keys/SPOONACULAR_API_KEY.txt", "r")
+	key = open("SPOON_API_KEY.txt", "r")
 	SPOONACULAR_API_KEY = key.read()
 	
 
@@ -73,7 +74,7 @@ def getRecipies(numbOfRecipies, incomingIngredients):
 	# loading data into a json format
 	b_json = json.loads(b)
 	# putting the extracted data into a json file
-	with open("JSON_Files/getRecipiesByIngredients.json", "w") as f:
+	with open("Recipe_Files/JSON_Files/getRecipiesByIngredients.json", "w") as f:
 		json.dump(b_json, f, indent=1)
 
 
@@ -97,7 +98,7 @@ def getInstructions(number, i):
 	# loading data into a json format
 	b_json = json.loads(b)
 	# putting the extracted data into a json file denoted by numeral index
-	file = "JSON_Files/recipeInstructions{}.json".format(i)
+	file = "Recipe_Files/JSON_Files/recipeInstructions{}.json".format(i)
 	with open(file, "w") as f:
 		json.dump(b_json, f, indent=1)
 
@@ -112,7 +113,7 @@ def APICalls(incomingIngredients):
 	getRecipies(NUMBER_OF_RECIPIES, incomingIngredients)
 
 	# opening the JSON file produced by the first API call
-	with open('JSON_Files/getRecipiesByIngredients.json', 'r') as f:
+	with open('Recipe_Files/JSON_Files/getRecipiesByIngredients.json', 'r') as f:
 		file = json.loads(f.read())
 	
 	# creating list to store IDs of the recipies
@@ -149,7 +150,7 @@ def outputJSON():
 		curTitle = "recipe{}".format(i)
 
 		# grabbing the corrisponding JSON file that is being parsed
-		current = "JSON_Files/recipeInstructions{}.json".format(i)
+		current = "Recipe_Files/JSON_Files/recipeInstructions{}.json".format(i)
 		# start parsing
 		with open(current, 'r') as f:
 			f_json = json.loads(f.read())
@@ -171,7 +172,7 @@ def outputJSON():
 			outputFileDict[curTitle] = curDict
 
 	# create the JSON file to store all of the data from all of the recipies
-	with open("JSON_Files/recipiesOutput.json", "w") as fout:
+	with open("Recipe_Files/JSON_Files/recipiesOutput.json", "w") as fout:
 		json.dump(outputFileDict, fout, indent=1)
 
 def run(incomingIngredients):
