@@ -245,7 +245,7 @@
 
 <div style = "overflow: hidden;" >
         <form action="/tag_images" method="post" enctype="multipart/form-data">
-            <button class="btn" type="submit" value="Find Foods" style="margin-bottom: 8px">Find Foods
+            <button id="Find_Foods_btn" class="btn" type="submit" value="Find Foods" style="margin-bottom: 8px">Find Foods
             <i class="glyphicon glyphicon-share-alt"></i>
             </button>
         </form>
@@ -257,11 +257,12 @@
 </div>
 
 
-<a href="#output" data-toggle="collapse">
-    <img src="" class="img-circle img-center" alt="table">
-</a>
-
 <script>
+$('#Find_Foods_btn').click(myFunc);
+function myFunc() {
+    alert("We received your images, please click 'Generate' next! ")
+}
+
 
 $('#generate_button').click(GetCellValues);
 function myFunction(elem) {
@@ -270,6 +271,7 @@ function myFunction(elem) {
 }
 
 function GetCellValues() {
+/*Commented out because there is no table 
         var list = [];
         var table = document.getElementById('myTab');
         for (var r = 1, n = table.rows.length; r < n; r++) {
@@ -277,13 +279,15 @@ function GetCellValues() {
                 list.push(table.rows[r].cells[c].innerText);
             }
         }
+*/
         sendValue(list);
         
 }
 
 function sendValue(input){
         console.log("sendValues called");
-        
+        alert("Thanks for waiting. We know you're hungry. We appericate your patiences. We are currently working hard to gather the World's best recipes for you!")
+/* Comment out for future feature, still buggy currently
         $.ajax({
             url: '/topfive',
             data: input,
@@ -296,8 +300,16 @@ function sendValue(input){
                 console.log(error);
             }
         });
+*/
 }
 </script>
+
+
+<!-----Uncomment for future feature to allow user to 
+
+<a href="#output" data-toggle="collapse">
+    <img src="" class="img-circle img-center" alt="table">
+</a>
 
 {% if n == 0 %}
 <div id ="output" data-toggle="collapse">
@@ -332,6 +344,8 @@ function sendValue(input){
 </div>
 </div>
 {% endif %}
+----->
+
 
 <div class="container-fluid bg-1 text-center" id="myCarousel">
 {% if n > 0 %}
