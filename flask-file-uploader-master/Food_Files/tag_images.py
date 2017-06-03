@@ -1,19 +1,27 @@
-#from jinja2 import FileSystemLoader, Environment
-#from shutil import copyfile
+# Author: Randy Chen
+#
+# Code adapted from goberoi's CloudyVision. (link: https://github.com/goberoi/cloudy_vision). Many thanks them for 
+# providing a way to cache API calls so that no calls are made on duplicate images.
+#
+# This program will go through photos in a given path and tag them with responses from the Clarifai API.
+
 import json
 import os
 import time
-#import vendors.google
-#import vendors.microsoft
 import vendors.clarifai_
-#import vendors.ibm
-#import vendors.cloudsight_
-#import vendors.rekognition
 
 
 SETTINGS = None
 def settings(name):
-    """Fetch a settings parameter."""
+    """This function will allow us to fetch a settings parameter.
+    When working with so many different variables and filepaths, this
+    is helpful for keeping track of all the different settings and 
+    ensuring that we are working with the correct objects.
+    Input:
+        name: the name of the setting as a key of a dictionary.
+    Output:
+        returns SETTING['name'], the value associated with the key 'name'.
+    """
 
     # Initialize settings if necessary.
     global SETTINGS
@@ -22,19 +30,12 @@ def settings(name):
         # Change this dict to suit your taste.
         SETTINGS = {
             'api_keys_filepath' : './api_keys.json',
-            # Uncomment for pythonanywhere 
-            #'input_images_dir' : '/../CIS-422-Group-Project-2/Food_Files/input_images/',
             'input_images_dir' : 'Food_Files/input_images',
             'output_dir' : 'Food_Files/output',
             'static_dir' : 'static',
             'output_image_height' : 200,
             'vendors' : {
-                #'google' : vendors.google,
-                #'msft' : vendors.microsoft,
-                'clarifai' : vendors.clarifai_,
-                #'ibm' : vendors.ibm,
-                #'cloudsight' : vendors.cloudsight_,
-                #'rekognition' : vendors.rekognition,
+                'clarifai' : vendors.clarifai_
             },
             'resize': False,
             'statistics': [
@@ -44,7 +45,6 @@ def settings(name):
             'tagged_images': False,
             'tags_filepath': './tags.json',
         }
-
         if SETTINGS['tagged_images']:
             SETTINGS['statistics'] += [
                 'matching_tags_count',
@@ -52,13 +52,21 @@ def settings(name):
             ]
 
         # Load API keys
-        #with open(SETTINGS['api_keys_filepath']) as data_file:
         SETTINGS['api_keys'] = {}
 
     return SETTINGS[name]
 
 
 def log_status(filepath, vendor_name, msg):
+    """
+    This function logs the status of an API call to the console.
+    Input:
+        filepath: the filepath of the file. Gets us the specific filename we are printing a message for.
+        vendor_name: the name of the API used to tag the images. Is Clarifai by default.
+        msg: a string in the form of "skipping API call, already cached", or "calling API"
+    Output:
+        Prints out a message to let the user know about whether the image is new or old, whether a call was made to the API or not. 
+    """
     filename = os.path.basename(filepath)
     print("%s -> %s" % ((filename + ", " + vendor_name).ljust(40), msg))
 
@@ -74,12 +82,6 @@ def process_all_images():
     Output:
         Writes a .json file into the 'output/' directory, which will be accessed by the application.
     """
-
-    image_results = []
-
-    # Create the output directory
-    """if not os.path.exists(settings('output_dir')):
-        os.makedirs(settings('output_dir'))"""
 
     # Read image labels
     if settings('tagged_images'):
@@ -102,29 +104,7 @@ def process_all_images():
         image_tags = []
         if settings('tagged_images'):
             image_tags = tags.get(filename, [])
-
-        # Create an output object for the image
-        image_result = {
-            'input_image_filepath' : filepath,
-            'output_image_filepath' : filename,
-            'vendors' : [],
-            'image_tags' : image_tags,
-        }
-        image_results.append(image_result)
-        """
-        # not used.
-        # If there's no output file, then resize or copy the input file over
-        output_image_filepath = os.path.join(settings('output_dir'), filename)
-        if not(os.path.isfile(output_image_filepath)):
-            log_status(filepath, "", "writing output image in %s" % output_image_filepath)
-            if settings('resize'):
-                resize_and_save(filepath, output_image_filepath)
-            else:
-                copyfile(filepath, output_image_filepath)
-        """
-
-        # Walk through all vendor APIs to call.
-        #for vendor_name, vendor_module in sorted(settings('vendors').items(), reverse=True):
+        
         vendor_name   = sorted(settings('vendors').items(), reverse=True)[0][0]
         vendor_module = sorted(settings('vendors').items(), reverse=True)[0][1]
         #print(vendor_name, vendor_module)
@@ -147,10 +127,7 @@ def process_all_images():
             # If not, make the API call for this particular vendor.
             log_status(filepath, vendor_name, "calling API")
             
-            ### Code below times execution of API call ###
-            #api_call_start = time.time()
             api_result = vendor_module.call_vision_api(filepath)
-            #api_result['response_time'] = time.time() - api_call_start
 
             # And cache the result in a .json file
             log_status(filepath, vendor_name, "success, storing result in %s" % output_json_path)
@@ -168,20 +145,7 @@ def process_all_images():
         #print(standardized_result)
 
 
-    # Compute global statistics for each vendor
-    #vendor_stats = vendor_statistics(image_results)
-    #print(recommendations)
-    # Sort image_results output by filename (so that future runs produce comparable output)
-    image_results.sort(key=lambda image_result: image_result['output_image_filepath'])
-    #print(image_results)
-    # Render HTML file with all results.
-
-    # Write HTML output.
-    """output_html_filepath = os.path.join(settings('output_dir'), 'output.html')
-    with open(output_html_filepath, 'wb') as output_html_file:
-        output_html_file.write(output_html.encode('utf-8'))"""
-
-    # Write JSON output.
+    # Write JSON output to be displayed by the application.
     output_json_path = os.path.join(settings('output_dir'), 'foods.json')
     with open(output_json_path, 'w') as outfile:
         api_result_str = json.dumps(recommendations, sort_keys=True, indent=4, separators=(',', ': '))
