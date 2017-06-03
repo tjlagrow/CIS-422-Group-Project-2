@@ -25,14 +25,13 @@ def get_standardized_result(api_result):
     Arguments:
         api_result, which is the response from making an API call.
     Returns:
-        A dictionary which associates the recommended labels (as values) with the image names (as keys).
+        A dictionary confirm_foods which associates the recommended labels (as values) with the image names (as keys).
     """
-    output = {
+    output     = {
         'tags': []
     }
-
-    concepts = api_result['outputs'][0]['data']['concepts']
-    tag_names = []
+    concepts   = api_result['outputs'][0]['data']['concepts']
+    tag_names  = []
     tag_scores = []
 
     for concept in concepts:
@@ -40,18 +39,17 @@ def get_standardized_result(api_result):
         tag_scores.append(concept['value'])
 
     output['tags'] = zip(tag_names, tag_scores)
-    #print(output['tags'])
     # a dictionary which contains unnecessary or vague recommendations. Used to filter the responses to the user.
     not_specific_ingredients = {'food', 'sauce', 'barbecue', 'comestible', 'grass', 'aliment', 'salad', 'pasture', 'vegetable', 'sweet', 'legume', 'dessert', 'berry', 'juice', 'meat'}
-    output_list = list(output['tags'])
-    confirm_foods = []
+    output_list    = list(output['tags'])
+    confirm_foods  = []
     
-    max_recs = 7
-    #print ("short list", len(output_list))
+    # We get the top five ingredients for each photo so that in the future, if we were to build a table from
+    # the recommended ingredients, the table would not be excessively large to a user be on their mobile device.
+    max_recs       = 5
     for (food, score) in output_list:
         if food not in not_specific_ingredients and max_recs > 0:
             confirm_foods.append(food)
             max_recs -= 1
-    print(confirm_foods)
+    #print(confirm_foods)
     return confirm_foods
-    #return output
