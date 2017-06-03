@@ -16,10 +16,10 @@ import json
 ##############################################################
 
 # A verification of the API in the correct folder
-if os.path.isfile("./SPOONACULAR_API_KEY.txt") != True:
+if os.path.isfile("./../../Keys/SPOONACULAR_API_KEY.txt") != True:
 	exit("API Key does not exist.")
 else:
-	key = open("SPOONACULAR_API_KEY.txt", "r")
+	key = open("./../../Keys/SPOONACULAR_API_KEY.txt", "r")
 	SPOONACULAR_API_KEY = key.read()
 	
 #################################################################
