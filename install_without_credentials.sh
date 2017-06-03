@@ -7,5 +7,4 @@ sudo pip install unirest
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
-clarifai config
-python flask_app.py
+

@@ -1,10 +1,20 @@
 # Hopper's Heapin' Jalapeños
-## CIS-422-Group-Project-2 (<a href="http://422hopper.pythonanywhere.com/" target="_blank">Demo</a>) 
+## CIS-422-Group-Project-2 (<a href="http://422hopper.pythonanywhere.com/" target="_blank">Application Demo! Click Me!</a>) 
 
 This is the GitHub repository for the second group project for CIS 422 Software Methodologies taught by Dr. Michael Young.
 
 ![alt text](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/Other_Files/Picture1.png)
 
+### First things, first!
+Are you ready to just download and start the application locally? There are two ways!
+1. If you have the credientials for Clarifai and the Spoonacular Key, use [install.sh](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/install.sh)
+1. If you don't have credientials or the key, you can still download all of the files and necessary packages with [install_without_credentials.sh](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/install_without_credentials.sh)
+
+### Looking for documentation?
+You should start at the [wiki pages!](https://github.com/tjlagrow/CIS-422-Group-Project-2/wiki)
+
+
+### History of group:
 Founded in 2017, Hopper's Heapin' Jalapenos is composed of several [contributors](https://github.com/tjlagrow/CIS-422-Group-Project-2/wiki/Contributors). 
 
 Have you ever opened your fridge on an empty stomach, only to be discouraged to cook anything 
@@ -18,9 +28,9 @@ How does this work? This app is a light-weight mobile and web-based platform tha
 generate recipes.
 
 We do this by taking the files you upload and running them through an image tagging API.
-You can then clarify what your ingredients are through your voice, which is captured by 
-a voice recognition API. Once we have your confirmed list of ingredients sorted out, we 
-then use a recipe API to display the top recipes out there! No typing, no hassle! 
+You can then clarify what your ingredients are through a selection table. Once we have 
+your confirmed list of ingredients sorted out, we then use a recipe API to display the 
+top recipes out there! No typing, no hassle! 
 
 ## Important Links Starting Out
 

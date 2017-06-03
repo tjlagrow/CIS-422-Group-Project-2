@@ -21,10 +21,10 @@ NUMBER_OF_RECIPIES = 10
 ##############################################################
 
 # A verification of the API in the correct folder
-if os.path.isfile("./SPOONACULAR_API_KEY.txt") != True:
+if os.path.isfile("./../../Keys/SPOONACULAR_API_KEY.txt") != True:
 	exit("API Key does not exist.")
 else:
-	key = open("SPOONACULAR_API_KEY.txt", "r")
+	key = open("./../../Keys/SPOONACULAR_API_KEY.txt", "r")
 	SPOONACULAR_API_KEY = key.read()
 	
 
@@ -184,9 +184,9 @@ def run(incomingIngredients):
 
 
 if __name__ == "__main__":
-	"""
+	
 	### UNCOMMENT FOR TESTING ###
 
 	f_list = ["apples", "beef", "brown sugar", "tomato"]
-	run(f_lsit)
-	"""
+	run(f_list)
+	
