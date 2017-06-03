@@ -144,8 +144,8 @@ def delete(filename):
 # serve static files
 @app.route("/thumbnail/<string:filename>", methods=['GET'])
 def get_thumbnail(filename):
-    print (app.config['THUMBNAIL_FOLDER'])
-    print filename
+    #print (app.config['THUMBNAIL_FOLDER'])
+    #print filename
     return send_from_directory(app.config['THUMBNAIL_FOLDER'], filename=filename)
 
 
@@ -156,16 +156,12 @@ def get_file(filename):
 
 @app.route('/tag_images', methods=['GET', 'POST'])
 def tag_images():
-    # Activate Clarifai here.
-    #s = ""
+    # Activate Clarifai here
     #process_all_images()
-    #anythin = read_file(app.config['OUTPUT'], 0)
+    anythin = read_file(app.config['OUTPUT'], 0)
 
-    anythin = read_file(app.config['RECIPIE'], 1)
-
-    #getIngredientsFromString(anythin)
     #session['anythin'] = anythin
-    return render_template('index.html', anythin = anythin) 
+    return render_template('index.html', n = 0, anythin = anythin) 
 
 def read_file(filename, output_type):
     try:
@@ -176,7 +172,7 @@ def read_file(filename, output_type):
         if output_type == 0:
         #print (d)
             for key, value in d.iteritems():
-            #for key, value in d.items():
+            #This value is accessed 7 times due to design decision to only show the top seven found indrigrents from the uploaded image
                 con_lis.append([value[0], value[1], value[2], value[3], value[4], value[5], value[6]])
             return con_lis
             
@@ -203,20 +199,22 @@ def show_recipe_full():
 
 @app.route('/topfive', methods=['GET', 'POST'])
 def show_top5():
-    #clicked = None
-    #if request.method == "POST":
-    #      clicked=request.json['data']
-    #time.sleep(14)
+    clicked = None
+    print 'start'
+    if request.method == "POST":
+          #clicked=request.json['data']
+          print 'gotcha'
+    time.sleep(3)
     e = read_file(app.config['RECIPIE'], 1)
     num_recip = len(e)
-    print e[0]['title']
     return render_template('index.html', e = e, n = num_recip)
     
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     session['anythin'] = ''
-    return render_template('index.html')
+    num_recip = -1
+    return render_template('index.html', n = num_recip)
 
 
 if __name__ == '__main__':
