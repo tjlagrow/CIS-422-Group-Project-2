@@ -5,6 +5,11 @@ This is the GitHub repository for the second group project for CIS 422 Software 
 
 ![alt text](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/Other_Files/Picture1.png)
 
+### First things, first!
+Are you ready to just download and start the application locally? There are two ways!
+If you have the credientials for Clarifai and the Spoonacular Key, use [install.sh](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/install.sh)
+If you don't have credientials or the key, you can still download all of the [files and necessary packages](https://github.com/tjlagrow/CIS-422-Group-Project-2/blob/master/install_without_credentials.sh)
+
 ### Looking for documentation?
 You should start at the [wiki pages!](https://github.com/tjlagrow/CIS-422-Group-Project-2/wiki)
 
